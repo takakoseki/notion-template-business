@@ -1,3 +1,2 @@
-Before: Three abandoned habit apps and a notes page I stopped checking after day 11. After: 90-day streak visible the second I open Notion. https://gumroad.com/l/your-product
-
-#Notion #HabitTracker
+Track skip reasons, not just streaks. When you miss a habit, log why in one word: tired, busy, forgot, sick. After two weeks, patterns emerge and you fix the actual problem instead of just trying harder. I built a…
+#HabitTracker #Notion #Productivity
