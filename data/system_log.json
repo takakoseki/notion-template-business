@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2026-03-30T10:48:22.022148+00:00",
+    "agent": "analytics_agent",
+    "status": "started",
+    "message": "Analytics job started"
+  },
+  {
+    "timestamp": "2026-03-30T10:48:22.161746+00:00",
+    "agent": "analytics_agent",
+    "status": "warning",
+    "message": "Metrics fetch failed: 401 Unauthorized\nUnauthorized"
+  }
+]

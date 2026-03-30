@@ -1,0 +1,24 @@
+{
+  "page_title": "🏠 Habit Tracker",
+  "page_id": "33366eda-9d87-8192-805d-ddf245355066",
+  "page_url": "https://www.notion.so/33366eda9d878192805dddf245355066",
+  "databases_created": 4,
+  "databases": [
+    {
+      "name": "📋 Habit Library",
+      "id": "33366eda-9d87-8102-ac0e-cb37b4bc5eeb"
+    },
+    {
+      "name": "📅 Daily Log",
+      "id": "33366eda-9d87-81fd-b88e-db9df78e45b4"
+    },
+    {
+      "name": "📆 Weekly Review",
+      "id": "33366eda-9d87-81a7-9a71-cfb07dd3b5a5"
+    },
+    {
+      "name": "🎯 Habit Goals & Milestones",
+      "id": "33366eda-9d87-8166-aaf0-d1327fb7217e"
+    }
+  ]
+}
