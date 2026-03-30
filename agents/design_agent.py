@@ -91,15 +91,25 @@ Write practical, specific content. All text must be in English.
 def run() -> dict:
     print("[design] === Design started ===")
 
+    fallback_themes = [
+        "Habit Tracker",
+        "Project Management",
+        "Personal Finance",
+        "Content Creator",
+        "Study / Learning",
+    ]
+
     research = load_research_result()
     top5 = research.get("top5_themes", [])
 
     if not top5:
-        raise ValueError("top5_themes not found in research_result.json.")
-
-    top_theme = top5[0]
-    theme_name = top_theme["theme"]
-    top_posts = top_theme.get("top_posts", [])
+        print("[design] WARNING: top5_themes is empty. Using fallback theme.")
+        theme_name = fallback_themes[0]
+        top_posts = []
+    else:
+        top_theme = top5[0]
+        theme_name = top_theme["theme"]
+        top_posts = top_theme.get("top_posts", [])
 
     print(f"[design] Top theme: {theme_name}")
 
