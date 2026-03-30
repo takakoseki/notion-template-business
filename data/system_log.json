@@ -10,5 +10,17 @@
     "agent": "analytics_agent",
     "status": "warning",
     "message": "Metrics fetch failed: 401 Unauthorized\nUnauthorized"
+  },
+  {
+    "timestamp": "2026-03-30T21:51:07.448149+00:00",
+    "agent": "analytics_agent",
+    "status": "started",
+    "message": "Analytics job started"
+  },
+  {
+    "timestamp": "2026-03-30T21:51:07.623414+00:00",
+    "agent": "analytics_agent",
+    "status": "warning",
+    "message": "Metrics fetch failed: 401 Unauthorized\nUnauthorized"
   }
 ]

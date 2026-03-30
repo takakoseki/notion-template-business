@@ -1,25 +1,25 @@
 {
-  "title": "Notion Habit Tracker — Build Habits That Actually Stick",
-  "description": "Stop abandoning your habits after two weeks. This all-in-one Notion Habit Tracker gives you a beautifully structured system to define, log, analyze, and celebrate your daily habits — all in one place you already own.\n\nBuilt for everyone from beginners to power users, this template includes four interconnected databases: a Habit Library to define your habits with categories, cues, and difficulty ratings; a Daily Log to check off habits and capture mood and quality data; a Weekly Review system to reflect and course-correct; and a Goals & Milestones tracker to keep you motivated with long-term targets.\n\nThe visual dashboard shows you today's habits, streak leaders, this week at a glance, and your latest weekly review — the moment you open Notion. No more wondering how you're doing. No more lost streaks you didn't know you were building.\n\nWhether you want to build a morning routine, exercise consistently, or finally track the habits that matter across health, work, mindset, and relationships — this template gives you the clarity, structure, and insight to make it happen.",
+  "title": "Habit Tracker — All-in-One Notion Template",
+  "description": "Stop letting your habits fall apart after week two. This Notion Habit Tracker gives you a complete, beautifully structured workspace to build lasting routines — without juggling five different apps.\n\nDefine your habits, log completions daily, track streaks automatically, and link every habit to a bigger life goal — all inside Notion. Whether you're a remote worker optimizing your morning routine, a student building study habits, or someone on a wellness journey, this template adapts to your life.\n\nInside you get five interconnected databases (Habits, Daily Log, Goals, Weekly Reviews, and Streak Snapshots) plus seven pre-built pages including a Dashboard, Daily Check-In, Analytics view, and a full Setup Guide. Streak calculations, completion rate formulas, mood tracking, and structured weekly reflections are all ready to go from day one.\n\nNo complex setup required. Follow the 3-step onboarding, add 3–5 habits, and start logging today. Built for intermediate Notion users who want a powerful system without building it from scratch.",
   "features": [
-    "4-database system (Habit Library, Daily Log, Weekly Reviews, Goals & Milestones) that connects your daily check-ins to long-term progress in one unified workspace.",
-    "Visual dashboard homepage showing today's habits, active streaks, weekly progress, and your latest review — so you always know exactly where you stand.",
-    "Category-based habit organization across Health, Mindset, Work, Relationships, Finance, and Creative domains to keep your habit stack balanced and intentional.",
-    "Mood tracking (before & after), quality ratings, and skip-reason logging in the Daily Log so you can identify patterns and understand what's really driving your results.",
-    "Built-in Goals & Milestones database with progress formulas and reward fields to give you motivating checkpoints beyond just daily streaks."
+    "5 fully structured databases with pre-built relations, rollups, and formulas — track habits, daily logs, goals, streaks, and weekly reviews all in one place.",
+    "Automatic streak and 30-day completion rate calculations so you always know exactly how consistent you've been without any manual math.",
+    "Goal-to-habit linking connects every daily action to a bigger life goal, keeping you motivated when enthusiasm starts to fade.",
+    "Structured Weekly Review template prompts you to celebrate wins, identify obstacles, and set intentions — turning reflection into a 10-minute habit.",
+    "7 pre-configured pages including a Dashboard, Daily Check-In, Analytics view with calendar and timeline, and a beginner-friendly Setup Guide."
   ],
   "faq": [
     {
-      "q": "Do I need to be an advanced Notion user to use this template?",
-      "a": "Not at all. The template is designed to work out of the box for beginners — just duplicate it to your Notion workspace, open the Habit Library, and add your first habit in under 10 minutes. Advanced users will appreciate the flexible database structure, formula fields, and fully customizable views."
+      "q": "Do I need to be a Notion expert to use this template?",
+      "a": "No — this template is designed for intermediate Notion users who are comfortable with databases but don't want to build everything from scratch. A detailed Setup Guide and Getting Started checklist are included so you can be up and running in under 15 minutes."
     },
     {
-      "q": "How do I get the template after purchase?",
-      "a": "After completing your purchase on Gumroad, you will receive a link to a Notion page. Click 'Duplicate' in the top-right corner to add the full template to your own Notion workspace. You only need a free Notion account to use it."
+      "q": "Can I use this on mobile for quick daily logging?",
+      "a": "Absolutely. The Daily Check-In page is designed for fast, low-friction logging on mobile — just open the page, check off your habits, and you're done in under a minute. The full analytics and setup features are best explored on desktop."
     },
     {
-      "q": "Can I track both daily habits and habits I only do a few times per week?",
-      "a": "Yes. Each habit in the Habit Library has a Target Frequency field with options including Daily, 5×/week, 3×/week, and Weekly. You can filter and customize your Daily Log views to match exactly how often each habit is scheduled, keeping your tracker realistic and flexible."
+      "q": "What happens after I purchase? How do I get the template?",
+      "a": "After purchase you'll receive a Notion template link. Click it, select 'Duplicate' in Notion, and the entire workspace — all databases, pages, formulas, and views — will be copied directly into your Notion account. No additional software required."
     }
   ],
   "price": {
