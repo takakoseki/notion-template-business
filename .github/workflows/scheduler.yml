@@ -1,0 +1,220 @@
+name: Notion Template Business Scheduler
+
+on:
+  schedule:
+    - cron: "0 21 * * *"   # 06:00 JST — pipeline
+    - cron: "0 0 * * *"    # 09:00 JST — morning post
+    - cron: "0 12 * * *"   # 21:00 JST — evening post
+  workflow_dispatch:
+    inputs:
+      job_type:
+        description: "Job to run"
+        required: true
+        default: "pipeline"
+        type: choice
+        options:
+          - pipeline
+          - post_am
+          - post_pm
+
+permissions:
+  contents: write
+
+env:
+  ANTHROPIC_API_KEY:           ${{ secrets.ANTHROPIC_API_KEY }}
+  REDDIT_CLIENT_ID:            ${{ secrets.REDDIT_CLIENT_ID }}
+  REDDIT_CLIENT_SECRET:        ${{ secrets.REDDIT_CLIENT_SECRET }}
+  REDDIT_USER_AGENT:           ${{ secrets.REDDIT_USER_AGENT }}
+  GUMROAD_ACCESS_TOKEN:        ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+  PRODUCTHUNT_API_KEY:         ${{ secrets.PRODUCTHUNT_API_KEY }}
+  PRODUCTHUNT_API_SECRET:      ${{ secrets.PRODUCTHUNT_API_SECRET }}
+  PRODUCTHUNT_DEVELOPER_TOKEN: ${{ secrets.PRODUCTHUNT_DEVELOPER_TOKEN }}
+  NOTION_API_KEY:              ${{ secrets.NOTION_API_KEY }}
+  NOTION_PARENT_PAGE_ID:       ${{ secrets.NOTION_PARENT_PAGE_ID }}
+  X_API_KEY:                   ${{ secrets.X_API_KEY }}
+  X_API_SECRET:                ${{ secrets.X_API_SECRET }}
+  X_BEARER_TOKEN:              ${{ secrets.X_BEARER_TOKEN }}
+  X_ACCESS_TOKEN:              ${{ secrets.X_ACCESS_TOKEN }}
+  X_ACCESS_TOKEN_SECRET:       ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+  GMAIL_ADDRESS:               ${{ secrets.GMAIL_ADDRESS }}
+  GMAIL_APP_PASSWORD:          ${{ secrets.GMAIL_APP_PASSWORD }}
+
+# ---------------------------------------------------------------------------
+# Shared setup steps (referenced as a reusable pattern in each job)
+# ---------------------------------------------------------------------------
+
+jobs:
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # 06:00 JST  analytics → orchestrator (1-5) → save latest_product.json
+  # ─────────────────────────────────────────────────────────────────────────
+  pipeline:
+    name: "06:00 JST — Analytics + Product Pipeline"
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 21 * * *' ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.job_type == 'pipeline')
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: playwright install chromium
+
+      - name: Run analytics_agent
+        run: python agents/analytics_agent.py
+        continue-on-error: true   # analytics failure must not block the pipeline
+
+      - name: Run orchestrator (agents 1-5)
+        run: python orchestrator.py --end-at 5
+
+      - name: Save latest_product.json
+        run: |
+          python - <<'EOF'
+          import json, sys
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          ROOT        = Path(".")
+          sales_path  = ROOT / "data" / "sales_copy.json"
+          notion_path = ROOT / "data" / "notion_result.json"
+          out_path    = ROOT / "data" / "latest_product.json"
+
+          if not sales_path.exists():
+              print("sales_copy.json not found — skipping")
+              sys.exit(0)
+
+          sales = json.loads(sales_path.read_text(encoding="utf-8"))
+
+          notion_url = ""
+          if notion_path.exists():
+              try:
+                  notion_url = json.loads(notion_path.read_text(encoding="utf-8")).get("page_url", "")
+              except Exception:
+                  pass
+
+          existing_gumroad_url = ""
+          if out_path.exists():
+              try:
+                  existing_gumroad_url = json.loads(out_path.read_text(encoding="utf-8")).get("gumroad_url", "")
+              except Exception:
+                  pass
+
+          product = {
+              "title":       sales.get("title", ""),
+              "description": sales.get("description", ""),
+              "notion_url":  notion_url,
+              "created_at":  datetime.now(timezone.utc).isoformat(),
+              "gumroad_url": existing_gumroad_url,
+          }
+
+          out_path.parent.mkdir(parents=True, exist_ok=True)
+          out_path.write_text(json.dumps(product, ensure_ascii=False, indent=2), encoding="utf-8")
+          print(f"Saved latest_product.json: {product['title']}")
+          EOF
+
+      - name: Commit data changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: pipeline data update [skip ci]"
+            git push
+          fi
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # 09:00 JST  tweet draft → email
+  # ─────────────────────────────────────────────────────────────────────────
+  post_am:
+    name: "09:00 JST — Morning Post Draft"
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 0 * * *' ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.job_type == 'post_am')
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run twitter_agent
+        run: python agents/twitter_agent.py
+
+      - name: Run email_agent
+        run: python agents/email_agent.py
+        continue-on-error: true   # email failure must not discard the draft
+
+      - name: Commit log changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f data/twitter_log.json data/twitter_draft.txt
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: twitter log update (09:00 post) [skip ci]"
+            git push
+          fi
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # 21:00 JST  tweet draft → email
+  # ─────────────────────────────────────────────────────────────────────────
+  post_pm:
+    name: "21:00 JST — Evening Post Draft"
+    runs-on: ubuntu-latest
+    if: |
+      github.event.schedule == '0 12 * * *' ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.job_type == 'post_pm')
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run twitter_agent
+        run: python agents/twitter_agent.py
+
+      - name: Run email_agent
+        run: python agents/email_agent.py
+        continue-on-error: true
+
+      - name: Commit log changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f data/twitter_log.json data/twitter_draft.txt
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: twitter log update (21:00 post) [skip ci]"
+            git push
+          fi
