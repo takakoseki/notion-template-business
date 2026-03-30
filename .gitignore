@@ -1,0 +1,24 @@
+# API keys — never commit
+.env
+
+# Claude Code settings
+.claude/
+
+# Python virtual environment
+venv/
+
+# Generated data files (regenerated on each run)
+data/
+output/
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Windows
+Thumbs.db
+Desktop.ini
