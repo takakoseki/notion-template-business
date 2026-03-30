@@ -88,6 +88,21 @@ Write practical, specific content. All text must be in English.
     return message.content[0].text
 
 
+def _load_past_themes() -> set[str]:
+    """Return the set of themes already created (from latest_product.json)."""
+    path = ROOT / "data" / "latest_product.json"
+    if not path.exists():
+        return set()
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        title = data.get("title", "")
+        # The title contains the theme name (e.g. "Notion Habit Tracker — ...")
+        # Also store the raw title so we can do a keyword check
+        return {title.lower()}
+    except Exception:
+        return set()
+
+
 def run() -> dict:
     print("[design] === Design started ===")
 
@@ -97,19 +112,46 @@ def run() -> dict:
         "Personal Finance",
         "Content Creator",
         "Study / Learning",
+        "Job Search / Career",
+        "CRM / Sales",
+        "Life OS / Second Brain",
+        "Meeting Notes",
+        "Travel Planner",
     ]
+
+    past_title = _load_past_themes()
 
     research = load_research_result()
     top5 = research.get("top5_themes", [])
 
-    if not top5:
-        print("[design] WARNING: top5_themes is empty. Using fallback theme.")
-        theme_name = fallback_themes[0]
-        top_posts = []
-    else:
-        top_theme = top5[0]
-        theme_name = top_theme["theme"]
-        top_posts = top_theme.get("top_posts", [])
+    # Pick the highest-ranked theme that was NOT used in the last run
+    theme_name = None
+    top_posts: list[dict] = []
+
+    for candidate in top5:
+        name = candidate["theme"]
+        # Skip if the previous product title contains this theme's keywords
+        if any(word.lower() in pt for word in name.split() for pt in past_title):
+            print(f"[design] Skipping '{name}' (same as last product).")
+            continue
+        theme_name = name
+        top_posts = candidate.get("top_posts", [])
+        break
+
+    if theme_name is None:
+        # All top5 were used — fall back to a theme not in top5
+        top5_names = {t["theme"] for t in top5}
+        for fb in fallback_themes:
+            if fb not in top5_names and not any(
+                word.lower() in pt for word in fb.split() for pt in past_title
+            ):
+                theme_name = fb
+                break
+        if theme_name is None:
+            # Last resort: just pick the top result regardless
+            theme_name = top5[0]["theme"] if top5 else fallback_themes[0]
+            top_posts = top5[0].get("top_posts", []) if top5 else []
+            print(f"[design] WARNING: All themes exhausted. Reusing '{theme_name}'.")
 
     print(f"[design] Top theme: {theme_name}")
 

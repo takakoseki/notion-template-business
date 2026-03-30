@@ -12,236 +12,239 @@
 
 ### Problem This Template Solves
 
-Most people struggle to build and maintain consistent habits because they lack a **centralized, visual system** that combines planning, daily logging, progress tracking, and reflection in one place. Existing habit-tracking apps are often siloed, lack flexibility, or don't connect habit performance to broader personal goals. This Notion template bridges that gap by providing a fully integrated workspace where users can define habits, log completions, monitor streaks, and review patterns — all without switching between multiple tools.
+Most people struggle to build consistent habits because they lack a **centralized, visual system** that simultaneously tracks daily check-ins, measures long-term progress, reflects on wins and failures, and adjusts goals over time. Generic to-do apps treat habits like tasks — one-and-done. This template treats habits as ongoing behavioral systems that require **streaks, context, reflection, and analytics** working together in one place.
 
 ### Primary Use Cases
 
-- **Daily habit logging** — Quickly check off habits each day in a structured, low-friction interface
-- **Streak tracking** — Automatically calculate and visualize current and longest streaks per habit
-- **Weekly & monthly reviews** — Reflect on completion rates and adjust habits for the upcoming period
-- **Goal-to-habit alignment** — Link each habit to a higher-level life goal or area to maintain motivation
-- **Onboarding new habits** — Gradually introduce habits with difficulty levels and start dates to avoid overwhelm
-
-### Detailed Target User Persona
-
-| Attribute | Details |
+| Use Case | Description |
 |---|---|
-| **Name** | Alex, 29 |
-| **Occupation** | Remote software developer / knowledge worker |
-| **Goals** | Improve physical health, build a reading habit, reduce screen time, advance professionally |
-| **Pain Points** | Starts habits with enthusiasm but loses track after 2–3 weeks; forgets to log; can't see patterns |
-| **Notion Experience** | Intermediate — comfortable with databases and filters but doesn't want to build from scratch |
-| **Motivation Style** | Data-driven; enjoys seeing numbers improve; responds well to visual progress indicators |
-| **Device Usage** | Primarily desktop for setup and weekly review; mobile for daily quick-logging |
-| **Secondary Persona** | Students building study routines; entrepreneurs tracking morning routines; wellness-focused individuals managing health habits |
+| **Daily habit logging** | Check off habits each day with optional notes and mood tags |
+| **Streak tracking** | Automatically calculate current and best streaks per habit |
+| **Weekly reviews** | Reflect on the past week — what worked, what didn't |
+| **Habit library management** | Store, categorize, and archive habits with goals and triggers |
+| **Progress analytics** | View completion rates, trend charts, and category breakdowns |
+| **Goal-to-habit mapping** | Link each habit to a higher-level life goal |
+
+### Target User Persona
+
+---
+
+**Primary Persona: "The Intentional Improver"**
+
+> *"I know what I want to change about myself, but I always lose momentum after two weeks."*
+
+- **Name:** Alex, 28–38 years old
+- **Occupation:** Knowledge worker, freelancer, student, or entrepreneur
+- **Tech comfort:** Intermediate Notion user — comfortable with databases and filtered views, but not a formula expert
+- **Goals:**
+  - Build 3–7 sustainable daily habits (exercise, reading, journaling, hydration, etc.)
+  - Reduce decision fatigue around self-improvement routines
+  - Have a single "home base" for personal development without switching between apps
+- **Pain points:**
+  - Starts strong in habit apps but abandons them within weeks
+  - Can't see *why* habits are failing — missing reflection layer
+  - Uses multiple disconnected tools (spreadsheets, sticky notes, phone apps)
+- **Behavior patterns:**
+  - Does a Sunday evening planning ritual
+  - Motivated by visual streaks and completion percentages
+  - Prefers minimal friction for daily check-ins (30 seconds or less)
+
+---
+
+**Secondary Persona: "The Wellness Coach Client"**
+
+- A person in a coaching program who needs to report habit compliance weekly to an accountability partner or coach
+- Uses the Weekly Review page to export reflections or share Notion pages
 
 ---
 
 ## 2. Notion Database List and Column Definitions
 
-### Database 1: 🎯 Habits (Master Habit Registry)
+---
 
-**Purpose:** The central database that defines every habit a user wants to track. Each entry represents a single habit with its configuration, category, and metadata.
+### Database 1: `📋 Habit Library`
+
+**Purpose:** The master registry of all habits the user wants to build or is currently tracking. Each entry defines *what* the habit is, *how* it's categorized, and *why* it exists (linked to a life goal). This is the source of truth — habits are referenced from here in every daily log entry.
 
 | Column Name | Data Type | Description |
 |---|---|---|
-| **Habit Name** | Title | The name of the habit (e.g., "Morning Run", "Read 20 Pages", "Meditate") |
-| **Category** | Select | Life area the habit belongs to: `Health 🏃`, `Mind 🧠`, `Career 💼`, `Relationships ❤️`, `Finance 💰`, `Creativity 🎨`, `Other ⚙️` |
-| **Frequency** | Select | Target frequency: `Daily`, `Weekdays Only`, `Weekends Only`, `3x per Week`, `Weekly` |
-| **Target Count** | Number | Number of times per frequency period (e.g., 1 per day, 3 per week). Defaults to 1 |
-| **Unit** | Text | What is being measured (e.g., "pages", "minutes", "reps", "glasses") — optional for binary habits |
-| **Difficulty** | Select | Habit effort level: `Easy 🟢`, `Medium 🟡`, `Hard 🔴` |
-| **Cue / Trigger** | Text | The environmental or time-based cue that triggers this habit (e.g., "After morning coffee") |
-| **Why I'm Doing This** | Text | Personal motivation statement — helps reconnect with purpose during low-motivation periods |
-| **Linked Goal** | Relation | Links to the **Goals** database — associates the habit with a higher-level goal |
-| **Start Date** | Date | The date the user officially began tracking this habit |
-| **Is Active** | Checkbox | When unchecked, the habit is archived and excluded from daily views without deletion |
-| **Icon / Emoji** | Text | A single emoji the user adds to the habit name or uses for visual identification |
-| **Total Completions** | Rollup | Counts all related entries in the **Daily Log** database where `Completed = ✅` |
-| **Current Streak** | Formula | Calculated using log entries — counts consecutive days (from today backwards) where the habit was completed. *(See formula note below)* |
-| **Best Streak** | Number | Manually updated (or semi-automated) field for the user's all-time best streak for this habit |
-| **Completion Rate (30d)** | Formula | `Total completions in last 30 days / expected completions in 30 days × 100` — expressed as a percentage |
-| **Notes** | Text | Additional setup notes, modifications, or reminders about this habit |
-
-> **Formula Note:** Notion's native formula engine has limitations with date-based rollup calculations. The `Current Streak` formula uses a simplified approach: it counts log entries marked complete in the most recent consecutive date range. For advanced streak tracking, a linked **Streak Snapshots** entry (manually or button-updated) is recommended as a companion field.
+| `Habit Name` | **Title** | The name of the habit (e.g., "Morning Run", "Read 20 Pages") |
+| `Category` | **Select** | Life area: `🏃 Health`, `🧠 Mind`, `💼 Work`, `❤️ Relationships`, `💰 Finance`, `🧘 Wellbeing`, `🎨 Creative` |
+| `Frequency Target` | **Select** | Expected cadence: `Daily`, `Weekdays Only`, `3x/Week`, `Weekly` |
+| `Habit Type` | **Select** | `Build` (adding a behavior) or `Break` (removing a behavior) |
+| `Linked Goal` | **Relation** → `🎯 Goals` | The higher-level life goal this habit supports |
+| `Trigger / Cue` | **Text** | The situational cue that should prompt this habit (e.g., "After morning coffee") |
+| `Minimum Viable Dose` | **Text** | The smallest acceptable version of this habit (e.g., "Even 5 minutes counts") |
+| `Why This Habit` | **Text** | Personal motivation statement — why this habit matters to the user |
+| `Start Date` | **Date** | When the user officially began tracking this habit |
+| `Status` | **Select** | `🟢 Active`, `⏸️ Paused`, `🗄️ Archived` |
+| `Difficulty` | **Select** | `Easy`, `Medium`, `Hard` — self-assessed difficulty level |
+| `Icon / Emoji` | **Text** | An emoji the user picks to represent this habit visually |
+| `Total Completions` | **Rollup** | COUNT of related `✅ Daily Log` entries where `Completed = true` |
+| `Completion Rate (30d)` | **Formula** | `round((prop("Total Completions") / 30) * 100)` — approximates 30-day rate |
+| `Notes` | **Text** | Freeform notes, research links, tips for maintaining this habit |
 
 ---
 
-### Database 2: 📅 Daily Log (Habit Completion Records)
+### Database 2: `✅ Daily Log`
 
-**Purpose:** The operational heart of the tracker. Each entry records whether a specific habit was completed on a specific day. This is the database users interact with most frequently.
+**Purpose:** The heartbeat of the entire template. Every day, the user creates (or uses a template button to generate) entries for each active habit. This database captures binary completion, mood context, difficulty felt in the moment, and optional notes. It is the data source for all streaks, rollups, and analytics.
 
 | Column Name | Data Type | Description |
 |---|---|---|
-| **Log Entry Name** | Title | Auto-named using format: `[Habit Name] — [Date]` (e.g., "Morning Run — 2025-01-15") |
-| **Habit** | Relation | Links to the **Habits** database — identifies which habit this log entry belongs to |
-| **Date** | Date | The calendar date for this log entry |
-| **Completed** | Checkbox | The primary check — did the user complete this habit on this date? |
-| **Actual Count** | Number | Optional: If the habit has a unit (e.g., pages, minutes), record the actual amount completed |
-| **Mood** | Select | How the user felt during or after completing the habit: `😊 Great`, `😐 Okay`, `😔 Low`, `💪 Energized`, `😴 Tired` |
-| **Effort Level** | Select | Subjective effort for that day: `Easy`, `Moderate`, `Hard`, `Skipped — Intentional`, `Skipped — Forgot` |
-| **Day of Week** | Formula | `formatDate(prop("Date"), "ddd")` — Automatically displays Mon, Tue, Wed, etc. |
-| **Week Number** | Formula | `formatDate(prop("Date"), "WW")` — Displays ISO week number for weekly grouping |
-| **Month** | Formula | `formatDate(prop("Date"), "MMMM YYYY")` — Used for monthly filter views |
-| **Notes / Reflection** | Text | Optional daily micro-reflection: what made it easy or hard today? |
-| **Habit Category** | Rollup | Pulls the `Category` from the linked Habit record — enables filtering logs by life area |
-| **Habit Difficulty** | Rollup | Pulls `Difficulty` from the linked Habit — used in analytics views |
+| `Log Entry` | **Title** | Auto-named or manually set (e.g., "Morning Run — Jan 15") |
+| `Habit` | **Relation** → `📋 Habit Library` | Which habit this log entry refers to |
+| `Date` | **Date** | The calendar date for this log entry |
+| `Completed` | **Checkbox** | `✅ true` = done, unchecked = missed |
+| `Mood Before` | **Select** | Emotional state before attempting the habit: `😴 Tired`, `😐 Neutral`, `😊 Good`, `🔥 Energized` |
+| `Difficulty Felt` | **Select** | How hard it was *in practice*: `Easy`, `Medium`, `Hard`, `Skipped — why below` |
+| `Skip Reason` | **Select** | If skipped: `Sick`, `Travel`, `Forgot`, `Too Busy`, `Chose Not To`, `Rest Day` |
+| `Notes / Reflection` | **Text** | Optional freeform note (what went well, what to improve) |
+| `Duration (min)` | **Number** | Optional: how many minutes spent (for time-based habits) |
+| `Quantity` | **Number** | Optional: measurable output (pages read, glasses of water, reps) |
+| `Streak Day #` | **Formula** | Complex streak formula (see note below) |
+| `Week Number` | **Formula** | `formatDate(prop("Date"), "W")` — for grouping by week |
+| `Day of Week` | **Formula** | `formatDate(prop("Date"), "ddd")` — Mon/Tue/Wed etc. |
+| `Linked Weekly Review` | **Relation** → `📅 Weekly Reviews` | Links this log entry to the review for its corresponding week |
+
+> **Note on Streak Formula:** True streak calculation in Notion requires external formulas or manual tracking. The `Streak Day #` column uses a simplified formula approach: `if(prop("Completed"), 1, 0)` as a per-entry flag, while the actual *running streak* is calculated via Rollup on the Habit Library database for display purposes. For users wanting advanced streak logic, a linked automation via Notion API or Make.com is recommended.
 
 ---
 
-### Database 3: 🏆 Goals (Life Areas & High-Level Objectives)
+### Database 3: `📅 Weekly Reviews`
 
-**Purpose:** Provides the "why" behind each habit. Users define broad life goals or areas, then link their habits to these goals. This creates a motivational layer that connects micro-actions to macro-intentions.
+**Purpose:** Structured end-of-week reflection journal. Created once per week (typically Sunday), this page synthesizes the past 7 days — celebrating wins, diagnosing slippage, and adjusting habits for the coming week. Linked to all daily log entries from that week.
 
 | Column Name | Data Type | Description |
 |---|---|---|
-| **Goal Name** | Title | The name of the goal or life area (e.g., "Become Physically Fit", "Read 24 Books This Year") |
-| **Goal Type** | Select | `Outcome Goal` (specific result) or `Identity Goal` (type of person to become) |
-| **Target Date** | Date | Optional deadline or milestone date for the goal |
-| **Status** | Select | `Active 🚀`, `Achieved ✅`, `Paused ⏸️`, `Abandoned ❌` |
-| **Description** | Text | Detailed description of what success looks like for this goal |
-| **Linked Habits** | Relation | Reverse relation — shows all habits connected to this goal |
-| **Active Habit Count** | Rollup | Counts the number of active habits linked to this goal |
-| **Progress Notes** | Text | Running log of milestones, reflections, or updates toward this goal |
-| **Priority** | Select | `High 🔴`, `Medium 🟡`, `Low 🟢` — helps the user focus when goals compete |
-| **Cover Image** | Files & Media | Optional: upload an inspirational image that represents achieving this goal |
+| `Week Title` | **Title** | e.g., "Week 3 — Jan 13–19, 2025" |
+| `Week Start Date` | **Date** | Monday of the review week |
+| `Overall Rating` | **Select** | `⭐ 1` through `⭐⭐⭐⭐⭐ 5` — subjective week quality |
+| `Total Habits Completed` | **Rollup** | COUNT of related Daily Log entries where `Completed = true` |
+| `Total Habits Attempted` | **Rollup** | COUNT of all related Daily Log entries |
+| `Completion Rate` | **Formula** | `round((prop("Total Habits Completed") / prop("Total Habits Attempted")) * 100)` |
+| `Biggest Win` | **Text** | One highlight — a habit or moment that stood out positively |
+| `Biggest Challenge` | **Text** | What habit or situation was hardest this week |
+| `Root Cause Analysis` | **Text** | Why did failures happen? (No judgment — just honest reflection) |
+| `Next Week Intention` | **Text** | One or two adjustments or focus areas for the following week |
+| `Energy Level (avg)` | **Select** | `Low`, `Medium`, `High` — overall energy for the week |
+| `External Factors` | **Text** | Travel, illness, stress events that affected performance |
+| `Daily Logs This Week` | **Relation** → `✅ Daily Log` | All individual log entries from this week |
+| `Habits Modified` | **Relation** → `📋 Habit Library` | Any habits that were paused, adjusted, or added this week |
 
 ---
 
-### Database 4: 📝 Weekly Reviews (Reflection & Planning Records)
+### Database 4: `🎯 Goals`
 
-**Purpose:** Structured weekly check-ins where users assess the past week, celebrate wins, identify patterns, and set intentions for the coming week. Each entry = one week.
+**Purpose:** The top-level "why" layer. Each goal represents a meaningful life outcome the user is working toward. Habits are linked to goals so that every daily check-in carries larger purpose. This database is intentionally kept small (3–7 goals maximum recommended).
 
 | Column Name | Data Type | Description |
 |---|---|---|
-| **Review Title** | Title | Auto-named as `Week [#] Review — [Date Range]` (e.g., "Week 03 Review — Jan 13–19") |
-| **Review Date** | Date | The date the review was completed (typically Sunday evening or Monday morning) |
-| **Week Start** | Date | The Monday of the reviewed week |
-| **Week End** | Date | The Sunday of the reviewed week |
-| **Overall Completion Rate** | Number | User-entered percentage of habits completed that week (can be referenced from daily log views) |
-| **Energy Level This Week** | Select | `High ⚡`, `Medium 〰️`, `Low 🔋` — overall energy/motivation level for the week |
-| **Top Win** | Text | The single biggest habit success of the week |
-| **Biggest Challenge** | Text | The habit or situation that was hardest this week |
-| **What Helped** | Text | Conditions, strategies, or circumstances that supported habit completion |
-| **What Hindered** | Text | Obstacles, distractions, or circumstances that made habits harder |
-| **Habits to Adjust** | Text | Specific habits to modify, add, pause, or remove next week |
-| **Intentions for Next Week** | Text | 1–3 focus areas or specific commitments for the upcoming week |
-| **Rating (1–10)** | Number | Overall satisfaction score for the week (1 = very poor, 10 = excellent) |
-| **Linked Log Entries** | Relation | Optional: manually link key daily log entries from the week for reference |
+| `Goal Name` | **Title** | e.g., "Become Physically Fit", "Write My First Book" |
+| `Life Area` | **Select** | Mirrors Habit Library categories: `Health`, `Mind`, `Work`, etc. |
+| `Goal Description` | **Text** | What success looks like in concrete terms |
+| `Target Date` | **Date** | Aspirational deadline or review date |
+| `Status` | **Select** | `🌱 Just Started`, `📈 In Progress`, `🎉 Achieved`, `💤 On Hold` |
+| `Linked Habits` | **Relation** → `📋 Habit Library` | All habits supporting this goal |
+| `Habit Count` | **Rollup** | COUNT of linked habits |
+| `Progress Note` | **Text** | Free-form current progress assessment |
+| `Motivation Quote` | **Text** | A personal mantra or inspiring quote for this goal |
+| `Created Date` | **Date** | When this goal was set |
 
 ---
 
-### Database 5: 📊 Streak Snapshots (Streak History Log)
+### Database 5: `📊 Monthly Snapshots`
 
-**Purpose:** Because Notion formulas can't reliably calculate live streaks across thousands of entries, this lightweight database captures periodic streak data points. Users (or a simple manual process) update this once daily to preserve streak history.
+**Purpose:** A lightweight monthly record used as a historical archive. Created once per month, it stores high-level statistics pulled via rollups from the Daily Log. Useful for long-term trend analysis and motivation ("look how far I've come").
 
 | Column Name | Data Type | Description |
 |---|---|---|
-| **Snapshot Name** | Title | Auto-named as `[Habit Name] — Streak on [Date]` |
-| **Habit** | Relation | Links to the **Habits** database |
-| **Snapshot Date** | Date | The date this snapshot was recorded |
-| **Current Streak (Days)** | Number | The user's active streak count as of this date |
-| **Is New Best** | Checkbox | Check if this streak count surpasses the previous best streak |
-| **Note** | Text | Optional context (e.g., "Broke 30-day barrier!", "Restarting after travel break") |
+| `Month` | **Title** | e.g., "January 2025" |
+| `Month Start` | **Date** | First day of the month |
+| `Daily Logs This Month` | **Relation** → `✅ Daily Log` | All log entries from this month |
+| `Total Completions` | **Rollup** | COUNT of completed log entries this month |
+| `Total Possible` | **Rollup** | COUNT of all log entries this month |
+| `Monthly Completion Rate` | **Formula** | `round((prop("Total Completions") / prop("Total Possible")) * 100)` |
+| `Best Habit` | **Text** | Manually noted: which habit had the best streak/rate |
+| `Hardest Habit` | **Text** | Manually noted: which habit struggled most |
+| `Month Reflection` | **Text** | 2–3 sentence narrative summary |
+| `Active Habit Count` | **Number** | How many habits were being tracked this month |
 
 ---
 
 ## 3. Page Structure
 
 ```
-📚 HABIT TRACKER (Top-Level Workspace Page)
+🏠 HABIT TRACKER (Top-Level Page / Dashboard)
 │
-├── 🏠 Dashboard (Main Hub Page)
-│   ├── [Header] Welcome banner + current date
-│   ├── [Gallery/Board] Today's Habits — filtered view of Daily Log
-│   │   showing only today's date, grouped by Habit Category
-│   ├── [Progress Bar Section] Weekly completion percentage callout blocks
-│   ├── [Linked Database] Active Habits — gallery view of Habits DB
-│   │   filtered: Is Active = ✅, sorted by Category
-│   └── [Callout Block] Quick Links to sub-pages
+├── 📌 [Pinned Callout Block] — Daily Check-In Quick Access Button
+│     └── Button: "+ Log Today's Habits" (opens filtered Daily Log view)
 │
-├── ✅ Daily Check-In (Sub-Page)
-│   ├── [Instructional text] "Check off your habits for today"
-│   ├── [Linked Database View] Today's Log
-│   │   • View type: Table or Board
-│   │   • Filter: Date = Today
-│   │   • Properties shown: Habit, Completed, Actual Count, Mood, Notes
-│   └── [Button] "➕ Add Missing Habit Entry" — opens new Daily Log entry
+├── 📊 Dashboard Overview (Inline Section)
+│     ├── [Gallery View] Active Habits — from 📋 Habit Library (Status = Active)
+│     ├── [Board View] Today's Log — from ✅ Daily Log (filtered: Date = Today)
+│     └── [Progress Bars / Linked Views] Weekly Completion Rate widget
 │
-├── 📋 My Habits (Sub-Page)
-│   ├── [Linked Database] Habits — Full Table View
-│   │   • All columns visible
-│   │   • Filter toggle: Active Only vs. All Habits
-│   │   • Sorted by: Category, then Difficulty
-│   ├── [Linked Database] Habits — Gallery View (visual card layout)
-│   │   • Shows: Habit Name, Category, Streak, Completion Rate
-│   └── [Button] "➕ Add New Habit" — opens new Habits entry with template
+├── 📋 Habit Library (Sub-page)
+│     ├── Full database: 📋 Habit Library
+│     ├── [Gallery View] "Active Habits" — filtered by Status = Active
+│     ├── [Gallery View] "By Category" — grouped by Category
+│     ├── [Table View] "All Habits" — full master list
+│     └── [Table View] "Archived" — filtered by Status = Archived
 │
-├── 📈 Analytics & Progress (Sub-Page)
-│   ├── [Section Header] "30-Day Overview"
-│   ├── [Linked Database] Daily Log — Calendar View
-│   │   • Color-coded by Completed status
-│   │   • Filter: Last 30 days
-│   ├── [Linked Database] Daily Log — Table View grouped by Month
-│   │   • Shows completion rates per month
-│   ├── [Linked Database] Habits — Table View
-│   │   • Shows: Habit Name, Total Completions, Completion Rate (30d), Best Streak
-│   │   • Sorted by Completion Rate descending
-│   ├── [Linked Database] Streak Snapshots — Timeline View
-│   │   • Shows streak progression over time per habit
-│   └── [Callout] "📌 Tip: Review this page every Sunday during your Weekly Review"
+├── ✅ Daily Log (Sub-page)
+│     ├── Full database: ✅ Daily Log
+│     ├── [Calendar View] "Monthly Calendar" — entries plotted by date
+│     ├── [Table View] "Today" — filtered: Date = Today
+│     ├── [Table View] "This Week" — filtered: Week Number = current week
+│     ├── [Table View] "By Habit" — grouped by Habit relation
+│     └── [Table View] "Missed Days" — filtered: Completed = false
 │
-├── 🏆 Goals (Sub-Page)
-│   ├── [Linked Database] Goals — Board View grouped by Status
-│   ├── [Linked Database] Goals — Table View (detailed)
-│   │   • Shows all columns including Active Habit Count rollup
-│   └── [Button] "➕ Add New Goal"
+├── 📅 Weekly Reviews (Sub-page)
+│     ├── Full database: 📅 Weekly Reviews
+│     ├── [Table View] "All Reviews" — sorted by Week Start Date descending
+│     ├── [Gallery View] "Review Cards" — visual card layout with rating
+│     └── 📝 [Template] Weekly Review Template
+│           └── Pre-filled page with reflection prompts as H2 headers
 │
-├── 📝 Weekly Reviews (Sub-Page)
-│   ├── [Instructional Callout] "Complete this every Sunday. Takes 10–15 minutes."
-│   ├── [Linked Database] Weekly Reviews — Table View (newest first)
-│   ├── [Linked Database] Weekly Reviews — Gallery View (visual cards)
-│   └── [Button] "➕ Start This Week's Review" — opens new entry with template
+├── 🎯 Goals (Sub-page)
+│     ├── Full database: 🎯 Goals
+│     ├── [Board View] "By Status" — grouped by Status
+│     ├── [Table View] "All Goals" — with linked habit count rollup visible
+│     └── [Gallery View] "Goal Cards" — visual motivational layout
 │
-├── 📊 Streak Log (Sub-Page)
-│   ├── [Instructional text] "Update your streaks daily for accurate tracking"
-│   ├── [Linked Database] Streak Snapshots — Table View
-│   │   • Sorted by Snapshot Date descending
-│   │   • Grouped by Habit
-│   └── [Button] "➕ Log Today's Streaks"
+├── 📊 Monthly Snapshots (Sub-page)
+│     ├── Full database: 📊 Monthly Snapshots
+│     ├── [Table View] "All Months" — sorted chronologically
+│     └── [Gallery View] "Snapshot Cards" — with completion rate visible
 │
-└── 📖 Guide & Setup (Sub-Page)
-    ├── [Section] How to Use This Template (overview)
-    ├── [Section] Getting Started Checklist (checkbox list)
-    ├── [Section] Habit Design Tips (callout blocks)
-    ├── [Section] Frequently Asked Questions
-    └── [Section] Keyboard Shortcuts & Notion Tips
+├── 📈 Analytics Hub (Sub-page — View-Only Linked Databases)
+│     ├── Section: "Habit Performance"
+│     │     └── [Table View — Linked] Habit Library showing Total Completions + Rate
+│     ├── Section: "Weekly Trend"
+│     │     └── [Table View — Linked] Weekly Reviews showing Completion Rate + Rating
+│     ├── Section: "Category Breakdown"
+│     │     └── [Table View — Linked] Daily Log grouped by Habit → Category
+│     └── Section: "Monthly Progress"
+│           └── [Table View — Linked] Monthly Snapshots with all rate columns
+│
+└── 📖 Guide & Setup (Sub-page)
+      ├── Welcome message and philosophy
+      ├── How to use each section (step-by-step)
+      ├── FAQ (What if I miss a day? How do I pause a habit?)
+      ├── Recommended habit stack for beginners (starter examples)
+      └── Credits and version notes
 ```
 
-### Database Placement Summary
+---
 
-| Database | Primary Home Page | Additional Views Located |
+### Page Hierarchy Summary
+
+| Level | Page / Section | Contains |
 |---|---|---|
-| **Habits** | My Habits page | Dashboard (gallery), Analytics page |
-| **Daily Log** | Daily Check-In page | Dashboard (today view), Analytics (calendar + table) |
-| **Goals** | Goals page | My Habits page (linked context) |
-| **Weekly Reviews** | Weekly Reviews page | — |
-| **Streak Snapshots** | Streak Log page | Analytics page (timeline) |
-
----
-
-## 4. Getting-Started Flow (3 Steps)
-
----
-
-### ✅ Step 1: Define Your Habits (5–10 minutes)
-
-> **Navigate to: 📋 My Habits → Click "➕ Add New Habit"**
-
-Before you can track anything, you need to tell the system *what* to track. Start by creating **3 to 5 habits maximum** — beginners who start with too many habits at once tend to quit within two weeks.
-
-For each habit, fill in the following fields:
-
-1. **Habit Name** — Use action-oriented language (e.g., "Do 10 push-ups" not "Exercise more")
-2. **Category** — Choose the life area this habit belongs to
-3. **Frequency**
+| **Level 0** | 🏠 Habit Tracker (Dashboard) | Pinned callout, inline gallery views, quick-log button |
+| **Level 1** | 📋 Habit Library | Habit Library database + 4 views |
+| **Level 1** | ✅ Daily Log | Daily Log database + 5 views |
+| **Level 1** | 📅 Weekly Reviews | Weekly Reviews database + 2 views + template |
+| **Level 1** | 🎯 Goals | Goals database + 3 views |
+| **Level 1** |

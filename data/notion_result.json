@@ -1,28 +1,28 @@
 {
-  "page_title": "Habit Tracker",
-  "page_id": "33366eda-9d87-81a9-a301-f6ec4e6f496f",
-  "page_url": "https://www.notion.so/33366eda9d8781a9a301f6ec4e6f496f",
+  "page_title": "🏠 Habit Tracker",
+  "page_id": "33366eda-9d87-8148-9222-e1685dc733fb",
+  "page_url": "https://www.notion.so/33366eda9d8781489222e1685dc733fb",
   "databases_created": 5,
   "databases": [
     {
-      "name": "Habits",
-      "id": "33366eda-9d87-81de-82bb-ee7fd22184d8"
+      "name": "📋 Habit Library",
+      "id": "33366eda-9d87-811d-83c1-e3437abed920"
     },
     {
-      "name": "Daily Log",
-      "id": "33366eda-9d87-81bd-98f7-e27792457151"
+      "name": "✅ Daily Log",
+      "id": "33366eda-9d87-81e1-8b93-eced74833ab6"
     },
     {
-      "name": "Goals",
-      "id": "33366eda-9d87-812c-a5eb-c8528f16db15"
+      "name": "📅 Weekly Reviews",
+      "id": "33366eda-9d87-8155-841b-ff4028680798"
     },
     {
-      "name": "Weekly Reviews",
-      "id": "33366eda-9d87-81ba-a02f-dbfb7a7d9454"
+      "name": "🎯 Goals",
+      "id": "33366eda-9d87-8138-a779-f94003910961"
     },
     {
-      "name": "Streak Snapshots",
-      "id": "33366eda-9d87-81b6-a97a-f2365d7b3c8e"
+      "name": "📊 Monthly Snapshots",
+      "id": "33366eda-9d87-8103-bc93-dd8657f8a532"
     }
   ]
 }

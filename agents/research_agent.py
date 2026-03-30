@@ -6,6 +6,7 @@ Role: Research trending Notion template themes from Reddit and ProductHunt,
 
 import json
 import os
+import random
 import sys
 import time
 from collections import defaultdict
@@ -207,15 +208,22 @@ def run() -> dict:
 
     top5 = score_themes(all_posts)
 
-    # Supplement with fallback themes if fewer than 5 results
+    # Supplement with fallback themes if fewer than 5 results.
+    # Shuffle fallback list so the same theme is not always chosen first.
     if len(top5) < 5:
         fallback_themes = [
-            {"theme": "Habit Tracker",       "total_score": 100, "post_count": 1, "top_posts": []},
-            {"theme": "Project Management",  "total_score":  90, "post_count": 1, "top_posts": []},
-            {"theme": "Personal Finance",    "total_score":  80, "post_count": 1, "top_posts": []},
-            {"theme": "Content Creator",     "total_score":  70, "post_count": 1, "top_posts": []},
-            {"theme": "Study / Learning",    "total_score":  60, "post_count": 1, "top_posts": []},
+            {"theme": "Habit Tracker",        "total_score": 100, "post_count": 1, "top_posts": []},
+            {"theme": "Project Management",   "total_score":  90, "post_count": 1, "top_posts": []},
+            {"theme": "Personal Finance",     "total_score":  80, "post_count": 1, "top_posts": []},
+            {"theme": "Content Creator",      "total_score":  70, "post_count": 1, "top_posts": []},
+            {"theme": "Study / Learning",     "total_score":  60, "post_count": 1, "top_posts": []},
+            {"theme": "Job Search / Career",  "total_score":  50, "post_count": 1, "top_posts": []},
+            {"theme": "CRM / Sales",          "total_score":  40, "post_count": 1, "top_posts": []},
+            {"theme": "Life OS / Second Brain","total_score": 30, "post_count": 1, "top_posts": []},
+            {"theme": "Meeting Notes",        "total_score":  20, "post_count": 1, "top_posts": []},
+            {"theme": "Travel Planner",       "total_score":  10, "post_count": 1, "top_posts": []},
         ]
+        random.shuffle(fallback_themes)
         existing_themes = {t["theme"] for t in top5}
         for fb in fallback_themes:
             if fb["theme"] not in existing_themes and len(top5) < 5:

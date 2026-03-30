@@ -12,15 +12,45 @@
     "message": "Metrics fetch failed: 401 Unauthorized\nUnauthorized"
   },
   {
-    "timestamp": "2026-03-30T21:51:07.448149+00:00",
+    "timestamp": "2026-03-30T21:00:27.567552+00:00",
+    "agent": "scheduler",
+    "status": "started",
+    "message": "06:00 pipeline job started"
+  },
+  {
+    "timestamp": "2026-03-30T21:00:31.782053+00:00",
     "agent": "analytics_agent",
     "status": "started",
     "message": "Analytics job started"
   },
   {
-    "timestamp": "2026-03-30T21:51:07.623414+00:00",
+    "timestamp": "2026-03-30T21:00:34.235325+00:00",
     "agent": "analytics_agent",
     "status": "warning",
     "message": "Metrics fetch failed: 401 Unauthorized\nUnauthorized"
+  },
+  {
+    "timestamp": "2026-03-30T21:00:34.267490+00:00",
+    "agent": "scheduler",
+    "status": "success",
+    "message": "analytics_agent complete"
+  },
+  {
+    "timestamp": "2026-03-30T21:04:48.569895+00:00",
+    "agent": "scheduler",
+    "status": "success",
+    "message": "orchestrator agents 1-5 complete"
+  },
+  {
+    "timestamp": "2026-03-30T21:04:48.620521+00:00",
+    "agent": "scheduler",
+    "status": "info",
+    "message": "latest_product.json saved: Habit Tracker Pro — All-in-One Notion System"
+  },
+  {
+    "timestamp": "2026-03-30T21:04:48.640190+00:00",
+    "agent": "scheduler",
+    "status": "completed",
+    "message": "06:00 pipeline job complete"
   }
 ]

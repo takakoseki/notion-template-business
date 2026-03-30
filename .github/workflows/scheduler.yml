@@ -20,6 +20,11 @@ on:
 permissions:
   contents: write
 
+# Prevent duplicate runs: cancel in-progress job if the same job is triggered again
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.schedule || github.event.inputs.job_type }}
+  cancel-in-progress: false
+
 env:
   ANTHROPIC_API_KEY:           ${{ secrets.ANTHROPIC_API_KEY }}
   REDDIT_CLIENT_ID:            ${{ secrets.REDDIT_CLIENT_ID }}
