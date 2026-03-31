@@ -140,15 +140,34 @@ def load_sales_copy() -> dict:
 
 
 def load_gumroad_url() -> str:
+    """
+    Resolve the Gumroad product URL in priority order:
+      1. GUMROAD_PRODUCT_URL in .env
+      2. gumroad_url in data/latest_product.json
+      3. First https://....gumroad.com/l/... URL in publish_summary.txt
+      4. Placeholder string
+    """
     env_url = os.getenv("GUMROAD_PRODUCT_URL", "").strip()
     if env_url:
         return env_url
+
+    latest_path = ROOT / "data" / "latest_product.json"
+    if latest_path.exists():
+        try:
+            data = json.loads(latest_path.read_text(encoding="utf-8"))
+            url = data.get("gumroad_url", "").strip()
+            if url:
+                return url
+        except Exception:
+            pass
+
     summary_path = ROOT / "output" / "publish_summary.txt"
     if summary_path.exists():
         text = summary_path.read_text(encoding="utf-8")
         m = re.search(r"https://[a-z]+\.gumroad\.com/l/\S+", text)
         if m:
             return m.group(0).rstrip(")")
+
     return "https://gumroad.com/l/your-product"
 
 
