@@ -52,5 +52,17 @@
     "agent": "scheduler",
     "status": "completed",
     "message": "06:00 pipeline job complete"
+  },
+  {
+    "timestamp": "2026-03-31T21:49:26.039939+00:00",
+    "agent": "analytics_agent",
+    "status": "started",
+    "message": "Analytics job started"
+  },
+  {
+    "timestamp": "2026-03-31T21:49:26.242319+00:00",
+    "agent": "analytics_agent",
+    "status": "warning",
+    "message": "Metrics fetch failed: 401 Unauthorized\nUnauthorized"
   }
 ]

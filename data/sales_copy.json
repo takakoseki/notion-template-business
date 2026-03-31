@@ -1,25 +1,25 @@
 {
-  "title": "Habit Tracker Pro — All-in-One Notion System",
-  "description": "Stop abandoning your habits after two weeks. Habit Tracker Pro is a fully-built Notion template that turns vague self-improvement goals into a structured, data-driven daily system — all in one place.\n\nUnlike basic to-do apps, this template treats habits as long-term behavioral systems. Log daily check-ins in under 30 seconds, track streaks, and understand *why* habits succeed or fail through built-in weekly reflection prompts and monthly analytics snapshots.\n\nInside you get 5 interconnected databases — Habit Library, Daily Log, Weekly Reviews, Goals, and Monthly Snapshots — plus an Analytics Hub that surfaces completion rates, category breakdowns, and weekly trends automatically.\n\nLink every habit to a meaningful life goal so each daily check-in carries real purpose. Use the structured Weekly Review template every Sunday to celebrate wins, diagnose slippage, and set intentions for the week ahead.\n\nPerfect for knowledge workers, freelancers, students, and entrepreneurs who are serious about building 3–7 sustainable habits around health, mindset, work, and wellbeing. Includes a full setup guide, beginner habit stack, and FAQ so you can get started in minutes.",
+  "title": "Ultimate Notion Travel Planner — Plan Every Trip",
+  "description": "Stop losing booking confirmations in your inbox and juggling five different apps just to plan a vacation. The Ultimate Notion Travel Planner brings every piece of your trip into one beautifully organized workspace — flights, hotels, daily itineraries, budgets, packing lists, and tasks, all connected and always in sync.\n\nWhether you're planning a solo weekend escape, a two-week multi-city adventure, or a group trip with friends, this template handles the complexity so you can focus on the excitement. Track your spending against your budget in real time, follow a day-by-day schedule during your trip, and archive memories when you return.\n\nBuilt across 8 fully linked Notion databases — Trip Overview, Flights & Transport, Accommodations, Daily Itinerary, Expenses, Packing List, Task Manager, and Saved Places — this template is the last travel planning system you'll ever need. A central Dashboard gives you an at-a-glance view of upcoming trips, today's tasks, and live budget status the moment you open it. Duplicate, customize, and start planning your next adventure in minutes.",
   "features": [
-    "5 fully-linked databases (Habit Library, Daily Log, Weekly Reviews, Goals, Monthly Snapshots) that automatically share data via rollups and relations — no manual calculations needed.",
-    "One-click daily logging with mood tags, difficulty ratings, skip reasons, and optional duration/quantity fields so check-ins take under 30 seconds.",
-    "Structured Weekly Review template with guided reflection prompts — biggest win, root cause analysis, and next-week intentions — to help you understand why habits succeed or fail.",
-    "Goal-to-habit mapping layer that connects every daily check-in to a higher-level life goal, keeping your motivation anchored to what actually matters.",
-    "Analytics Hub with linked views showing habit completion rates, weekly trend data, category breakdowns, and monthly progress snapshots for clear long-term visibility."
+    "8 fully interconnected databases cover every aspect of trip planning — from first research to post-trip memories — in a single Notion workspace.",
+    "Real-time budget tracking automatically calculates total spent via rollups and shows remaining budget so you never overspend on the road.",
+    "A day-by-day itinerary builder with priority levels, reservation tracking, and activity categories keeps you on schedule without the stress.",
+    "The Saved Places wishlist database lets you collect restaurant and attraction ideas during research, then promote them to your itinerary with one click.",
+    "Group travel ready — assign tasks, track who paid each expense, and split costs among travel companions directly inside the template."
   ],
   "faq": [
     {
-      "q": "Do I need to be an advanced Notion user to use this template?",
-      "a": "No. This template is designed for intermediate Notion users who are comfortable with basic databases and filtered views. All formulas, rollups, and relations are pre-built — you just duplicate the template into your workspace and start logging. A full setup guide and FAQ are included inside."
+      "q": "Do I need to be an experienced Notion user to use this template?",
+      "a": "No advanced Notion knowledge is required. The template is fully pre-built with all databases, views, and formulas already configured. If you're comfortable using Notion at a basic level — creating pages and editing text — you'll be up and running in minutes. A built-in Quick-Start Guide on the Dashboard walks you through each section."
     },
     {
-      "q": "What happens if I miss a day — does it break my streak?",
-      "a": "Missing a day is handled gracefully. Each Daily Log entry has a 'Skip Reason' field so you can record whether you were sick, traveling, or simply chose a rest day — giving you context instead of just a broken streak. The included FAQ section inside the template covers exactly how to handle missed days without losing your momentum."
+      "q": "Can I use this template for multiple trips?",
+      "a": "Absolutely. The Trip Overview database is designed to hold unlimited trips, and every other database (flights, accommodations, expenses, etc.) links back to individual trips so your data stays perfectly organized. Simply duplicate an existing trip entry or create a new one for each adventure."
     },
     {
-      "q": "Can I track both habits I want to build and habits I want to break?",
-      "a": "Yes. The Habit Library database includes a 'Habit Type' field with 'Build' and 'Break' options so you can manage both types in the same system. Each habit also supports a personal motivation statement and minimum viable dose field to keep your standards realistic and sustainable."
+      "q": "Does this work for group travel and shared planning?",
+      "a": "Yes. The template includes fields for assigning tasks to specific travelers, tracking who paid each expense, and noting which costs are split among the group. Share your Notion workspace with travel companions and everyone can view and edit the same plan in real time."
     }
   ],
   "price": {

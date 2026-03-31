@@ -1,10 +1,10 @@
 # Notion Template Design Specification
 
-**Theme:** Habit Tracker
+**Theme:** Travel Planner
 
 ---
 
-# Habit Tracker — Notion Template Design Specification
+# Notion Template Design Specification: Travel Planner
 
 ---
 
@@ -12,239 +12,238 @@
 
 ### Problem This Template Solves
 
-Most people struggle to build consistent habits because they lack a **centralized, visual system** that simultaneously tracks daily check-ins, measures long-term progress, reflects on wins and failures, and adjusts goals over time. Generic to-do apps treat habits like tasks — one-and-done. This template treats habits as ongoing behavioral systems that require **streaks, context, reflection, and analytics** working together in one place.
+Planning a trip involves juggling dozens of moving parts — flights, accommodations, daily itineraries, budgets, packing lists, and travel documents — often scattered across multiple apps, spreadsheets, and notes. This template consolidates every aspect of trip planning into a single, structured Notion workspace, eliminating the chaos of context-switching and reducing the risk of missing critical details.
 
 ### Primary Use Cases
 
-| Use Case | Description |
-|---|---|
-| **Daily habit logging** | Check off habits each day with optional notes and mood tags |
-| **Streak tracking** | Automatically calculate current and best streaks per habit |
-| **Weekly reviews** | Reflect on the past week — what worked, what didn't |
-| **Habit library management** | Store, categorize, and archive habits with goals and triggers |
-| **Progress analytics** | View completion rates, trend charts, and category breakdowns |
-| **Goal-to-habit mapping** | Link each habit to a higher-level life goal |
+- **Pre-trip planning**: Researching destinations, comparing accommodation options, booking flights, and setting a budget
+- **Active trip management**: Following day-by-day itineraries, tracking expenses in real time, and storing confirmation numbers
+- **Post-trip archiving**: Saving memories, photos, notes, and lessons learned for future reference
+- **Multi-destination trip coordination**: Managing complex itineraries spanning several cities or countries
+- **Group travel coordination**: Sharing plans, splitting costs, and assigning tasks among travel companions
 
 ### Target User Persona
 
----
+**Primary Persona: "The Organized Explorer"**
 
-**Primary Persona: "The Intentional Improver"**
+| Attribute | Detail |
+|---|---|
+| **Name** | Alex Chen |
+| **Age** | 28–42 |
+| **Occupation** | Mid-level professional (marketing manager, software developer, consultant) |
+| **Travel frequency** | 3–6 trips per year (mix of solo, couple, and group travel) |
+| **Tech comfort** | Comfortable with productivity tools; already uses Notion for work or personal projects |
+| **Pain points** | Loses booking confirmations in email, overspends without realizing it, forgets to pack essentials, struggles to coordinate with travel companions |
+| **Goals** | Travel stress-free, stay within budget, make the most of limited vacation days, keep all information in one accessible place |
+| **Devices** | MacBook for planning, iPhone for on-the-go access via Notion mobile app |
 
-> *"I know what I want to change about myself, but I always lose momentum after two weeks."*
+**Secondary Persona: "The Adventure Couple"**
 
-- **Name:** Alex, 28–38 years old
-- **Occupation:** Knowledge worker, freelancer, student, or entrepreneur
-- **Tech comfort:** Intermediate Notion user — comfortable with databases and filtered views, but not a formula expert
-- **Goals:**
-  - Build 3–7 sustainable daily habits (exercise, reading, journaling, hydration, etc.)
-  - Reduce decision fatigue around self-improvement routines
-  - Have a single "home base" for personal development without switching between apps
-- **Pain points:**
-  - Starts strong in habit apps but abandons them within weeks
-  - Can't see *why* habits are failing — missing reflection layer
-  - Uses multiple disconnected tools (spreadsheets, sticky notes, phone apps)
-- **Behavior patterns:**
-  - Does a Sunday evening planning ritual
-  - Motivated by visual streaks and completion percentages
-  - Prefers minimal friction for daily check-ins (30 seconds or less)
-
----
-
-**Secondary Persona: "The Wellness Coach Client"**
-
-- A person in a coaching program who needs to report habit compliance weekly to an accountability partner or coach
-- Uses the Weekly Review page to export reflections or share Notion pages
+| Attribute | Detail |
+|---|---|
+| **Profile** | Two partners who plan trips together and need shared visibility |
+| **Key need** | Both partners can view and edit the same plan, assign tasks to each other, and track shared expenses |
+| **Usage pattern** | Heavy planning 4–6 weeks before departure; light usage during the trip for reference |
 
 ---
 
 ## 2. Notion Database List and Column Definitions
 
----
+### Database 1: 🌍 Trip Overview
 
-### Database 1: `📋 Habit Library`
-
-**Purpose:** The master registry of all habits the user wants to build or is currently tracking. Each entry defines *what* the habit is, *how* it's categorized, and *why* it exists (linked to a life goal). This is the source of truth — habits are referenced from here in every daily log entry.
+**Purpose**: The master database for all trips. Each entry represents one trip and serves as the parent record that all other databases link back to.
 
 | Column Name | Data Type | Description |
 |---|---|---|
-| `Habit Name` | **Title** | The name of the habit (e.g., "Morning Run", "Read 20 Pages") |
-| `Category` | **Select** | Life area: `🏃 Health`, `🧠 Mind`, `💼 Work`, `❤️ Relationships`, `💰 Finance`, `🧘 Wellbeing`, `🎨 Creative` |
-| `Frequency Target` | **Select** | Expected cadence: `Daily`, `Weekdays Only`, `3x/Week`, `Weekly` |
-| `Habit Type` | **Select** | `Build` (adding a behavior) or `Break` (removing a behavior) |
-| `Linked Goal` | **Relation** → `🎯 Goals` | The higher-level life goal this habit supports |
-| `Trigger / Cue` | **Text** | The situational cue that should prompt this habit (e.g., "After morning coffee") |
-| `Minimum Viable Dose` | **Text** | The smallest acceptable version of this habit (e.g., "Even 5 minutes counts") |
-| `Why This Habit` | **Text** | Personal motivation statement — why this habit matters to the user |
-| `Start Date` | **Date** | When the user officially began tracking this habit |
-| `Status` | **Select** | `🟢 Active`, `⏸️ Paused`, `🗄️ Archived` |
-| `Difficulty` | **Select** | `Easy`, `Medium`, `Hard` — self-assessed difficulty level |
-| `Icon / Emoji` | **Text** | An emoji the user picks to represent this habit visually |
-| `Total Completions` | **Rollup** | COUNT of related `✅ Daily Log` entries where `Completed = true` |
-| `Completion Rate (30d)` | **Formula** | `round((prop("Total Completions") / 30) * 100)` — approximates 30-day rate |
-| `Notes` | **Text** | Freeform notes, research links, tips for maintaining this habit |
+| Trip Name | Title | Name of the trip (e.g., "Japan Spring 2025", "Barcelona Solo") |
+| Destination(s) | Multi-select | Countries or cities being visited |
+| Status | Select | Current state: `🧠 Planning` / `✅ Booked` / `🧳 In Progress` / `🏁 Completed` |
+| Departure Date | Date | Date of first travel day (with time) |
+| Return Date | Date | Date of last travel day (with time) |
+| Duration (Days) | Formula | `dateBetween(prop("Return Date"), prop("Departure Date"), "days") + 1` |
+| Travelers | Multi-select | Names of people going on the trip |
+| Total Budget | Number (Currency) | Planned total budget for the trip in home currency |
+| Total Spent | Rollup | Sum of all expenses linked to this trip from the Expenses database |
+| Budget Remaining | Formula | `prop("Total Budget") - prop("Total Spent")` |
+| Cover Photo | Files & Media | Hero image for the trip (city skyline, map, etc.) |
+| Trip Notes | Text | Free-form notes, links to inspiration boards, or general reminders |
+| Visa Required | Checkbox | Check if a visa is required for any destination |
+| Visa Status | Select | `Not Required` / `Applied` / `Approved` / `Not Started` |
 
 ---
 
-### Database 2: `✅ Daily Log`
+### Database 2: ✈️ Flights & Transport
 
-**Purpose:** The heartbeat of the entire template. Every day, the user creates (or uses a template button to generate) entries for each active habit. This database captures binary completion, mood context, difficulty felt in the moment, and optional notes. It is the data source for all streaks, rollups, and analytics.
+**Purpose**: Tracks all transportation bookings including flights, trains, buses, and ferry rides for every trip.
 
 | Column Name | Data Type | Description |
 |---|---|---|
-| `Log Entry` | **Title** | Auto-named or manually set (e.g., "Morning Run — Jan 15") |
-| `Habit` | **Relation** → `📋 Habit Library` | Which habit this log entry refers to |
-| `Date` | **Date** | The calendar date for this log entry |
-| `Completed` | **Checkbox** | `✅ true` = done, unchecked = missed |
-| `Mood Before` | **Select** | Emotional state before attempting the habit: `😴 Tired`, `😐 Neutral`, `😊 Good`, `🔥 Energized` |
-| `Difficulty Felt` | **Select** | How hard it was *in practice*: `Easy`, `Medium`, `Hard`, `Skipped — why below` |
-| `Skip Reason` | **Select** | If skipped: `Sick`, `Travel`, `Forgot`, `Too Busy`, `Chose Not To`, `Rest Day` |
-| `Notes / Reflection` | **Text** | Optional freeform note (what went well, what to improve) |
-| `Duration (min)` | **Number** | Optional: how many minutes spent (for time-based habits) |
-| `Quantity` | **Number** | Optional: measurable output (pages read, glasses of water, reps) |
-| `Streak Day #` | **Formula** | Complex streak formula (see note below) |
-| `Week Number` | **Formula** | `formatDate(prop("Date"), "W")` — for grouping by week |
-| `Day of Week` | **Formula** | `formatDate(prop("Date"), "ddd")` — Mon/Tue/Wed etc. |
-| `Linked Weekly Review` | **Relation** → `📅 Weekly Reviews` | Links this log entry to the review for its corresponding week |
-
-> **Note on Streak Formula:** True streak calculation in Notion requires external formulas or manual tracking. The `Streak Day #` column uses a simplified formula approach: `if(prop("Completed"), 1, 0)` as a per-entry flag, while the actual *running streak* is calculated via Rollup on the Habit Library database for display purposes. For users wanting advanced streak logic, a linked automation via Notion API or Make.com is recommended.
+| Route | Title | Descriptive label (e.g., "NYC → Tokyo (Outbound)") |
+| Trip | Relation | Links to the **Trip Overview** database |
+| Transport Type | Select | `✈️ Flight` / `🚂 Train` / `🚌 Bus` / `⛴️ Ferry` / `🚗 Car Rental` / `🚕 Taxi/Rideshare` |
+| Carrier / Operator | Text | Airline name, train company, etc. (e.g., "ANA", "Eurostar") |
+| Booking Reference | Text | Confirmation number or PNR code |
+| Departure Airport/Station | Text | IATA code or station name (e.g., "JFK", "Gare du Nord") |
+| Arrival Airport/Station | Text | IATA code or station name |
+| Departure Date & Time | Date | Scheduled departure (with time and timezone) |
+| Arrival Date & Time | Date | Scheduled arrival (with time and timezone) |
+| Duration | Formula | `dateBetween(prop("Arrival Date & Time"), prop("Departure Date & Time"), "hours") + " hrs"` |
+| Seat/Class | Text | Seat number and class (e.g., "34A, Economy") |
+| Price Paid | Number (Currency) | Total cost of this booking |
+| Booking URL | URL | Link to booking website or confirmation page |
+| Booking Status | Select | `🔖 To Book` / `⏳ Pending` / `✅ Confirmed` / `❌ Cancelled` |
+| E-Ticket / Document | Files & Media | Uploaded PDF of ticket or boarding pass |
+| Notes | Text | Baggage allowance, layover details, terminal info |
 
 ---
 
-### Database 3: `📅 Weekly Reviews`
+### Database 3: 🏨 Accommodations
 
-**Purpose:** Structured end-of-week reflection journal. Created once per week (typically Sunday), this page synthesizes the past 7 days — celebrating wins, diagnosing slippage, and adjusting habits for the coming week. Linked to all daily log entries from that week.
+**Purpose**: Manages all lodging across every trip, from hotels to Airbnbs to hostels.
 
 | Column Name | Data Type | Description |
 |---|---|---|
-| `Week Title` | **Title** | e.g., "Week 3 — Jan 13–19, 2025" |
-| `Week Start Date` | **Date** | Monday of the review week |
-| `Overall Rating` | **Select** | `⭐ 1` through `⭐⭐⭐⭐⭐ 5` — subjective week quality |
-| `Total Habits Completed` | **Rollup** | COUNT of related Daily Log entries where `Completed = true` |
-| `Total Habits Attempted` | **Rollup** | COUNT of all related Daily Log entries |
-| `Completion Rate` | **Formula** | `round((prop("Total Habits Completed") / prop("Total Habits Attempted")) * 100)` |
-| `Biggest Win` | **Text** | One highlight — a habit or moment that stood out positively |
-| `Biggest Challenge` | **Text** | What habit or situation was hardest this week |
-| `Root Cause Analysis` | **Text** | Why did failures happen? (No judgment — just honest reflection) |
-| `Next Week Intention` | **Text** | One or two adjustments or focus areas for the following week |
-| `Energy Level (avg)` | **Select** | `Low`, `Medium`, `High` — overall energy for the week |
-| `External Factors` | **Text** | Travel, illness, stress events that affected performance |
-| `Daily Logs This Week` | **Relation** → `✅ Daily Log` | All individual log entries from this week |
-| `Habits Modified` | **Relation** → `📋 Habit Library` | Any habits that were paused, adjusted, or added this week |
+| Property Name | Title | Name of the hotel, Airbnb, hostel, etc. |
+| Trip | Relation | Links to the **Trip Overview** database |
+| Accommodation Type | Select | `🏨 Hotel` / `🏡 Airbnb/VRBO` / `🛏️ Hostel` / `🏕️ Camping` / `🏠 Friend/Family` / `🏢 Serviced Apartment` |
+| City | Select | City where the property is located |
+| Address | Text | Full street address |
+| Google Maps Link | URL | Direct link to property on Google Maps |
+| Check-in Date | Date | Date and time of check-in |
+| Check-out Date | Date | Date and time of check-out |
+| Nights | Formula | `dateBetween(prop("Check-out Date"), prop("Check-in Date"), "days")` |
+| Price Per Night | Number (Currency) | Nightly rate in home currency |
+| Total Cost | Formula | `prop("Price Per Night") * prop("Nights")` |
+| Booking Reference | Text | Confirmation or reservation number |
+| Booking Status | Select | `🔖 To Book` / `✅ Confirmed` / `❌ Cancelled` |
+| Booking URL | URL | Link to booking platform |
+| Rating | Select | Personal rating: `⭐` / `⭐⭐` / `⭐⭐⭐` / `⭐⭐⭐⭐` / `⭐⭐⭐⭐⭐` |
+| WiFi Included | Checkbox | Whether free WiFi is available |
+| Breakfast Included | Checkbox | Whether breakfast is included in the rate |
+| Free Cancellation | Checkbox | Whether the booking can be cancelled without penalty |
+| Cancellation Deadline | Date | Last date to cancel without fees |
+| Confirmation Doc | Files & Media | Upload of booking confirmation PDF |
+| Notes | Text | Check-in instructions, host contact, parking info |
 
 ---
 
-### Database 4: `🎯 Goals`
+### Database 4: 📅 Daily Itinerary
 
-**Purpose:** The top-level "why" layer. Each goal represents a meaningful life outcome the user is working toward. Habits are linked to goals so that every daily check-in carries larger purpose. This database is intentionally kept small (3–7 goals maximum recommended).
+**Purpose**: The day-by-day, activity-by-activity schedule for each trip. This is the operational core used during the trip itself.
 
 | Column Name | Data Type | Description |
 |---|---|---|
-| `Goal Name` | **Title** | e.g., "Become Physically Fit", "Write My First Book" |
-| `Life Area` | **Select** | Mirrors Habit Library categories: `Health`, `Mind`, `Work`, etc. |
-| `Goal Description` | **Text** | What success looks like in concrete terms |
-| `Target Date` | **Date** | Aspirational deadline or review date |
-| `Status` | **Select** | `🌱 Just Started`, `📈 In Progress`, `🎉 Achieved`, `💤 On Hold` |
-| `Linked Habits` | **Relation** → `📋 Habit Library` | All habits supporting this goal |
-| `Habit Count` | **Rollup** | COUNT of linked habits |
-| `Progress Note` | **Text** | Free-form current progress assessment |
-| `Motivation Quote` | **Text** | A personal mantra or inspiring quote for this goal |
-| `Created Date` | **Date** | When this goal was set |
+| Activity Name | Title | Name of the activity or event (e.g., "Visit Senso-ji Temple") |
+| Trip | Relation | Links to the **Trip Overview** database |
+| Date | Date | Date and start time of the activity |
+| Day Number | Formula | `dateBetween(prop("Date"), prop("Trip").prop("Departure Date"), "days") + 1` |
+| Category | Select | `🗺️ Sightseeing` / `🍽️ Food & Dining` / `🎭 Entertainment` / `🛒 Shopping` / `🏖️ Beach/Nature` / `🏛️ Museum/Culture` / `🚶 Free Time` / `🚌 Transit` |
+| City | Select | City where the activity takes place |
+| Location / Venue | Text | Specific venue name or address |
+| Google Maps Link | URL | Link to location on Google Maps |
+| Start Time | Date | Start time of the activity |
+| End Time | Date | Estimated end time |
+| Duration (hrs) | Formula | `dateBetween(prop("End Time"), prop("Start Time"), "hours")` |
+| Estimated Cost | Number (Currency) | Expected cost per person |
+| Reservation Required | Checkbox | Whether a reservation must be made in advance |
+| Reservation Status | Select | `Not Required` / `To Book` / `Booked` / `Confirmed` |
+| Booking Reference | Text | Reservation or ticket confirmation number |
+| Priority | Select | `🔴 Must-Do` / `🟡 Want-To-Do` / `🟢 If Time Permits` |
+| Status | Select | `📌 Planned` / `✅ Done` / `⏭️ Skipped` |
+| Notes | Text | Opening hours, dress code, insider tips, website |
+| Photos | Files & Media | Post-trip photos from this activity |
 
 ---
 
-### Database 5: `📊 Monthly Snapshots`
+### Database 5: 💰 Expenses
 
-**Purpose:** A lightweight monthly record used as a historical archive. Created once per month, it stores high-level statistics pulled via rollups from the Daily Log. Useful for long-term trend analysis and motivation ("look how far I've come").
+**Purpose**: Tracks every expense during the trip to monitor spending against the budget in real time.
 
 | Column Name | Data Type | Description |
 |---|---|---|
-| `Month` | **Title** | e.g., "January 2025" |
-| `Month Start` | **Date** | First day of the month |
-| `Daily Logs This Month` | **Relation** → `✅ Daily Log` | All log entries from this month |
-| `Total Completions` | **Rollup** | COUNT of completed log entries this month |
-| `Total Possible` | **Rollup** | COUNT of all log entries this month |
-| `Monthly Completion Rate` | **Formula** | `round((prop("Total Completions") / prop("Total Possible")) * 100)` |
-| `Best Habit` | **Text** | Manually noted: which habit had the best streak/rate |
-| `Hardest Habit` | **Text** | Manually noted: which habit struggled most |
-| `Month Reflection` | **Text** | 2–3 sentence narrative summary |
-| `Active Habit Count` | **Number** | How many habits were being tracked this month |
+| Expense Name | Title | Short description (e.g., "Dinner at Ichiran Ramen") |
+| Trip | Relation | Links to the **Trip Overview** database |
+| Date | Date | Date the expense was incurred |
+| Category | Select | `✈️ Transport` / `🏨 Accommodation` / `🍽️ Food & Drink` / `🎟️ Activities` / `🛒 Shopping` / `💊 Health` / `📡 Communication` / `🔧 Miscellaneous` |
+| Amount (Local Currency) | Number | Amount paid in local/foreign currency |
+| Local Currency | Select | Currency code: `JPY` / `EUR` / `GBP` / `USD` / `THB` / etc. |
+| Exchange Rate | Number | Exchange rate used at time of purchase |
+| Amount (Home Currency) | Formula | `prop("Amount (Local Currency)") / prop("Exchange Rate")` |
+| Payment Method | Select | `💳 Credit Card` / `💵 Cash` / `📱 Mobile Pay` / `🏦 Debit Card` |
+| Paid By | Select | Name of the traveler who paid (for group trip splitting) |
+| Split With | Multi-select | Names of others splitting this expense |
+| Receipt | Files & Media | Photo or PDF of the receipt |
+| Notes | Text | Additional context or memo |
+
+---
+
+### Database 6: 🎒 Packing List
+
+**Purpose**: A reusable, categorized checklist of items to pack for any trip. Can be filtered by trip or used as a universal master list.
+
+| Column Name | Data Type | Description |
+|---|---|---|
+| Item Name | Title | Name of the item (e.g., "Passport", "Power Adapter") |
+| Trip | Relation | Links to the **Trip Overview** database (optional, for trip-specific items) |
+| Category | Select | `📄 Documents` / `👔 Clothing` / `🧴 Toiletries` / `💊 Health & Medical` / `💻 Electronics` / `🔧 Gear` / `🎒 Carry-On` / `🏖️ Beach` / `🌨️ Winter` / `🍼 Baby/Kids` |
+| Packed | Checkbox | Check when item has been packed |
+| Quantity | Number | How many of this item to pack |
+| Essential | Checkbox | Mark as absolutely critical (passport, medication, etc.) |
+| Notes | Text | Brand preference, where to find it, size info |
+
+---
+
+### Database 7: 📋 Task Manager
+
+**Purpose**: Tracks all pre-trip and post-trip to-do items — from booking tasks to things to prepare at home before leaving.
+
+| Column Name | Data Type | Description |
+|---|---|---|
+| Task | Title | Description of the task (e.g., "Apply for Japan e-Visa") |
+| Trip | Relation | Links to the **Trip Overview** database |
+| Category | Select | `📝 Booking` / `🛂 Documents` / `💰 Finance` / `🏠 Home Prep` / `🎒 Packing` / `🌐 Research` / `🔔 Notifications` / `📸 Post-Trip` |
+| Assigned To | Select | Person responsible (for group trips) |
+| Due Date | Date | Deadline for completing the task |
+| Status | Select | `🔖 To Do` / `🔄 In Progress` / `✅ Done` / `⏭️ Skipped` |
+| Priority | Select | `🔴 High` / `🟡 Medium` / `🟢 Low` |
+| Notes | Text | Additional details, links, or instructions |
+
+---
+
+### Database 8: 📍 Saved Places
+
+**Purpose**: A personal travel wishlist and research database for restaurants, attractions, and hidden gems discovered during research — before they get added to the itinerary.
+
+| Column Name | Data Type | Description |
+|---|---|---|
+| Place Name | Title | Name of the restaurant, attraction, or venue |
+| Trip | Relation | Links to the **Trip Overview** database |
+| Category | Select | `🍽️ Restaurant` / `☕ Café` / `🍸 Bar` / `🏛️ Museum` / `🌿 Nature` / `🏖️ Beach` / `🛒 Market` / `🎭 Venue` / `🏨 Hotel Option` / `🎯 Activity` |
+| City | Select | City where this place is located |
+| Address | Text | Street address |
+| Google Maps Link | URL | Link to location |
+| Website | URL | Official website or booking page |
+| Source | Text | Where you found this recommendation (e.g., "Eater NY", "Reddit r/travel") |
+| Rating (External) | Select | Michelin / Google rating category: `⭐ Acclaimed` / `👍 Highly Rated` / `📌 To Investigate` |
+| Price Range | Select | `💲 Budget` / `💲💲 Moderate` / `💲💲💲 Upscale` / `💲💲💲💲 Luxury` |
+| Status | Select | `💡 Idea` / `✅ Added to Itinerary` / `❌ Decided Against` |
+| Opening Hours | Text | Days and times open |
+| Reservation Required | Checkbox | Whether booking in advance is necessary |
+| Notes | Text | Personal notes, must-try dishes, tips |
 
 ---
 
 ## 3. Page Structure
 
 ```
-🏠 HABIT TRACKER (Top-Level Page / Dashboard)
+📁 ✈️ Travel Planner (Top-Level Workspace Page)
 │
-├── 📌 [Pinned Callout Block] — Daily Check-In Quick Access Button
-│     └── Button: "+ Log Today's Habits" (opens filtered Daily Log view)
+├── 🏠 Dashboard (Home)
+│   ├── 👋 Welcome Banner + Quick-Start Guide
+│   ├── 📊 Stats Summary (Rollup: trips taken, total spent, countries visited)
+│   ├── 🗓️ Upcoming Trips (Filtered Gallery View — Trip Overview DB)
+│   ├── 📌 Active Trip Spotlight (Filter: Status = "In Progress")
+│   ├── ✅ Today's Tasks (Filtered Table View — Task Manager DB, Due Date = Today)
+│   └── 📦 Quick Links (Nav buttons to all sub-pages)
 │
-├── 📊 Dashboard Overview (Inline Section)
-│     ├── [Gallery View] Active Habits — from 📋 Habit Library (Status = Active)
-│     ├── [Board View] Today's Log — from ✅ Daily Log (filtered: Date = Today)
-│     └── [Progress Bars / Linked Views] Weekly Completion Rate widget
-│
-├── 📋 Habit Library (Sub-page)
-│     ├── Full database: 📋 Habit Library
-│     ├── [Gallery View] "Active Habits" — filtered by Status = Active
-│     ├── [Gallery View] "By Category" — grouped by Category
-│     ├── [Table View] "All Habits" — full master list
-│     └── [Table View] "Archived" — filtered by Status = Archived
-│
-├── ✅ Daily Log (Sub-page)
-│     ├── Full database: ✅ Daily Log
-│     ├── [Calendar View] "Monthly Calendar" — entries plotted by date
-│     ├── [Table View] "Today" — filtered: Date = Today
-│     ├── [Table View] "This Week" — filtered: Week Number = current week
-│     ├── [Table View] "By Habit" — grouped by Habit relation
-│     └── [Table View] "Missed Days" — filtered: Completed = false
-│
-├── 📅 Weekly Reviews (Sub-page)
-│     ├── Full database: 📅 Weekly Reviews
-│     ├── [Table View] "All Reviews" — sorted by Week Start Date descending
-│     ├── [Gallery View] "Review Cards" — visual card layout with rating
-│     └── 📝 [Template] Weekly Review Template
-│           └── Pre-filled page with reflection prompts as H2 headers
-│
-├── 🎯 Goals (Sub-page)
-│     ├── Full database: 🎯 Goals
-│     ├── [Board View] "By Status" — grouped by Status
-│     ├── [Table View] "All Goals" — with linked habit count rollup visible
-│     └── [Gallery View] "Goal Cards" — visual motivational layout
-│
-├── 📊 Monthly Snapshots (Sub-page)
-│     ├── Full database: 📊 Monthly Snapshots
-│     ├── [Table View] "All Months" — sorted chronologically
-│     └── [Gallery View] "Snapshot Cards" — with completion rate visible
-│
-├── 📈 Analytics Hub (Sub-page — View-Only Linked Databases)
-│     ├── Section: "Habit Performance"
-│     │     └── [Table View — Linked] Habit Library showing Total Completions + Rate
-│     ├── Section: "Weekly Trend"
-│     │     └── [Table View — Linked] Weekly Reviews showing Completion Rate + Rating
-│     ├── Section: "Category Breakdown"
-│     │     └── [Table View — Linked] Daily Log grouped by Habit → Category
-│     └── Section: "Monthly Progress"
-│           └── [Table View — Linked] Monthly Snapshots with all rate columns
-│
-└── 📖 Guide & Setup (Sub-page)
-      ├── Welcome message and philosophy
-      ├── How to use each section (step-by-step)
-      ├── FAQ (What if I miss a day? How do I pause a habit?)
-      ├── Recommended habit stack for beginners (starter examples)
-      └── Credits and version notes
-```
-
----
-
-### Page Hierarchy Summary
-
-| Level | Page / Section | Contains |
-|---|---|---|
-| **Level 0** | 🏠 Habit Tracker (Dashboard) | Pinned callout, inline gallery views, quick-log button |
-| **Level 1** | 📋 Habit Library | Habit Library database + 4 views |
-| **Level 1** | ✅ Daily Log | Daily Log database + 5 views |
-| **Level 1** | 📅 Weekly Reviews | Weekly Reviews database + 2 views + template |
-| **Level 1** | 🎯 Goals | Goals database + 3 views |
-| **Level 1** |
+├── 🌍

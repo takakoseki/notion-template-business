@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-03-30T21:00:38.557974+00:00",
+  "generated_at": "2026-03-31T21:49:27.167916+00:00",
   "total_posts_analyzed": 1,
   "top5_themes": [
     {
-      "theme": "Habit Tracker",
-      "total_score": 100,
-      "post_count": 1,
-      "top_posts": []
-    },
-    {
-      "theme": "Project Management",
-      "total_score": 90,
-      "post_count": 1,
-      "top_posts": []
-    },
-    {
-      "theme": "Personal Finance",
-      "total_score": 80,
+      "theme": "Travel Planner",
+      "total_score": 10,
       "post_count": 1,
       "top_posts": []
     },
@@ -27,8 +15,20 @@
       "top_posts": []
     },
     {
+      "theme": "Life OS / Second Brain",
+      "total_score": 30,
+      "post_count": 1,
+      "top_posts": []
+    },
+    {
       "theme": "Study / Learning",
       "total_score": 60,
+      "post_count": 1,
+      "top_posts": []
+    },
+    {
+      "theme": "CRM / Sales",
+      "total_score": 40,
       "post_count": 1,
       "top_posts": []
     }
