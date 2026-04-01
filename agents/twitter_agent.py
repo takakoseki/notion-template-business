@@ -64,7 +64,8 @@ Features:
 {extra_context}""",
 
     "tips": """\
-Write a single tweet sharing ONE practical, actionable tip about habit tracking or building daily routines.
+Write a single tweet sharing ONE practical, actionable tip related to the product below.
+The tip should be directly useful to someone who would use this kind of Notion template.
 Rules:
 - The tip must be genuinely useful and specific (not generic advice).
 - After the tip, add: I built a Notion template to help with exactly this → {url}
@@ -80,10 +81,10 @@ Features: {features}
 
     "before_after": """\
 Write a single tweet using a before/after contrast format showing the transformation
-a user experiences from using a habit-tracking Notion template.
+a user experiences from using the Notion template described below.
 Rules:
 - Use the format: "Before: ... / After: ..." or similar contrast structure.
-- Keep it relatable and specific.
+- Keep it relatable and specific to the product theme.
 - Include the product URL: {url}
 - Add hashtags on the last line: {hashtags}
 - Total tweet length (URL counted as 23 chars) must be ≤ 280 characters.
@@ -95,7 +96,8 @@ Description: {description}
 {extra_context}""",
 
     "question": """\
-Write a single engagement-focused tweet asking a question about habit tracking or productivity.
+Write a single engagement-focused tweet asking a question related to the product below.
+The question should resonate with someone who would use this kind of Notion template.
 Rules:
 - Ask ONE concise, relatable question that encourages replies.
 - After the question, add: I built a Notion template to solve this → {url}
@@ -106,6 +108,7 @@ Rules:
 
 Context:
 Product title: {title}
+Description: {description}
 {extra_context}""",
 
     "new_product": """\
