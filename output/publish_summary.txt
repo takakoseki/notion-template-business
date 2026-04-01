@@ -1,0 +1,83 @@
+============================================================
+  Gumroad Manual Registration Summary
+============================================================
+
+[Product Title]
+  Ultimate Notion Travel Planner — Plan Every Trip
+
+[Price]
+  $13
+
+[Description — paste into Gumroad Description field]
+----------------------------------------
+Stop losing booking confirmations in your inbox and juggling five different apps just to plan a vacation. The Ultimate Notion Travel Planner brings every piece of your trip into one beautifully organized workspace — flights, hotels, daily itineraries, budgets, packing lists, and tasks, all connected and always in sync.
+
+Whether you're planning a solo weekend escape, a two-week multi-city adventure, or a group trip with friends, this template handles the complexity so you can focus on the excitement. Track your spending against your budget in real time, follow a day-by-day schedule during your trip, and archive memories when you return.
+
+Built across 8 fully linked Notion databases — Trip Overview, Flights & Transport, Accommodations, Daily Itinerary, Expenses, Packing List, Task Manager, and Saved Places — this template is the last travel planning system you'll ever need. A central Dashboard gives you an at-a-glance view of upcoming trips, today's tasks, and live budget status the moment you open it. Duplicate, customize, and start planning your next adventure in minutes.
+
+## What's included
+* 8 fully interconnected databases cover every aspect of trip planning — from first research to post-trip memories — in a single Notion workspace.
+* Real-time budget tracking automatically calculates total spent via rollups and shows remaining budget so you never overspend on the road.
+* A day-by-day itinerary builder with priority levels, reservation tracking, and activity categories keeps you on schedule without the stress.
+* The Saved Places wishlist database lets you collect restaurant and attraction ideas during research, then promote them to your itinerary with one click.
+* Group travel ready — assign tasks, track who paid each expense, and split costs among travel companions directly inside the template.
+
+## FAQ
+**Do I need to be an experienced Notion user to use this template?**
+No advanced Notion knowledge is required. The template is fully pre-built with all databases, views, and formulas already configured. If you're comfortable using Notion at a basic level — creating pages and editing text — you'll be up and running in minutes. A built-in Quick-Start Guide on the Dashboard walks you through each section.
+
+**Can I use this template for multiple trips?**
+Absolutely. The Trip Overview database is designed to hold unlimited trips, and every other database (flights, accommodations, expenses, etc.) links back to individual trips so your data stays perfectly organized. Simply duplicate an existing trip entry or create a new one for each adventure.
+
+**Does this work for group travel and shared planning?**
+Yes. The template includes fields for assigning tasks to specific travelers, tracking who paid each expense, and noting which costs are split among the group. Share your Notion workspace with travel companions and everyone can view and edit the same plan in real time.
+----------------------------------------
+
+[Gumroad Summary field]
+----------------------------------------
+You'll get 8 fully interconnected databases cover every aspect of trip planning — from first research to post-trip memories — in a single notion workspace, and real-time budget tracking automatically calculates total spent via rollups and shows remaining budget so you never overspend on the road.
+----------------------------------------
+
+[Gumroad Additional Details]
+----------------------------------------
+Detail 1 Title: What's Included
+  * 8 fully interconnected databases cover every aspect of trip planning — from first research to post-trip memories — in a single Notion workspace.
+  * Real-time budget tracking automatically calculates total spent via rollups and shows remaining budget so you never overspend on the road.
+  * A day-by-day itinerary builder with priority levels, reservation tracking, and activity categories keeps you on schedule without the stress.
+  * The Saved Places wishlist database lets you collect restaurant and attraction ideas during research, then promote them to your itinerary with one click.
+  * Group travel ready — assign tasks, track who paid each expense, and split costs among travel companions directly inside the template.
+
+Detail 2 Title: Frequently Asked Questions
+  Q: Do I need to be an experienced Notion user to use this template?
+  A: No advanced Notion knowledge is required. The template is fully pre-built with all databases, views, and formulas already configured. If you're comfortable using Notion at a basic level — creating pages and editing text — you'll be up and running in minutes. A built-in Quick-Start Guide on the Dashboard walks you through each section.
+
+  Q: Can I use this template for multiple trips?
+  A: Absolutely. The Trip Overview database is designed to hold unlimited trips, and every other database (flights, accommodations, expenses, etc.) links back to individual trips so your data stays perfectly organized. Simply duplicate an existing trip entry or create a new one for each adventure.
+
+Detail 3 Title: More Questions & Support
+  Q: Does this work for group travel and shared planning?
+  A: Yes. The template includes fields for assigning tasks to specific travelers, tracking who paid each expense, and noting which costs are split among the group. Share your Notion workspace with travel companions and everyone can view and edit the same plan in real time.
+
+  Support: After purchase, reach out via Gumroad's messaging feature and I'll respond within 2 business days.
+----------------------------------------
+
+[Notion Template Link]
+  Page  : ✈️ Travel Planner
+  URL   : https://www.notion.so/33466eda9d8781598c17deaa21ef62cf
+  NOTE  : Enable 'Share to web' in Notion to get the public link.
+
+[Thumbnail Image Paths]
+  Landscape (1200x630) : C:\Users\tkoseki\notion-template-business\output\thumbnail.png
+  Square   (1200x1200) : C:\Users\tkoseki\notion-template-business\output\thumbnail_square.png
+
+[Registration Steps]
+  1. Open https://app.gumroad.com/products/new
+  2. Copy and paste the title, price, and description above
+  3. Paste the Summary field text into the Summary box
+  4. Add Detail 1-3 under Additional Details
+  5. Add the Notion template link to the product file or description
+  6. Upload the thumbnail image (landscape or square)
+  7. Review all details and publish
+
+============================================================

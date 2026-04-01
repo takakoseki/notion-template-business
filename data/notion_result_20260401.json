@@ -1,0 +1,40 @@
+{
+  "page_title": "✈️ Travel Planner",
+  "page_id": "33466eda-9d87-8159-8c17-deaa21ef62cf",
+  "page_url": "https://www.notion.so/33466eda9d8781598c17deaa21ef62cf",
+  "databases_created": 8,
+  "databases": [
+    {
+      "name": "🌍 Trip Overview",
+      "id": "33466eda-9d87-8157-b9b7-d757166508a1"
+    },
+    {
+      "name": "✈️ Flights & Transport",
+      "id": "33466eda-9d87-81b0-a7e2-ecc41b6fa77c"
+    },
+    {
+      "name": "🏨 Accommodations",
+      "id": "33466eda-9d87-8180-a96d-f8fc4f13e054"
+    },
+    {
+      "name": "📅 Daily Itinerary",
+      "id": "33466eda-9d87-8108-b3ce-cc77b58bad16"
+    },
+    {
+      "name": "💰 Expenses",
+      "id": "33466eda-9d87-811b-a7c4-f60347bf8782"
+    },
+    {
+      "name": "🎒 Packing List",
+      "id": "33466eda-9d87-8136-b54a-deed202b11bb"
+    },
+    {
+      "name": "📋 Task Manager",
+      "id": "33466eda-9d87-81ac-b922-fb19cc114a36"
+    },
+    {
+      "name": "📍 Saved Places",
+      "id": "33466eda-9d87-81f5-9b16-d13d1dcf4168"
+    }
+  ]
+}
