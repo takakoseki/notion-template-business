@@ -9,6 +9,7 @@ Usage:
 """
 
 import argparse
+import glob
 import logging
 import sys
 import time
@@ -32,6 +33,19 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S",
 )
 logger = logging.getLogger("orchestrator")
+
+
+MAX_TEMPLATES = 10
+
+
+# ---------------------------------------------------------------------------
+# Template count
+# ---------------------------------------------------------------------------
+
+def count_completed_templates() -> int:
+    """Count completed templates by looking at archived notion_result_YYYYMMDD.json files."""
+    pattern = str(ROOT / "data" / "notion_result_????????.json")
+    return len(glob.glob(pattern))
 
 
 # ---------------------------------------------------------------------------
@@ -94,6 +108,16 @@ def main(start_from: int = 1, end_at: int = 5) -> None:
     logger.info("=" * 60)
     logger.info("  Notion Template Business Automation Orchestrator")
     logger.info("=" * 60)
+
+    # Check template limit
+    completed = count_completed_templates()
+    logger.info(f"  Templates completed: {completed} / {MAX_TEMPLATES}")
+    if completed >= MAX_TEMPLATES:
+        logger.info("=" * 60)
+        logger.info(f"  Template limit reached ({MAX_TEMPLATES}).")
+        logger.info("  Pipeline skipped. Review templates before continuing.")
+        logger.info("=" * 60)
+        return
 
     results: dict[str, dict] = {}
 
