@@ -42,9 +42,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger("scheduler")
 
-ANALYTICS_AGENT_PATH = ROOT / "agents" / "analytics_agent.py"
-TWITTER_AGENT_PATH   = ROOT / "agents" / "twitter_agent.py"
-EMAIL_AGENT_PATH     = ROOT / "agents" / "email_agent.py"
+ANALYTICS_AGENT_PATH        = ROOT / "agents" / "analytics_agent.py"
+TWITTER_AGENT_PATH          = ROOT / "agents" / "twitter_agent.py"
+EMAIL_AGENT_PATH            = ROOT / "agents" / "email_agent.py"
+PIPELINE_NOTIFY_AGENT_PATH  = ROOT / "agents" / "pipeline_notify_agent.py"
 
 PIPELINE_TIME = "06:00"
 POST_TIME_AM  = "09:00"
@@ -161,6 +162,16 @@ def run_pipeline_job() -> None:
     except Exception as e:
         logger.error(f"[SKIP] archive failed (continuing): {e}")
         system_log("scheduler", "warning", f"archive failed: {e}")
+
+    # Step 5: Send pipeline notification email (Gumroad content)
+    logger.info(">> Step 5: pipeline notification email")
+    try:
+        _load_and_run("pipeline_notify_agent", PIPELINE_NOTIFY_AGENT_PATH)
+        logger.info("[OK] Pipeline notification email sent")
+        system_log("scheduler", "success", "Pipeline notification email sent")
+    except Exception as e:
+        logger.error(f"[SKIP] pipeline_notify_agent failed (continuing): {e}")
+        system_log("scheduler", "warning", f"pipeline_notify_agent failed: {e}")
 
     logger.info("  06:00 Pipeline job complete")
     logger.info("=" * 50)

@@ -131,6 +131,10 @@ jobs:
       - name: Archive dated copies
         run: python archive_daily.py
 
+      - name: Send pipeline notification email
+        run: python agents/pipeline_notify_agent.py
+        continue-on-error: true   # email failure must not block the pipeline
+
       - name: Commit data changes
         run: |
           git config user.name  "github-actions[bot]"
