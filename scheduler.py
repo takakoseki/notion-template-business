@@ -149,6 +149,19 @@ def run_pipeline_job() -> None:
         logger.error(f"[SKIP] save latest_product failed (continuing): {e}")
         system_log("scheduler", "warning", f"save latest_product failed: {e}")
 
+    # Step 4: Archive dated copies
+    logger.info(">> Step 4: archive dated copies")
+    try:
+        archive_spec = importlib.util.spec_from_file_location("archive_daily", ROOT / "archive_daily.py")
+        archive_mod  = importlib.util.module_from_spec(archive_spec)
+        archive_spec.loader.exec_module(archive_mod)
+        archive_mod.run()
+        logger.info("[OK] Archive complete")
+        system_log("scheduler", "success", "Daily archive complete")
+    except Exception as e:
+        logger.error(f"[SKIP] archive failed (continuing): {e}")
+        system_log("scheduler", "warning", f"archive failed: {e}")
+
     logger.info("  06:00 Pipeline job complete")
     logger.info("=" * 50)
     system_log("scheduler", "completed", "06:00 pipeline job complete")
