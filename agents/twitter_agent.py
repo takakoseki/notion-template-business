@@ -275,10 +275,26 @@ def generate_tweet(
         hashtag_line = lines[-1] if lines[-1].startswith("#") else ""
         body_lines   = lines[:-1] if hashtag_line else lines
         body         = " ".join(body_lines).strip()
-        max_body     = TWEET_MAX_CHARS - _URL_T_CO_LEN - 1 - len(hashtag_line) - 2
-        if len(body) > max_body:
-            body = body[:max_body - 1].rsplit(" ", 1)[0] + "…"
-        tweet = f"{body}\n{hashtag_line}".strip()
+
+        # Calculate excess in effective (Twitter-counted) chars
+        hashtag_cost  = (1 + len(hashtag_line)) if hashtag_line else 0
+        body_eff_len  = len(body.replace(url, "x" * _URL_T_CO_LEN))
+        max_body_eff  = TWEET_MAX_CHARS - hashtag_cost
+        excess        = body_eff_len - max_body_eff + 1  # +1 for "…"
+
+        if excess > 0:
+            if url in body:
+                # Trim the text before the URL, keeping the URL intact
+                url_start = body.index(url)
+                pre  = body[:url_start].rstrip()
+                post = body[url_start:]
+                trim_to = max(0, len(pre) - excess)
+                pre  = pre[:trim_to].rsplit(" ", 1)[0] + "… " if trim_to < len(pre) else pre
+                body = pre + post
+            else:
+                body = body[: len(body) - excess].rsplit(" ", 1)[0] + "…"
+
+        tweet = f"{body}\n{hashtag_line}".strip() if hashtag_line else body.strip()
 
     return tweet
 
