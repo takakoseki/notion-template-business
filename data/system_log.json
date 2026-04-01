@@ -66,27 +66,27 @@
     "message": "Metrics fetch failed: 401 Unauthorized\nUnauthorized"
   },
   {
-    "timestamp": "2026-04-01T21:51:18.076485+00:00",
-    "agent": "analytics_agent",
-    "status": "started",
-    "message": "Analytics job started"
-  },
-  {
-    "timestamp": "2026-04-01T21:51:18.230011+00:00",
-    "agent": "analytics_agent",
-    "status": "warning",
-    "message": "Metrics fetch failed: 401 Unauthorized\nUnauthorized"
-  },
-  {
-    "timestamp": "2026-04-01T21:54:17.259406+00:00",
+    "timestamp": "2026-04-01T04:51:12.087602+00:00",
     "agent": "pipeline_notify_agent",
     "status": "started",
     "message": "Pipeline notification started"
   },
   {
-    "timestamp": "2026-04-01T21:54:18.413044+00:00",
+    "timestamp": "2026-04-01T04:51:14.918086+00:00",
     "agent": "pipeline_notify_agent",
     "status": "success",
-    "message": "Pipeline notification email sent: Meeting Notes Pro — Notion Template"
+    "message": "Pipeline notification email sent: Ultimate Notion Travel Planner — Plan Every Trip"
+  },
+  {
+    "timestamp": "2026-04-01T14:51:43.190014+00:00",
+    "agent": "twitter_agent",
+    "status": "started",
+    "message": "Tweet draft generation started"
+  },
+  {
+    "timestamp": "2026-04-01T14:51:48.515195+00:00",
+    "agent": "twitter_agent",
+    "status": "success",
+    "message": "Draft saved — type: product, chars: 267"
   }
 ]
