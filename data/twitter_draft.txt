@@ -1,5 +1,3 @@
-After every meeting, assign each action item an owner and due date before closing your notes. Vague next steps with no owner get forgotten by the next day.
+Before: Digging through 6 email threads to find who was supposed to do what after last Tuesday's call. After: Every decision, owner, and deadline lives in one dashboard. https://takasoccerfan.gumroad.com/l/glnhwp
 
-I built a Notion template to help with exactly this → https://takasoccerfan.gumroad.com/l/glnhwp
-
-#MeetingNotes #Notion #Productivity
+#Notion #HabitTracker
