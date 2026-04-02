@@ -88,5 +88,29 @@
     "agent": "twitter_agent",
     "status": "success",
     "message": "Draft saved — type: product, chars: 267"
+  },
+  {
+    "timestamp": "2026-04-02T21:46:53.133863+00:00",
+    "agent": "analytics_agent",
+    "status": "started",
+    "message": "Analytics job started"
+  },
+  {
+    "timestamp": "2026-04-02T21:46:53.400919+00:00",
+    "agent": "analytics_agent",
+    "status": "warning",
+    "message": "Metrics fetch failed: 401 Unauthorized\nUnauthorized"
+  },
+  {
+    "timestamp": "2026-04-02T21:50:13.577246+00:00",
+    "agent": "pipeline_notify_agent",
+    "status": "started",
+    "message": "Pipeline notification started"
+  },
+  {
+    "timestamp": "2026-04-02T21:50:14.571446+00:00",
+    "agent": "pipeline_notify_agent",
+    "status": "success",
+    "message": "Pipeline notification email sent: Personal Finance & Investment Clarity Hub — Notion Template"
   }
 ]
