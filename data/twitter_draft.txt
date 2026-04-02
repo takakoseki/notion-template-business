@@ -1,3 +1,5 @@
-Never overspend on the road again. Real-time budget rollups show exactly what you've spent and what's left — automatically. The Ultimate Notion Travel Planner keeps your finances on track, every trip.
-https://takasoccerfan.gumroad.com/l/hvrwx
-#Notion #ProductivityTools #NotionTemplate
+After every meeting, assign each action item an owner and due date before closing your notes. Vague next steps with no owner get forgotten by the next day.
+
+I built a Notion template to help with exactly this → https://takasoccerfan.gumroad.com/l/glnhwp
+
+#MeetingNotes #Notion #Productivity
