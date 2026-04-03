@@ -1,3 +1,5 @@
-Before: Five apps, three spreadsheets, and still no idea if you are actually building wealth. After: One Notion workspace tracking your portfolio, dividends, budget, and net worth in real time. https://takasoccerfan.gumroad.com/l/glnhwp
+How many apps are you currently using just to get a clear picture of your finances?
 
-#Notion #HabitTracker
+I built a Notion template to solve this → https://takasoccerfan.gumroad.com/l/glnhwp
+
+#Notion #Productivity
