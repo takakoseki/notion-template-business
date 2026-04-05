@@ -160,5 +160,29 @@
     "agent": "pipeline_notify_agent",
     "status": "success",
     "message": "Pipeline notification email sent: Personal Finance & Investment Clarity Hub — Notion Template"
+  },
+  {
+    "timestamp": "2026-04-05T21:40:06.080987+00:00",
+    "agent": "analytics_agent",
+    "status": "started",
+    "message": "Analytics job started"
+  },
+  {
+    "timestamp": "2026-04-05T21:40:06.302278+00:00",
+    "agent": "analytics_agent",
+    "status": "warning",
+    "message": "Metrics fetch failed: 401 Unauthorized\nUnauthorized"
+  },
+  {
+    "timestamp": "2026-04-05T21:43:20.127881+00:00",
+    "agent": "pipeline_notify_agent",
+    "status": "started",
+    "message": "Pipeline notification started"
+  },
+  {
+    "timestamp": "2026-04-05T21:43:22.121837+00:00",
+    "agent": "pipeline_notify_agent",
+    "status": "success",
+    "message": "Pipeline notification email sent: Meeting Notes Hub — Notion Template"
   }
 ]
