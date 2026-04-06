@@ -45,6 +45,7 @@ _HASHTAG_SETS = {
     "before_after":"#Notion #HabitTracker",
     "question":    "#Notion #Productivity",
     "new_product": "#Notion #NewRelease #ProductivityTools",
+    "thread":      "",
 }
 
 TWEET_PROMPTS: dict[str, str] = {
@@ -124,6 +125,48 @@ Rules:
 
 Product name: {title}
 Key features:
+{features}
+{extra_context}""",
+
+    "thread": """\
+Generate a viral X (Twitter) thread promoting the Notion template below.
+Separate each tweet with a line containing only "---".
+
+Tweet 1 — Hook:
+Notion + {{genre}} = {{outcome}} 💰
+No skills. No design. No excuses.
+{{N}} templates that do all the work 👇
+
+Tweets 2 through N — Thread body (one per use case, draw inspiration from the features):
+{{number}}/ {{Catchy Name — end with Machine / System / Blueprint / Tracker / Engine}}
+{{One sentence describing a relatable user situation. Use [PLACEHOLDER] format.}}
+
+Include: (or Give me: or Build me:)
+- {{specific output 1}}
+- {{specific output 2}}
+- {{specific output 3}}
+- {{specific output 4}}
+- {{specific output 5}}
+
+Final Tweet — CTA:
+That's {{N}} Notion prompts for {{genre}}. 💸
+Built the template so you don't have to.
+Get it for ${price} → {url}
+
+Rules:
+- Total body tweets = number of features + 5 to 7 additional use cases
+- Each individual tweet ≤ 280 characters (URL counts as 23 characters)
+- English only, imperative tone, simple style
+- Emojis ONLY in the Hook and CTA tweets — none in body tweets
+- Body tweet placeholders use [BRACKET] format (e.g., [GOAL], [AMOUNT], [INVESTOR], [N])
+- Weave the features naturally across the body tweets — do not list them verbatim
+- Output only the tweets separated by "---", nothing else
+
+Product title: {title}
+Price: ${price}
+URL: {url}
+Description (first 100 chars): {description}
+Features:
 {features}
 {extra_context}""",
 }
@@ -255,24 +298,32 @@ def generate_tweet(
     hashtags       = _HASHTAG_SETS[tweet_type]
     extra_context  = _build_extra_context(past_posts or [], analytics)
 
+    price = sales_copy.get("price", {}).get("usd", "")
+
     prompt = TWEET_PROMPTS[tweet_type].format(
         title=sales_copy.get("title", ""),
-        description=sales_copy.get("description", ""),
+        description=sales_copy.get("description", "")[:100],
         features=features_text,
         url=url,
         hashtags=hashtags,
+        price=price,
         extra_context=extra_context,
     )
 
+    max_tokens = 4096 if tweet_type == "thread" else 512
+
     message = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=512,
+        max_tokens=max_tokens,
         messages=[{"role": "user", "content": prompt}],
     )
 
     tweet = message.content[0].text.strip()
 
-    # Safety trim
+    # Safety trim (skipped for thread type — Claude handles per-tweet length)
+    if tweet_type == "thread":
+        return tweet
+
     if _count_tweet_length(tweet, url) > TWEET_MAX_CHARS:
         lines = tweet.splitlines()
         hashtag_line = lines[-1] if lines[-1].startswith("#") else ""
@@ -336,21 +387,27 @@ def run() -> dict:
 
     # Determine available tweet types
     available_types = list(TWEET_PROMPTS.keys())
-    has_new_product = (
+    has_gumroad_url = (
         latest_product is not None
         and bool(latest_product.get("gumroad_url", "").strip())
     )
-    if not has_new_product:
+    if not has_gumroad_url:
         available_types = [t for t in available_types if t != "new_product"]
 
     tweet_type = random.choice(available_types)
 
-    # URL: new_product uses latest_product gumroad_url; others use general URL
-    if tweet_type == "new_product" and has_new_product:
+    # When gumroad_url is set in latest_product.json, use it as the single
+    # source of truth for ALL tweet types so the content always matches the
+    # product that was actually registered on Gumroad.
+    if has_gumroad_url:
         url = latest_product["gumroad_url"]
-        # Merge latest_product info into sales_copy for richer context
-        if latest_product.get("title"):
-            sales_copy = {**sales_copy, "title": latest_product["title"]}
+        sales_copy = {
+            **sales_copy,
+            "title":       latest_product.get("title",    sales_copy.get("title", "")),
+            "description": latest_product.get("description", sales_copy.get("description", "")),
+            "features":    latest_product.get("features", sales_copy.get("features", [])),
+            "price":       latest_product.get("price",    sales_copy.get("price", {})),
+        }
     else:
         url = load_gumroad_url()
 

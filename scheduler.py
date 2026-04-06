@@ -95,6 +95,8 @@ def _save_latest_product() -> None:
     product = {
         "title":       sales.get("title", ""),
         "description": sales.get("description", ""),
+        "features":    sales.get("features", []),
+        "price":       sales.get("price", {}),
         "notion_url":  notion_url,
         "created_at":  datetime.now(timezone.utc).isoformat(),
         "gumroad_url": existing_gumroad_url,
