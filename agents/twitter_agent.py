@@ -2,12 +2,7 @@
 Agent: twitter_agent.py
 Role: Generate a promotional tweet draft using Claude API and save to data/twitter_draft.txt.
 
-Tweet types (selected randomly per run):
-  1. product      — highlight one feature + Gumroad link
-  2. tips         — useful habit tip + template link
-  3. before_after — contrast format showing transformation
-  4. question     — engagement question + template link
-  5. new_product  — new product announcement (only when gumroad_url is set in latest_product.json)
+Tweet format: viral thread (Hook → body tweets per feature → CTA)
 
 Additional context fed to Claude:
   - Past 30 post texts (deduplication)
@@ -16,7 +11,6 @@ Additional context fed to Claude:
 
 import json
 import os
-import random
 import re
 import sys
 from datetime import datetime, timezone
@@ -385,28 +379,23 @@ def run() -> dict:
     past_posts     = load_past_posts(30)
     analytics      = load_analytics_report()
 
-    # Determine available tweet types
-    available_types = list(TWEET_PROMPTS.keys())
+    # Always generate the viral thread format
+    tweet_type = "thread"
+
+    # When gumroad_url is set in latest_product.json, use it as the single
+    # source of truth so content always matches the registered product.
     has_gumroad_url = (
         latest_product is not None
         and bool(latest_product.get("gumroad_url", "").strip())
     )
-    if not has_gumroad_url:
-        available_types = [t for t in available_types if t != "new_product"]
-
-    tweet_type = random.choice(available_types)
-
-    # When gumroad_url is set in latest_product.json, use it as the single
-    # source of truth for ALL tweet types so the content always matches the
-    # product that was actually registered on Gumroad.
     if has_gumroad_url:
         url = latest_product["gumroad_url"]
         sales_copy = {
             **sales_copy,
-            "title":       latest_product.get("title",    sales_copy.get("title", "")),
+            "title":       latest_product.get("title",       sales_copy.get("title", "")),
             "description": latest_product.get("description", sales_copy.get("description", "")),
-            "features":    latest_product.get("features", sales_copy.get("features", [])),
-            "price":       latest_product.get("price",    sales_copy.get("price", {})),
+            "features":    latest_product.get("features",    sales_copy.get("features", [])),
+            "price":       latest_product.get("price",       sales_copy.get("price", {})),
         }
     else:
         url = load_gumroad_url()
@@ -417,21 +406,21 @@ def run() -> dict:
     print(f"[twitter] Analytics   : {'loaded' if analytics else 'not available'}")
     print("[twitter] Generating tweet via Claude API...")
 
-    tweet_text    = generate_tweet(sales_copy, url, tweet_type, past_posts, analytics)
-    estimated_len = _count_tweet_length(tweet_text, url)
+    tweet_text   = generate_tweet(sales_copy, url, tweet_type, past_posts, analytics)
+    tweet_count  = tweet_text.count("\n---\n") + 1  # number of tweets in thread
 
-    print(f"[twitter] Tweet ({estimated_len} chars):")
+    print(f"[twitter] Thread ({tweet_count} tweets):")
     print("-" * 40)
     print(tweet_text)
     print("-" * 40)
 
     log_entry: dict = {
-        "generated_at":    datetime.now(timezone.utc).isoformat(),
-        "tweet_type":      tweet_type,
-        "tweet_text":      tweet_text,
-        "estimated_chars": estimated_len,
-        "url":             url,
-        "status":          "draft",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "tweet_type":   tweet_type,
+        "tweet_text":   tweet_text,
+        "tweet_count":  tweet_count,
+        "url":          url,
+        "status":       "draft",
     }
 
     # Save draft
@@ -440,14 +429,14 @@ def run() -> dict:
     draft_path.write_text(tweet_text, encoding="utf-8")
 
     append_log(log_entry)
-    system_log("twitter_agent", "success", f"Draft saved — type: {tweet_type}, chars: {estimated_len}")
+    system_log("twitter_agent", "success", f"Draft saved — type: {tweet_type}, tweets: {tweet_count}")
 
     print(f"[twitter] Draft saved: {draft_path}")
     print("[twitter] ============================================")
-    print(f"[twitter]  Type    : {tweet_type}")
-    print(f"[twitter]  Chars   : {estimated_len}")
+    print(f"[twitter]  Type   : {tweet_type}")
+    print(f"[twitter]  Tweets : {tweet_count}")
     print("[twitter] ============================================")
-    print("[twitter] Copy the draft above and post it manually on X.")
+    print("[twitter] Copy the draft above and post it as a thread on X.")
     print("[twitter] === Draft generation complete ===")
 
     return log_entry
