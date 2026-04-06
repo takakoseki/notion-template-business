@@ -247,6 +247,15 @@ def run() -> dict:
     html_to_png(html_content, output_path)
 
     print(f"[thumbnail] Thumbnail saved to {output_path} (1200x630px)")
+
+    # Generate square version (1200x1200) for social media / Gumroad
+    import importlib.util as _ilu
+    _spec = _ilu.spec_from_file_location("resize_square", ROOT / "resize_square.py")
+    _mod = _ilu.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    _mod.main()
+    print("[thumbnail] Square thumbnail saved (1200x1200px)")
+
     print("[thumbnail] === Thumbnail generation complete ===")
 
     return {"output_path": str(output_path)}

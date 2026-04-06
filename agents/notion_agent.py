@@ -35,6 +35,11 @@ NOTION_API_BASE = "https://api.notion.com/v1"
 # return or create database properties correctly.
 NOTION_API_VERSION = "2022-06-28"
 
+THUMBNAIL_COVER_URL = (
+    "https://raw.githubusercontent.com/takakoseki/"
+    "notion-template-business/master/output/thumbnail.png"
+)
+
 # Notion property colors for select / multi_select options
 _COLORS = ["blue", "green", "orange", "pink", "purple", "red", "yellow", "gray", "brown"]
 
@@ -256,6 +261,7 @@ def create_template_page(notion: Client, parent_page_id: str, title: str) -> str
     """Create the top-level template page and return its page_id."""
     resp = notion.pages.create(
         parent={"type": "page_id", "page_id": parent_page_id},
+        cover={"type": "external", "external": {"url": THUMBNAIL_COVER_URL}},
         properties={
             "title": {
                 "title": [{"type": "text", "text": {"content": title}}]
