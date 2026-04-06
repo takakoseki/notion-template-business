@@ -89,18 +89,31 @@ Write practical, specific content. All text must be in English.
 
 
 def _load_past_themes() -> set[str]:
-    """Return the set of themes already created (from latest_product.json)."""
-    path = ROOT / "data" / "latest_product.json"
-    if not path.exists():
-        return set()
-    try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-        title = data.get("title", "")
-        # The title contains the theme name (e.g. "Notion Habit Tracker — ...")
-        # Also store the raw title so we can do a keyword check
-        return {title.lower()}
-    except Exception:
-        return set()
+    """Return the set of all titles already created (from archived sales_copy files)."""
+    past: set[str] = set()
+
+    # Collect every archived sales_copy_YYYYMMDD.json
+    for path in (ROOT / "data").glob("sales_copy_????????.json"):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            title = data.get("title", "").strip()
+            if title:
+                past.add(title.lower())
+        except Exception:
+            pass
+
+    # Also include the current latest_product.json as a safety net
+    latest = ROOT / "data" / "latest_product.json"
+    if latest.exists():
+        try:
+            data = json.loads(latest.read_text(encoding="utf-8"))
+            title = data.get("title", "").strip()
+            if title:
+                past.add(title.lower())
+        except Exception:
+            pass
+
+    return past
 
 
 def run() -> dict:
