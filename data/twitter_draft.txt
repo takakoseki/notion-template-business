@@ -1,2 +1,5 @@
-New template just dropped! Meeting Notes Hub keeps every decision traceable with 5 interconnected databases linking meetings, actions, projects, contacts, and templates. https://takasoccerfan.gumroad.com/l/glnhwp
-#Notion #NewRelease #ProductivityTools
+How many action items from your last meeting are still sitting in someone's inbox with no owner and no due date?
+
+I built a Notion template to solve this → https://takasoccerfan.gumroad.com/l/glnhwp
+
+#Notion #Productivity
