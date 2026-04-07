@@ -208,5 +208,29 @@
     "agent": "pipeline_notify_agent",
     "status": "success",
     "message": "Pipeline notification email sent: Personal Finance & Investment Clarity Hub for Notion"
+  },
+  {
+    "timestamp": "2026-04-07T21:50:41.625403+00:00",
+    "agent": "analytics_agent",
+    "status": "started",
+    "message": "Analytics job started"
+  },
+  {
+    "timestamp": "2026-04-07T21:50:41.794913+00:00",
+    "agent": "analytics_agent",
+    "status": "warning",
+    "message": "Metrics fetch failed: 401 Unauthorized\nUnauthorized"
+  },
+  {
+    "timestamp": "2026-04-07T21:53:59.223083+00:00",
+    "agent": "pipeline_notify_agent",
+    "status": "started",
+    "message": "Pipeline notification started"
+  },
+  {
+    "timestamp": "2026-04-07T21:54:00.185252+00:00",
+    "agent": "pipeline_notify_agent",
+    "status": "success",
+    "message": "Pipeline notification email sent: Notion Project Management Template — Pro Hub"
   }
 ]
