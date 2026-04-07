@@ -1,129 +1,119 @@
-Notion + personal finance = total money clarity 💰
-No skills. No design. No excuses.
-10 templates that do all the work 👇
+Notion + investing = total financial clarity 💰
+No apps. No spreadsheets. No mental math.
+5 templates that run your entire money life 👇
 
 ---
 
-1/ ROI Calculation Engine
-You bought [TICKER] months ago and still have no idea if you are actually up or down after fees.
-
-Include:
+1/ Portfolio ROI Engine
+You bought [TICKER] months ago and still have no idea if you are actually up or down.
+Give me:
 - Total return per position
 - Unrealized gain or loss
-- Cost basis tracking
+- Cost basis per share
 - Return percentage
-- Auto-updated figures
+- Performance snapshot
 
 ---
 
 2/ 8-Database Wealth System
-Your stocks, bills, goals, and budget all live in separate places and never talk to each other.
-
-Give me:
-- Portfolio database
-- Income and expense logs
-- Accounts overview
-- Budget and goals linked
-- One unified workspace
+Your stocks, budget, income, and goals all live in separate places and never talk to each other.
+Build me:
+- Linked Portfolio database
+- Connected Accounts ledger
+- Unified Income log
+- Expense history
+- Goals tied to net worth
 
 ---
 
-3/ Financial Command Center Dashboard
-You open four apps every morning just to get a rough sense of where your money stands.
-
-Build me:
+3/ Financial Command Center Blueprint
+You open four apps every morning just to get a rough idea of where you stand.
+Give me:
 - Portfolio overview panel
-- Recent transaction feed
+- Recent transactions feed
 - Net worth snapshot
 - Goal progress summary
-- Single-glance layout
+- Single-screen daily view
 
 ---
 
-4/ Monthly Spending Blueprint
-You hit [MONTH] and have no idea where [AMOUNT] disappeared to this time.
-
+4/ Monthly Spend Tracker
+You hit [MONTH] and realized you blew your budget again with no idea where it went.
 Include:
-- Category-level spend targets
-- Actual vs budgeted view
-- Instant overspend alerts
-- Monthly reset structure
-- Running balance tracker
+- Category-level spending targets
+- Actual vs budgeted comparison
+- Overspend alerts by category
+- Month-to-month expense log
+- Running total by week
 
 ---
 
-5/ Financial Goals Tracker
-You set a goal to save [AMOUNT] by [DATE] and have not checked your progress since week one.
-
-Give me:
+5/ Financial Goals Engine
+You set a [GOAL] six months ago and have not checked your progress once since.
+Build me:
+- Goal name and target amount
 - Progress percentage formula
-- Months remaining counter
-- Milestone markers
-- Priority ranking field
-- Auto-updating status
+- Months remaining countdown
+- Linked savings contributions
+- Milestone status tracker
 
 ---
 
 6/ Net Worth Snapshot Machine
-You have assets in three places and liabilities in two more and no single number to show for it.
-
-Build me:
-- Asset category totals
-- Liability breakdown
-- Net worth formula
-- Monthly change tracker
-- Historical trend view
-
----
-
-7/ Investment Portfolio Blueprint
-You have positions across [BROKER A] and [BROKER B] and no unified view of your actual allocation.
-
+You have assets in [N] places and cannot calculate your real net worth without a calculator.
 Include:
-- All positions in one table
-- Allocation percentage per asset
-- Sector or class grouping
-- Weight vs target column
-- Rebalance flag field
+- All account balances in one view
+- Liability subtraction formula
+- Month-over-month net worth change
+- Asset category breakdown
+- Running historical log
 
 ---
 
-8/ Income Stream Tracker
-You freelance, invest, and work full-time but never know your true monthly take-home across all sources.
-
+7/ Investment Distribution Tracker
+You keep forgetting when [TICKER] paid a dividend and how much you actually received.
 Give me:
-- Income source categories
-- Monthly total rollup
-- Recurring vs one-time flag
-- Year-to-date running total
-- Source comparison view
+- Distribution date log
+- Amount received per position
+- Linked portfolio entry
+- Annual income total
+- Yield-on-cost calculation
 
 ---
 
-9/ Expense Audit Engine
-You want to cut spending but have no idea which [CATEGORY] is silently draining your account each month.
-
+8/ Income Source Blueprint
+You have [N] income streams and zero visibility into which ones are actually growing.
 Build me:
-- Expense log with categories
-- Monthly subtotals per category
-- Largest spend identifier
-- Fixed vs variable split
+- Income entry by source
+- Monthly income totals
+- Recurring vs one-time split
+- Income-to-expense ratio
 - Linked budget comparison
 
 ---
 
-10/ Distribution & Dividend System
-You receive payouts from [INVESTMENT] but track them in a notes app and forget half by tax season.
-
+9/ Budget Category System
+You set a [AMOUNT] grocery budget and have no real-time way to know if you are over.
 Include:
-- Distribution log per holding
-- Payment date tracking
-- Total received per period
-- Reinvested vs withdrawn flag
-- Annual income summary
+- Editable category targets
+- Live actual-spend tracking
+- Over-budget flag formula
+- Category rollup by month
+- Linked expense entries
 
 ---
 
-That's 10 Notion prompts for personal finance. 💸
-Built the template so you don't have to.
+10/ Savings Goal Machine
+You want to reach [AMOUNT] by [DATE] but have no formula telling you if you are on pace.
+Give me:
+- Target amount and deadline
+- Automatic progress percentage
+- Months remaining formula
+- Contribution history log
+- Linked net worth impact
+
+---
+
+That's 10 Notion templates for personal finance. 💸
+Built the system so you don't have to.
 Get it for $13 → https://takasoccerfan.gumroad.com/l/glnhwp
