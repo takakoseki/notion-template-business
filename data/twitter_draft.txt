@@ -1,129 +1,129 @@
-Notion + project management = total team clarity 💰
-No chaos. No dropped balls. No excuses.
-10 templates that run your projects for you 👇
+Notion + project management = zero chaos 💰
+One workspace. Every project. Every team. Every deadline.
+10 templates that run your entire operation 👇
 
 ---
 
-1/ The 360° Project Hub
-You are juggling [PROJECT NAME] across Slack, email, and three spreadsheets and nothing lines up.
+1/ The 360 Project Hub
+You manage [NUMBER] active projects but can't get a clear picture of any of them without jumping between tools.
 
 Give me:
-- A single workspace linking every project to its tasks
-- Milestones tied directly to the work beneath them
-- Team members assigned across every relevant record
-- Meeting notes connected back to their parent project
-- A real-time view of every moving part in one place
+- A single workspace linking projects to tasks
+- Milestones tied to each project
+- Team members assigned across workstreams
+- Meeting notes connected to the right project
+- Risks logged and visible at all times
 
 ---
 
 2/ The Budget Rollup Engine
-You approved [AMOUNT] for [PROJECT NAME] but you have no idea how much is actually left.
+You approved [AMOUNT] for the project but have no idea how much is actually left after last week's tasks.
 
-Give me:
-- Auto-calculated cost totals pulled from individual tasks
-- A live budget-remaining figure at the project level
-- No manual spreadsheet entry ever again
-- A clear breakdown of where every dollar is going
-- An instant alert when costs are creeping past plan
+Include:
+- Auto-calculated spend per task
+- Total costs rolled up to the project level
+- Remaining budget visible without a spreadsheet
+- Cost tracking across [NUMBER] parallel projects
+- A clear view of where money is going
 
 ---
 
-3/ The Task Dependency Blueprint
-[TASK NAME] is blocked and three other tasks are waiting on it but no one flagged it until today.
+3/ The Smart Task Dependency System
+[TEAMMATE] can't start their work until yours is done but nobody flagged the blocker until the deadline passed.
 
-Give me:
+Build me:
 - Blocked By and Blocking relations on every task
-- A personal Kanban board filtered to my assignments only
-- Sprint labels to group work into delivery windows
-- A Days Overdue formula that surfaces late tasks instantly
-- A clear chain of what must happen before what
+- Sprint labels for each work cycle
+- Days Overdue formula per task
+- A personal Kanban filtered to your assignments
+- Dependency chains visible across the whole project
 
 ---
 
-4/ The Risk Priority Tracker
-[RISK NAME] looked minor two weeks ago and now it is the reason [PROJECT NAME] might slip.
+4/ The Risk Priority Blueprint
+Your project has [NUMBER] known risks but the team is focused on the wrong ones because nothing is ranked.
 
 Give me:
-- A risk register listing every known threat in one place
-- A Risk Score that multiplies severity by probability automatically
-- The most dangerous risks sorted to the top without manual ranking
-- Linked issues that connect problems back to their source project
-- A running log so nothing quietly disappears from view
+- A dedicated risk and issue register
+- Severity and probability fields per risk
+- A Risk Score formula that multiplies both values
+- Auto-sorted list with highest threats at the top
+- Issues linked directly back to the parent project
 
 ---
 
-5/ The Meeting Action System
-You had a great call about [PROJECT NAME] and three days later no one has done anything.
+5/ The Meeting Action Tracker
+You wrapped a [LENGTH]-hour call with [TEAMMATE] but three action items were never assigned and are already forgotten.
 
-Give me:
-- A centralized meeting notes database for every session
-- Direct links from each meeting back to its parent project
-- Instant task creation from decisions made on the call
-- Owners and due dates assigned before the call ends
-- A trackable record so follow-through is never optional
+Include:
+- A centralized meeting notes database
+- Decisions logged and tied to a specific project
+- Action items spawned as trackable tasks instantly
+- Owners and due dates on every follow-up
+- A full history of what was agreed and by whom
 
 ---
 
 6/ The Sprint Planning Machine
-You start every week without knowing which tasks on [PROJECT NAME] actually need to move this sprint.
+You start every sprint by copying tasks into a new doc because you have no system that carries context forward.
 
-Give me:
-- Sprint labels applied to every task so grouping is instant
-- A filtered view showing only this sprint's work
-- Assignments visible by team member across all active projects
-- Milestone targets tied to the sprint you are planning
-- A Kanban layout that updates as work moves forward
-
----
-
-7/ The Milestone Progress Blueprint
-You told [STAKEHOLDER] that [PROJECT NAME] is on track but you are not actually sure it is.
-
-Give me:
-- Milestones linked directly to the tasks beneath them
-- A progress view that reflects real task completion
-- Due dates on every milestone so slippage is obvious early
-- A rollup showing which milestones are at risk right now
-- A single source of truth to share with anyone asking
+Build me:
+- Sprint labels applied across all active tasks
+- A filtered Kanban showing only your current sprint
+- Task status updates that reflect across the project
+- Milestones tied to sprint completion
+- Progress visible without a single status meeting
 
 ---
 
-8/ The Team Workload Tracker
-You have no idea if [TEAM MEMBER] is underwater or if they can take on more work this week.
+7/ The Milestone Progress Tracker
+[STAKEHOLDER] asked for a project update and you had to pull numbers from four different places to answer.
 
 Give me:
-- Every team member linked to their active tasks
-- A view filtered by person showing current assignments
-- Sprint labels that reveal load by delivery window
-- Overdue task flags surfaced at the individual level
-- A clear picture of capacity before you assign anything new
+- Milestones linked to their parent project
+- Completion status per milestone
+- A rollup of task progress feeding each milestone
+- A timeline that shows what is on track and what is not
+- One view you can share with [STAKEHOLDER] in seconds
 
 ---
 
-9/ The Issue Escalation Engine
-A small problem on [PROJECT NAME] sat untracked for two weeks and just became a serious delay.
+8/ The Team Capacity Blueprint
+You assigned [TASK] to [TEAMMATE] without knowing they were already blocking two other workstreams this week.
 
-Give me:
-- An issue register separate from but linked to the risk log
-- Severity and probability fields that score every issue automatically
-- The highest-impact issues pushed to the top of the list
-- Direct connections back to the project and tasks affected
-- A log that proves every issue was seen and acted on
+Include:
+- A team members database connected to all tasks
+- Assignments visible across every active project
+- Blocked and blocking status per person
+- Overdue task counts per team member
+- A clear picture of who has bandwidth right now
 
 ---
 
-10/ The Project Kickoff Machine
-Every time you start [PROJECT NAME] you waste the first week just figuring out where to set things up.
+9/ The Issue Escalation System
+A low-priority bug from [DATE] quietly became the reason your launch slipped by two weeks.
+
+Build me:
+- An issue register separate from the risk log
+- Severity scores that update as conditions change
+- Issues linked to the project and the responsible team member
+- A sorted view that always surfaces the most critical items
+- A resolution field to close issues without losing the history
+
+---
+
+10/ The Stakeholder Update Engine
+You spend [NUMBER] hours every Friday pulling data from different tools just to write a project status email.
 
 Give me:
-- A ready-to-use project record with all six databases connected
-- Pre-built task views filtered by sprint, owner, and status
-- A risk register open and waiting before work even begins
-- A meeting notes page linked and ready for the first call
-- A complete project workspace live in under ten minutes
+- A single dashboard showing project health at a glance
+- Budget remaining, tasks overdue, and risks flagged in one view
+- Meeting notes tied to decisions that actually moved the project
+- Milestones with current completion status
+- Everything [STAKEHOLDER] needs without you building a slide deck
 
 ---
 
 That's 10 Notion templates for project management. 💸
-Built the system so you don't have to.
+Built the hub so you never lose a task, a dollar, or a deadline again.
 Get it for $13 → https://takasoccerfan.gumroad.com/l/glnhwp
