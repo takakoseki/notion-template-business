@@ -80,8 +80,8 @@ jobs:
         run: python agents/analytics_agent.py
         continue-on-error: true   # analytics failure must not block the pipeline
 
-      - name: Run orchestrator (agents 1-5)
-        run: python orchestrator.py --end-at 5
+      - name: Run orchestrator (agents 1-4)
+        run: python orchestrator.py --end-at 4
 
       - name: Save latest_product.json
         run: |
