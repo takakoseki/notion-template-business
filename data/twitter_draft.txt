@@ -1,129 +1,189 @@
-Notion + project management = zero chaos 💰
-One workspace. Every project. Every team. Every deadline.
-10 templates that run your entire operation 👇
+Notion + productivity = your entire life, organized 💰
+No apps. No chaos. No dropped tasks.
+10 databases. 1 template. All connected 👇
 
 ---
 
-1/ The 360 Project Hub
-You manage [NUMBER] active projects but can't get a clear picture of any of them without jumping between tools.
-
-Give me:
-- A single workspace linking projects to tasks
-- Milestones tied to each project
-- Team members assigned across workstreams
-- Meeting notes connected to the right project
-- Risks logged and visible at all times
-
----
-
-2/ The Budget Rollup Engine
-You approved [AMOUNT] for the project but have no idea how much is actually left after last week's tasks.
-
-Include:
-- Auto-calculated spend per task
-- Total costs rolled up to the project level
-- Remaining budget visible without a spreadsheet
-- Cost tracking across [NUMBER] parallel projects
-- A clear view of where money is going
-
----
-
-3/ The Smart Task Dependency System
-[TEAMMATE] can't start their work until yours is done but nobody flagged the blocker until the deadline passed.
+1/ Life Command Center
+You are juggling [N] projects, [N] goals, and [N] daily tasks across apps that never talk to each other.
 
 Build me:
-- Blocked By and Blocking relations on every task
-- Sprint labels for each work cycle
-- Days Overdue formula per task
-- A personal Kanban filtered to your assignments
-- Dependency chains visible across the whole project
+- A master dashboard linking every project to its tasks
+- Goal progress visible from a single view
+- Life areas tied to every active project
+- Tasks filtered by priority and due date
+- One inbox that captures everything the moment it lands
 
 ---
 
-4/ The Risk Priority Blueprint
-Your project has [NUMBER] known risks but the team is focused on the wrong ones because nothing is ranked.
-
-Give me:
-- A dedicated risk and issue register
-- Severity and probability fields per risk
-- A Risk Score formula that multiplies both values
-- Auto-sorted list with highest threats at the top
-- Issues linked directly back to the parent project
-
----
-
-5/ The Meeting Action Tracker
-You wrapped a [LENGTH]-hour call with [TEAMMATE] but three action items were never assigned and are already forgotten.
+2/ Goal-to-Task Alignment Engine
+You set [GOAL] in January and by February your daily tasks have nothing to do with it.
 
 Include:
-- A centralized meeting notes database
-- Decisions logged and tied to a specific project
-- Action items spawned as trackable tasks instantly
-- Owners and due dates on every follow-up
-- A full history of what was agreed and by whom
+- Quarterly goals broken into weekly milestones
+- Every task linked back to one parent goal
+- A clarity check showing why each action matters
+- Progress bars updating automatically as tasks close
+- Filters to surface only work that moves the needle
 
 ---
 
-6/ The Sprint Planning Machine
-You start every sprint by copying tasks into a new doc because you have no system that carries context forward.
+3/ Second Brain Knowledge Base
+You read [BOOK] three months ago and cannot recall a single idea worth using today.
 
 Build me:
-- Sprint labels applied across all active tasks
-- A filtered Kanban showing only your current sprint
-- Task status updates that reflect across the project
-- Milestones tied to sprint completion
-- Progress visible without a single status meeting
+- Literature Notes tied directly to the source
+- Permanent Notes distilled into your own words
+- Maps of Content connecting every related idea
+- A search layer that makes every highlight findable
+- A system that turns passive reading into active thinking
 
 ---
 
-7/ The Milestone Progress Tracker
-[STAKEHOLDER] asked for a project update and you had to pull numbers from four different places to answer.
-
-Give me:
-- Milestones linked to their parent project
-- Completion status per milestone
-- A rollup of task progress feeding each milestone
-- A timeline that shows what is on track and what is not
-- One view you can share with [STAKEHOLDER] in seconds
-
----
-
-8/ The Team Capacity Blueprint
-You assigned [TASK] to [TEAMMATE] without knowing they were already blocking two other workstreams this week.
+4/ Daily Focus Blueprint
+You open a blank page every morning and waste [N] minutes deciding what to actually do.
 
 Include:
-- A team members database connected to all tasks
-- Assignments visible across every active project
-- Blocked and blocking status per person
-- Overdue task counts per team member
-- A clear picture of who has bandwidth right now
+- A pre-built daily template that opens ready to fill
+- Mood and energy fields to calibrate your day
+- Top three priorities pulled from active tasks
+- A gratitude prompt to start with the right mindset
+- One evening reflection field to close the loop
 
 ---
 
-9/ The Issue Escalation System
-A low-priority bug from [DATE] quietly became the reason your launch slipped by two weeks.
+5/ Weekly Review System
+You reach Sunday night and have no idea what you actually accomplished across [N] areas of life.
 
 Build me:
-- An issue register separate from the risk log
-- Severity scores that update as conditions change
-- Issues linked to the project and the responsible team member
-- A sorted view that always surfaces the most critical items
-- A resolution field to close issues without losing the history
+- A structured weekly template with consistent prompts
+- Last week wins and losses captured in one block
+- Next week priorities ranked before Monday hits
+- Energy and focus trends tracked over time
+- Links to goals so every review connects to the bigger picture
 
 ---
 
-10/ The Stakeholder Update Engine
-You spend [NUMBER] hours every Friday pulling data from different tools just to write a project status email.
+6/ Habit Streak Tracker
+You want to build [HABIT] but every system you try breaks down by day [N].
 
-Give me:
-- A single dashboard showing project health at a glance
-- Budget remaining, tasks overdue, and risks flagged in one view
-- Meeting notes tied to decisions that actually moved the project
-- Milestones with current completion status
-- Everything [STAKEHOLDER] needs without you building a slide deck
+Include:
+- Daily habit checkboxes with streak counters
+- Frequency settings for daily, weekly, or custom cadence
+- Each habit linked to a life area and a goal
+- A view showing which habits are on track vs slipping
+- Skip logging so you can spot the exact pattern killing your consistency
 
 ---
 
-That's 10 Notion templates for project management. 💸
-Built the hub so you never lose a task, a dollar, or a deadline again.
+7/ Project Execution Machine
+You have [N] open projects and no clear picture of what is blocked, in progress, or overdue.
+
+Build me:
+- A project database with status, owner, and deadline
+- Tasks nested under each project automatically
+- A blocked filter that surfaces stuck work instantly
+- A timeline view to see what is due this week
+- Links to goals so every project has a reason to exist
+
+---
+
+8/ Personal Finance Tracker
+You reach the end of [MONTH] unsure where [AMOUNT] of your money actually went.
+
+Include:
+- Income and expense entries linked to life areas
+- Monthly totals calculated without a single formula you write
+- Spending categories you can filter and compare
+- A net worth snapshot that updates as you log
+- Budget targets set against actual figures side by side
+
+---
+
+9/ Life Areas Dashboard
+You feel busy but cannot tell if you are actually making progress in [AREA] or just reacting to the week.
+
+Build me:
+- A dedicated page for each major area of your life
+- Active goals, projects, and habits tied to each area
+- A health score you update during weekly reviews
+- Filters to show only the work relevant to that area
+- A bird's-eye view so nothing important goes invisible
+
+---
+
+10/ Reading and Resource Library
+You save [N] articles, books, and videos every month and revisit almost none of them.
+
+Include:
+- A library database for every resource you consume
+- Status fields tracking what is unread, in progress, or done
+- Tags connecting each resource to a topic or project
+- Notes linked directly from the resource record
+- A filtered view surfacing your most actionable saved material
+
+---
+
+11/ Note Capture and Processing System
+You take notes in [N] different places and none of them ever turn into something useful.
+
+Build me:
+- A fast-capture inbox for raw thoughts and ideas
+- A processing step that moves notes into permanent form
+- Tags linking every note to a project, goal, or life area
+- A review queue surfacing notes that need action
+- Full-text search across every idea you have ever saved
+
+---
+
+12/ Quarterly Planning Engine
+You want to map out [QUARTER] but every planning session ends with a list you ignore by week two.
+
+Include:
+- A quarterly goal-setting template with clear outcome fields
+- Milestones broken down by month
+- Tasks auto-linked to each milestone
+- A mid-quarter check-in prompt built into the review system
+- An end-of-quarter reflection to carry wins and lessons forward
+
+---
+
+13/ Journaling Habit Blueprint
+You keep meaning to journal but a blank page with no structure stops you before you start.
+
+Build me:
+- A daily journal template with consistent opening prompts
+- Mood and energy fields logged automatically by date
+- A gratitude section that takes under sixty seconds to fill
+- Priority and intention fields to set direction for the day
+- A searchable archive of every entry you have ever written
+
+---
+
+14/ Someday-Maybe Capture System
+You have ideas for [PROJECT] that are not urgent enough to act on but too good to lose.
+
+Include:
+- A dedicated space for parked ideas and future projects
+- Tags to group ideas by theme or life area
+- A review trigger built into your weekly template
+- Links to promote any idea into an active project instantly
+- A filter that surfaces your best ideas when you have bandwidth
+
+---
+
+15/ Integrated Life OS Dashboard
+You want one place where goals, tasks, habits, notes, and finances are all visible without switching apps.
+
+Build me:
+- A home dashboard pulling live data from every database
+- Quick links to your most active projects and goals
+- Today's habits, tasks, and journal entry in one view
+- A finance snapshot updated as you log new entries
+- A single workspace that replaces every other app you are using
+
+---
+
+That's 15 Notion prompts for your entire life system. 💸
+Built the template so you don't have to.
 Get it for $13 → https://takasoccerfan.gumroad.com/l/glnhwp
