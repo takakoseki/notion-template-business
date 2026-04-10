@@ -1,129 +1,129 @@
-Notion + productivity = your whole life in one place 💰
-No apps. No chaos. No dropped goals.
-5 templates that run your entire life 👇
+Notion + learning = total study clarity 💰
+No apps. No scattered notes. No lost progress.
+5 templates that do all the work 👇
 
 ---
 
-1/ Goal-to-Task Alignment Engine
-You set a big goal in January and by March you have no idea what daily tasks are supposed to move it forward.
+1/ Course Progress Engine
+You started [N] courses this year and have no idea how far along you actually are.
 
-Build me:
-- A linked goal database with quarterly milestones
-- Daily tasks that trace back to a specific goal
-- A priority filter showing what moves the needle today
-- Progress rollups that update automatically
-- A "why this matters" field on every task
-
----
-
-2/ Second Brain Knowledge Blueprint
-You read a great book, highlight half of it, and three weeks later you cannot remember a single idea worth acting on.
-
-Include:
-- Literature Notes tied to every book or article
-- Permanent Notes that distill insights into your own words
-- Maps of Content linking related ideas together
-- A searchable tag system across all notes
-- An inbox for capturing raw ideas before they disappear
+Track:
+- Every course, book, and certification in one place
+- Auto-calculated progress percentages per item
+- Completion status at a glance
+- A single source of truth for your learning
+- Exactly how far you've come without doing any math
 
 ---
 
-3/ Daily Reflection System
-You end most days unsure what you actually accomplished or how you are really feeling across the week.
+2/ Structured Notes Blueprint
+You take notes during [COURSE] but can never find the right ones when you need them.
 
-Give me:
-- A structured daily journal entry template
-- Mood and energy ratings logged each day
-- A gratitude section with a single prompt
-- Top three priorities set each morning
-- A weekly pattern view across all entries
-
----
-
-4/ Weekly Review Machine
-Sunday rolls around and you skip your review because you have no structure to follow and no idea where to start.
-
-Include:
-- A repeating weekly review template with guided sections
-- A wins and lessons field for each week
-- Carry-forward tasks pulled from the previous week
-- A focus theme field to set intention for the week ahead
-- Linked habit and goal data surfaced automatically
+Build:
+- Notes linked directly to their parent course
+- A consistent format for every single lesson
+- A section dedicated to Key Concepts per note
+- A running list of Questions you still need answered
+- Action Items you can act on immediately after studying
 
 ---
 
-5/ Habit Streak Tracker
-You download a habit app, use it for nine days, abandon it, and repeat the whole cycle two months later.
+3/ Study Session Tracker
+You sit down to study [SUBJECT] but have no idea if your sessions are actually adding up.
 
-Build me:
-- A habit database with frequency and schedule settings
-- Streak counters that update with each check-in
-- A skip-reason field to log why you missed a day
-- Links connecting each habit to a life area or goal
-- A monthly overview showing which habits are actually sticking
-
----
-
-6/ Life Areas Dashboard
-Your health, relationships, career, and finances all live in separate apps and you never see the full picture at once.
-
-Give me:
-- A Life Areas database covering every domain of your life
-- A health score or status field for each area
-- Linked projects, habits, and goals per area
-- A quick-capture note field for each life domain
-- A single dashboard view showing the state of your whole life
+Log:
+- Every session with its exact duration
+- The specific topic you covered each time
+- Your mood before and after each session
+- Patterns in where your time actually goes
+- Consistent habits built from real data
 
 ---
 
-7/ Project Command Center
-You are juggling four active projects and you cannot tell at a glance which one is behind or what needs to happen next.
+4/ Spaced Repetition Queue
+You reviewed [CONCEPT] once three weeks ago and completely forgot it by exam day.
 
-Include:
-- A projects database with status, owner, and due date
-- Linked task lists that roll up to each project
-- A next-action field always visible at the top
-- A linked goals field showing which project drives which outcome
-- A stalled-projects filter to surface anything overdue
-
----
-
-8/ Personal Finance Ledger
-You roughly know your income and roughly know your spending but you have never seen both in one clean, honest view.
-
-Build me:
-- An income and expense log with category tags
-- Monthly budget targets compared against actual spend
-- A net worth field that updates as you log new entries
-- Linked life areas showing which expenses serve which goals
-- A savings rate calculation updated automatically
+Get:
+- A queue that flags every overdue topic automatically
+- A confidence level score for each concept you track
+- A review schedule that adapts to what you actually know
+- Zero reliance on memory to decide what to study next
+- A system that makes forgetting genuinely hard to do
 
 ---
 
-9/ Reading and Library Engine
-You have a reading list somewhere, a set of highlights somewhere else, and no system connecting what you read to what you do.
+5/ Learning Goals Engine
+You set a goal to finish [CERTIFICATION] by [DEADLINE] and quietly let it slip.
 
-Give me:
-- A library database for every book, article, and resource
-- A reading status field from backlog to finished
-- Key takeaway fields filled in after each read
-- Links from each resource to related permanent notes
-- A filter showing your top-rated reads by category
-
----
-
-10/ Capture-to-Action Inbox
-Great ideas hit you in the shower, during meetings, and on walks — and most of them vanish before you do anything with them.
-
-Include:
-- A quick-capture inbox that takes raw notes in seconds
-- A processing field to mark each item as idea, task, or reference
-- A link to push processed items into the right database
-- A daily inbox-zero prompt inside the journal template
-- A tag system that routes captures into projects, goals, or notes
+Monitor:
+- Daily, weekly, monthly, and quarterly goals in one view
+- Deadlines tied to each specific learning target
+- Success metrics so you know exactly what winning looks like
+- Streak counters for every recurring study habit
+- Progress that stays visible so nothing quietly slips away
 
 ---
 
-That's 10 Notion templates for your whole life. 💸
-Built the system so you never lose a goal, idea, or habit again.
+6/ Weak Spot Blueprint
+You keep moving forward in [COURSE] even though [TOPIC] never fully clicked.
+
+Build:
+- A dedicated list of concepts you are not confident in
+- A review priority ranking for each weak area
+- Links back to the original notes where gaps appeared
+- A focused study queue built around your actual blind spots
+- A clear path from confused to confident on every topic
+
+---
+
+7/ Resource Library Engine
+You saved [ARTICLE] somewhere six weeks ago and have never found it since.
+
+Organize:
+- Every book, video, article, and course in one database
+- Tags by subject, format, and learning stage
+- A status field showing what is next, in progress, or done
+- Notes attached directly to each saved resource
+- A library you can actually search and use
+
+---
+
+8/ Weekly Review System
+You finish a study week with [N] hours logged but no idea what you actually retained.
+
+Run:
+- A structured end-of-week review in under ten minutes
+- A summary of every topic covered that week
+- A quick rating of what stuck and what needs more time
+- A carry-forward list for the following week
+- A habit of reflection that compounds your learning over time
+
+---
+
+9/ Certification Roadmap Blueprint
+You want to earn [CERTIFICATION] but have no idea what to study first or in what order.
+
+Map:
+- Every required topic broken into manageable steps
+- A logical sequence from first lesson to final exam
+- Milestones tied to real deadlines on your calendar
+- Progress tracked across every phase of preparation
+- A clear finish line that pulls you forward every single day
+
+---
+
+10/ Accountability Tracker
+You told [PERSON] you would finish [COURSE] by [DATE] and have opened it twice since.
+
+Track:
+- Every commitment you have made around your learning
+- Check-in dates so nothing drifts without you noticing
+- A simple status update for each active goal
+- A record of what you said you would do and whether you did it
+- The external pressure that actually makes habits stick
+
+---
+
+That's 10 Notion templates for learning. 💸
+Built the system so you don't have to.
 Get it for $13 → https://takasoccerfan.gumroad.com/l/glnhwp
