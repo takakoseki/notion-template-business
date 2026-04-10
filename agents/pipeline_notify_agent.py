@@ -40,19 +40,6 @@ def load_sales_copy() -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def load_notion_result() -> dict:
-    path = ROOT / "data" / "notion_result.json"
-    if path.exists():
-        return json.loads(path.read_text(encoding="utf-8"))
-    return {}
-
-
-def load_latest_product() -> dict:
-    path = ROOT / "data" / "latest_product.json"
-    if path.exists():
-        return json.loads(path.read_text(encoding="utf-8"))
-    return {}
-
 
 # ---------------------------------------------------------------------------
 # Formatters
@@ -91,24 +78,16 @@ def build_gumroad_description(sales_copy: dict) -> str:
     return "\n".join(lines).strip()
 
 
-def build_gumroad_content(sales_copy: dict, notion_result: dict) -> str:
+def build_gumroad_content(sales_copy: dict) -> str:
     """
     Build the Gumroad 'Content' field text (shown to buyers after purchase).
-    Uses the public Notion URL if available.
     """
-    notion_url = notion_result.get("page_url", "")
-    # Prefer a known public notion.site URL from latest_product if stored
-    latest = load_latest_product()
-    # notion_url stays as-is (user will update to public URL via update_gumroad_url / Share to web)
-
-    title = sales_copy.get("title", "Notion Template")
-
     lines = [
         "Thank you for your purchase! 🎉",
         "",
         "Click the link below to access your Notion template:",
         "",
-        notion_url if notion_url else "(Add your public Notion Share link here)",
+        "(Add your public Notion Share link here)",
         "",
         "How to duplicate:",
         "",
@@ -138,7 +117,7 @@ def build_summary_line(sales_copy: dict) -> str:
 # Email
 # ---------------------------------------------------------------------------
 
-def send_pipeline_email(sales_copy: dict, notion_result: dict) -> None:
+def send_pipeline_email(sales_copy: dict) -> None:
     gmail_address = os.getenv("GMAIL_ADDRESS", "").strip()
     app_password  = os.getenv("GMAIL_APP_PASSWORD", "").strip()
 
@@ -147,13 +126,12 @@ def send_pipeline_email(sales_copy: dict, notion_result: dict) -> None:
     if not app_password:
         raise EnvironmentError("GMAIL_APP_PASSWORD is not set in .env")
 
-    title     = sales_copy.get("title", "")
-    price     = sales_copy.get("price", {}).get("usd", "")
-    today     = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    notion_url = notion_result.get("page_url", "(not available)")
+    title = sales_copy.get("title", "")
+    price = sales_copy.get("price", {}).get("usd", "")
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     description = build_gumroad_description(sales_copy)
-    content     = build_gumroad_content(sales_copy, notion_result)
+    content     = build_gumroad_content(sales_copy)
     summary     = build_summary_line(sales_copy)
 
     sep = "=" * 60
@@ -166,10 +144,6 @@ PRODUCT INFO
 {sep}
 Title : {title}
 Price : ${price}
-Notion: {notion_url}
-
-NOTE: The Notion URL above is private. Before setting it in Gumroad Content,
-enable "Share to web" in Notion and replace with the public notion.site link.
 
 {sep}
 GUMROAD — Description field
@@ -195,10 +169,9 @@ NEXT STEPS
 {sep}
 1. Open https://app.gumroad.com/products/new (or edit existing product)
 2. Paste Description, Summary, and Content from above
-3. Enable "Share to web" in Notion → copy public URL → update Content field
-4. Upload thumbnail: output/thumbnail.png (1200x630 for Cover)
-5. Run: python update_gumroad_url.py https://takasoccerfan.gumroad.com/l/XXXXX
-6. git add -f data/latest_product.json && git commit -m "update gumroad url" && git push
+3. Upload thumbnail: output/thumbnail.png (1200x630 for Cover)
+4. Run: python update_gumroad_url.py https://takasoccerfan.gumroad.com/l/XXXXX
+5. git add -f data/latest_product.json && git commit -m "update gumroad url" && git push
 {sep}
 """
 
@@ -223,13 +196,12 @@ def run() -> dict:
     print("[pipeline_notify] === Pipeline notification started ===")
     system_log("pipeline_notify_agent", "started", "Pipeline notification started")
 
-    sales_copy    = load_sales_copy()
-    notion_result = load_notion_result()
+    sales_copy = load_sales_copy()
 
     title = sales_copy.get("title", "")
     print(f"[pipeline_notify] Product: {title}")
 
-    send_pipeline_email(sales_copy, notion_result)
+    send_pipeline_email(sales_copy)
 
     print("[pipeline_notify] Email sent successfully.")
     system_log("pipeline_notify_agent", "success", f"Pipeline notification email sent: {title}")
