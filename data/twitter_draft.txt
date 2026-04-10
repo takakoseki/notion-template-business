@@ -1,6 +1,6 @@
-Notion + learning = total study clarity 💰
-No apps. No scattered notes. No lost progress.
-5 templates that do all the work 👇
+Notion + learning = real progress, finally 💰
+No apps. No scattered notes. No lost courses.
+10 templates that do all the work 👇
 
 ---
 
@@ -9,118 +9,118 @@ You started [N] courses this year and have no idea how far along you actually ar
 
 Track:
 - Every course, book, and certification in one place
-- Auto-calculated progress percentages per item
+- Auto-calculated progress percentages per resource
 - Completion status at a glance
-- A single source of truth for your learning
-- Exactly how far you've come without doing any math
+- A running count of everything you have finished
+- Exactly how far you have come without doing any math
 
 ---
 
-2/ Structured Notes Blueprint
-You take notes during [COURSE] but can never find the right ones when you need them.
+2/ Structured Note Blueprint
+You take notes during a lesson but can never find them when you actually need them.
 
-Build:
-- Notes linked directly to their parent course
-- A consistent format for every single lesson
-- A section dedicated to Key Concepts per note
-- A running list of Questions you still need answered
-- Action Items you can act on immediately after studying
+Include:
+- A built-in note template for every session
+- A Key Concepts section per note
+- A Questions section to capture what you still do not understand
+- An Action Items section tied to each lesson
+- A direct link back to the parent course
 
 ---
 
 3/ Study Session Tracker
-You sit down to study [SUBJECT] but have no idea if your sessions are actually adding up.
+You sit down to study but never really know where your time is going each week.
 
 Log:
 - Every session with its exact duration
-- The specific topic you covered each time
-- Your mood before and after each session
-- Patterns in where your time actually goes
-- Consistent habits built from real data
+- The topic you covered that day
+- Your mood at the start of the session
+- A running history of every session you have completed
+- Patterns that show you when and how you study best
 
 ---
 
-4/ Spaced Repetition Queue
-You reviewed [CONCEPT] once three weeks ago and completely forgot it by exam day.
-
-Get:
-- A queue that flags every overdue topic automatically
-- A confidence level score for each concept you track
-- A review schedule that adapts to what you actually know
-- Zero reliance on memory to decide what to study next
-- A system that makes forgetting genuinely hard to do
-
----
-
-5/ Learning Goals Engine
-You set a goal to finish [CERTIFICATION] by [DEADLINE] and quietly let it slip.
-
-Monitor:
-- Daily, weekly, monthly, and quarterly goals in one view
-- Deadlines tied to each specific learning target
-- Success metrics so you know exactly what winning looks like
-- Streak counters for every recurring study habit
-- Progress that stays visible so nothing quietly slips away
-
----
-
-6/ Weak Spot Blueprint
-You keep moving forward in [COURSE] even though [TOPIC] never fully clicked.
+4/ Habit Consistency Engine
+You study hard for three days and then disappear for two weeks without noticing until it is too late.
 
 Build:
-- A dedicated list of concepts you are not confident in
-- A review priority ranking for each weak area
-- Links back to the original notes where gaps appeared
-- A focused study queue built around your actual blind spots
-- A clear path from confused to confident on every topic
+- Daily, weekly, monthly, and quarterly learning goals
+- Deadline tracking per goal
+- Success metrics so you know what done actually looks like
+- Streak counters for every recurring habit
+- A single view that shows your full learning rhythm
 
 ---
 
-7/ Resource Library Engine
-You saved [ARTICLE] somewhere six weeks ago and have never found it since.
+5/ Spaced Repetition Queue
+You reviewed [TOPIC] once two months ago and now you cannot remember a single thing from it.
 
-Organize:
-- Every book, video, article, and course in one database
-- Tags by subject, format, and learning stage
-- A status field showing what is next, in progress, or done
-- Notes attached directly to each saved resource
-- A library you can actually search and use
-
----
-
-8/ Weekly Review System
-You finish a study week with [N] hours logged but no idea what you actually retained.
-
-Run:
-- A structured end-of-week review in under ten minutes
-- A summary of every topic covered that week
-- A quick rating of what stuck and what needs more time
-- A carry-forward list for the following week
-- A habit of reflection that compounds your learning over time
+Give me:
+- A built-in review queue for every concept you have studied
+- Automatic flags for overdue topics
+- A confidence level rating per concept
+- A prioritized list of what to review next
+- Full review history so nothing slips through
 
 ---
 
-9/ Certification Roadmap Blueprint
-You want to earn [CERTIFICATION] but have no idea what to study first or in what order.
-
-Map:
-- Every required topic broken into manageable steps
-- A logical sequence from first lesson to final exam
-- Milestones tied to real deadlines on your calendar
-- Progress tracked across every phase of preparation
-- A clear finish line that pulls you forward every single day
-
----
-
-10/ Accountability Tracker
-You told [PERSON] you would finish [COURSE] by [DATE] and have opened it twice since.
+6/ Learning Goal Blueprint
+You set a goal to finish [CERTIFICATION] by [MONTH] and then never looked at it again.
 
 Track:
-- Every commitment you have made around your learning
-- Check-in dates so nothing drifts without you noticing
-- A simple status update for each active goal
-- A record of what you said you would do and whether you did it
-- The external pressure that actually makes habits stick
+- Every active goal with a clear deadline
+- The specific success metric attached to each goal
+- Weekly check-in prompts so goals stay visible
+- Progress against quarterly targets
+- A single dashboard that shows all goals in one view
+
+---
+
+7/ Knowledge Gap Tracker
+You keep re-reading the same chapter on [SUBJECT] because you never captured what you actually did not understand.
+
+Include:
+- A dedicated space to log every open question
+- A link from each question to its source course or book
+- A resolved versus unresolved status per question
+- A review prompt so old questions resurface regularly
+- A full archive of every concept you have clarified
+
+---
+
+8/ Resource Library Engine
+You saved [N] articles, videos, and books to read later and now that list is completely useless.
+
+Build:
+- A unified library for every learning resource you collect
+- Status tags showing what is unread, in progress, or done
+- A category filter so you can browse by subject
+- A priority field so you always know what to tackle next
+- A direct link to your notes once you have reviewed it
+
+---
+
+9/ Weekly Review System
+Every Sunday you mean to review what you learned that week but you never actually do it.
+
+Give me:
+- A weekly review template that opens in one click
+- A prompt to log your top three lessons from the week
+- A space to carry forward anything you did not finish
+- A field to set your single focus for the coming week
+- A running archive of every weekly review you complete
+
+---
+
+10/ Learning Momentum Tracker
+You feel busy but have no proof that [GOAL] is actually getting closer week over week.
+
+Track:
+- Total study hours logged this month versus last month
+- The number of resources you have completed this quarter
+- Your current streak for hitting daily study targets
+- A visual breakdown of time spent per subject
+- A clear before-and-after snapshot of your progress
 
 ---
 
