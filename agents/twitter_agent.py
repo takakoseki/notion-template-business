@@ -143,17 +143,16 @@ Include: (or Give me: or Build me:)
 - {{specific output 5}}
 
 Final Tweet — CTA:
-That's {{N}} Notion prompts for {{genre}}. 💸
-Built the template so you don't have to.
+That's {{N}} Notion features inside {title}. 💸
+Built the system so you don't have to.
 Get it for ${price} → {url}
 
 Rules:
-- Total body tweets = number of features + 5 to 7 additional use cases
+- Total body tweets = EXACTLY the number of features listed below. Do NOT invent additional features or use cases.
+- Each body tweet must correspond to one actual feature from the list. Do not add anything not in the list.
 - Each individual tweet ≤ 280 characters (URL counts as 23 characters)
 - English only, imperative tone, simple style
 - Emojis ONLY in the Hook and CTA tweets — none in body tweets
-- Body tweet placeholders use [BRACKET] format (e.g., [GOAL], [AMOUNT], [INVESTOR], [N])
-- Weave the features naturally across the body tweets — do not list them verbatim
 - Output only the tweets separated by "---", nothing else
 
 Product title: {title}

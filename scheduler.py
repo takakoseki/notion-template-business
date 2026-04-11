@@ -83,12 +83,18 @@ def _save_latest_product() -> None:
         except Exception:
             pass
 
-    # Preserve existing gumroad_url if the file already exists
+    # If gumroad_url is already set, preserve existing product data and only update notion_url
     existing_gumroad_url = ""
     if out_path.exists():
         try:
             existing = json.loads(out_path.read_text(encoding="utf-8"))
-            existing_gumroad_url = existing.get("gumroad_url", "")
+            existing_gumroad_url = existing.get("gumroad_url", "").strip()
+            if existing_gumroad_url:
+                existing["notion_url"] = notion_url
+                out_path.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")
+                logger.info(f"latest_product.json: notion_url updated (gumroad_url preserved): {existing.get('title', '')}")
+                system_log("scheduler", "info", f"latest_product.json notion_url updated (gumroad_url preserved): {existing.get('title', '')}")
+                return
         except Exception:
             pass
 
@@ -99,7 +105,7 @@ def _save_latest_product() -> None:
         "price":       sales.get("price", {}),
         "notion_url":  notion_url,
         "created_at":  datetime.now(timezone.utc).isoformat(),
-        "gumroad_url": existing_gumroad_url,
+        "gumroad_url": "",
     }
 
     out_path.parent.mkdir(parents=True, exist_ok=True)

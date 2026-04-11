@@ -39,6 +39,20 @@ def main() -> None:
 
     data = json.loads(path.read_text(encoding="utf-8"))
     old_url = data.get("gumroad_url", "")
+
+    # Sync latest data from sales_copy.json
+    sales_path = ROOT / "data" / "sales_copy.json"
+    if sales_path.exists():
+        try:
+            sales = json.loads(sales_path.read_text(encoding="utf-8"))
+            data["title"]       = sales.get("title",       data.get("title", ""))
+            data["description"] = sales.get("description", data.get("description", ""))
+            data["features"]    = sales.get("features",    data.get("features", []))
+            data["price"]       = sales.get("price",       data.get("price", {}))
+            print(f"[OK] Synced title/description/features/price from sales_copy.json")
+        except Exception as e:
+            print(f"[WARN] Could not sync from sales_copy.json: {e}")
+
     data["gumroad_url"] = url
     data["gumroad_url_updated_at"] = datetime.now(timezone.utc).isoformat()
 
