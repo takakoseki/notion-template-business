@@ -1,126 +1,126 @@
-Notion + learning = the only study system you'll ever need 💰
-No apps. No scattered notes. No excuses.
-10 templates that do all the work 👇
+Notion + learning = no more half-finished courses 💰
+No apps. No sticky notes. No excuses.
+5 templates that do all the work 👇
 
 ---
 
 1/ Course Progress Engine
-You signed up for [NUMBER] courses this year and have no idea how far you've gotten in any of them.
+You enrolled in [NUMBER] courses this year and have no idea how far along you are in any of them.
 
 Include:
-- Auto-calculated progress for [COURSE NAME]
-- Completion percentage per module
-- Status tags for each course
-- Linked resources and notes
-- Visual progress overview
+- A tracker for [COURSE NAME]
+- Auto-calculated progress percentage
+- Completion status per module
+- Deadline for each course
+- A single dashboard view of all active learning
 
 ---
 
-2/ Structured Notes Blueprint
-You just finished a lecture on [TOPIC] and your notes are all over the place.
+2/ Structured Note Blueprint
+You take notes during [COURSE NAME] but can never find the right one when you need it.
 
-Include:
-- Key Concepts section for [SUBJECT]
-- Open Questions to revisit later
-- Action Items tied to [COURSE NAME]
-- Linked parent course entry
-- Reusable note template
+Give me:
+- A note linked directly to [COURSE NAME]
+- A Key Concepts section
+- A Questions section
+- An Action Items section
+- A searchable archive of every note by course
 
 ---
 
 3/ Study Session Tracker
-You keep saying you study [NUMBER] hours a week but have no proof it's actually working.
-
-Give me:
-- Session log for [DATE] and [TOPIC]
-- Duration entry per session
-- Mood rating at time of study
-- Topics covered checklist
-- Weekly time breakdown view
-
----
-
-4/ Spaced Repetition Queue
-You reviewed [CONCEPT] once three weeks ago and have already forgotten everything.
+You study [SUBJECT] inconsistently and have no data on where your time actually goes.
 
 Build me:
-- Overdue review flags for [CONCEPT]
-- Confidence level rating per topic
-- Next review date calculator
-- Linked source note for [SUBJECT]
-- Review streak per concept
+- A log for each session on [TOPIC]
+- Duration tracking per session
+- Mood rating at the time of study
+- Topic coverage for that session
+- A weekly summary of total hours spent
 
 ---
 
-5/ Learning Goal Machine
-You set a goal to finish [CERTIFICATION] by [DATE] and still haven't opened it.
+4/ Spaced Repetition Queue Machine
+You reviewed [CONCEPT] once and forgot it completely before the exam.
 
 Include:
-- Daily, weekly, and monthly targets for [GOAL]
-- Deadline tracker per objective
-- Success metric definition
-- Streak counter for recurring habits
-- Quarterly milestone overview
+- A queue of overdue topics for [SUBJECT]
+- Confidence level rating per concept
+- Next review date for each item
+- A flag system for what needs urgent review
+- Progress tracking across all concepts over time
 
 ---
 
-6/ Certification Roadmap Blueprint
-You want to land [JOB ROLE] but have no idea which certifications to pursue or in what order.
+5/ Learning Goal System
+You set a goal to finish [CERTIFICATION] by [DATE] and quietly gave up three weeks in.
 
 Give me:
-- Prioritized cert list for [FIELD]
-- Time estimate per certification
-- Status tracker for [CERT NAME]
-- Linked study materials
-- Target completion date per cert
+- Daily, weekly, and monthly goals for [SKILL]
+- A deadline tracker per goal
+- Success metrics defined upfront
+- Streak counters for recurring study habits
+- A quarterly review view of everything completed
 
 ---
 
-7/ Book Learning System
-You've read [NUMBER] books this year and retained almost nothing from any of them.
+6/ Certification Roadmap Engine
+You want to earn [CERTIFICATION] but have no structured plan to get there.
 
 Build me:
-- Book log with status for [TITLE]
-- Key takeaways section per chapter
-- Linked action items from [BOOK]
-- Author and genre tags
-- Re-read priority score
+- A step-by-step roadmap for [CERTIFICATION NAME]
+- Milestones broken into weekly targets
+- A progress bar updated as you complete each step
+- Resource links attached to each milestone
+- A final checklist before the exam date
 
 ---
 
-8/ Habit Study Engine
-You want to study [SUBJECT] every day but keep breaking the streak after [NUMBER] days.
+7/ Book Learning Tracker
+You finished [BOOK] but retained almost none of it a month later.
 
 Include:
-- Daily habit entry for [STUDY GOAL]
-- Streak counter with reset tracking
-- Time-of-day pattern analysis
-- Linked session log per day
-- Weekly consistency score
+- A dedicated page for [BOOK TITLE]
+- Key takeaways captured per chapter
+- Questions you still need answered
+- Action items you committed to from the reading
+- A re-read flag when your notes feel incomplete
 
 ---
 
-9/ Concept Confidence Tracker
-You're preparing for [EXAM] and have no idea which topics you actually know well.
+8/ Weekly Review Blueprint
+You end every week unsure whether you actually made progress on [SKILL] or just stayed busy.
 
 Give me:
-- Confidence rating per concept in [SUBJECT]
-- Weak spot highlight list
-- Review priority ranking
-- Linked notes for each concept
-- Last reviewed date per topic
+- A weekly review template for [LEARNING GOAL]
+- Total study hours logged that week
+- Topics covered versus topics planned
+- Wins and blockers from the past seven days
+- Priorities carried forward into next week
 
 ---
 
-10/ Weekly Learning Review Blueprint
-You end every week unsure whether you made real progress toward [LEARNING GOAL].
+9/ Confidence Level Machine
+You move on to [NEW TOPIC] without ever knowing if you truly understood [PREVIOUS TOPIC].
 
 Build me:
-- Weekly summary for [DATE RANGE]
-- Hours studied vs target for [SUBJECT]
-- Goals hit and missed review
-- Wins and blockers log
-- Plan adjustment section for next week
+- A self-assessment log for [CONCEPT]
+- A confidence score from one to five
+- Notes on what still feels unclear
+- A trigger to add weak concepts back to the review queue
+- A mastery threshold before moving to the next topic
+
+---
+
+10/ Multi-Format Learning Engine
+You learn from [COURSES], [BOOKS], and [VIDEOS] but track none of them in the same place.
+
+Include:
+- A unified library for all learning formats
+- Status tags for not started, in progress, and complete
+- A priority ranking for what to tackle next
+- Time estimates per resource
+- A single filtered view showing only active items
 
 ---
 
