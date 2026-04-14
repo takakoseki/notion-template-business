@@ -1,129 +1,129 @@
-Notion + learning = every course, book, and cert — done. 💰
-No apps. No lost notes. No excuses.
-10 templates that do all the work 👇
+Notion + learning = progress you can actually measure 💰
+No apps. No forgotten notes. No half-finished courses.
+5 templates that do all the work 👇
 
 ---
 
-1/ Course Progress Engine
-You signed up for [NUMBER] courses this year and have no idea how far along you are in any of them.
+1/ Course Progress Machine
+You have [N] courses open and no idea which one you last touched.
 
 Include:
-- Auto-calculated progress for each course
-- Status tags for active, paused, and completed
-- Linked resources per course
-- Priority ranking by deadline
-- A single dashboard view of everything
+- A dashboard for [COURSE NAME], [BOOK TITLE], and [CERTIFICATION]
+- Auto-calculated progress percentages
+- Completion status for each item
+- A single view showing everything in flight
+- One-click access to pick up where you left off
 
 ---
 
-2/ Structured Note Blueprint
-You take notes during [COURSE] but can never find the insight you need when it actually matters.
+2/ Structured Notes Blueprint
+You took notes on [TOPIC] two weeks ago and now you cannot find the key point that mattered.
 
 Give me:
-- A reusable note template per lesson
-- A Key Concepts section for core ideas
-- A Questions section for follow-up
-- An Action Items section for next steps
-- A direct link back to the parent course
+- A note linked directly to [COURSE NAME]
+- A Key Concepts section for [CONCEPT]
+- A Questions section to revisit later
+- An Action Items section for [TASK]
+- A consistent format every single time
 
 ---
 
 3/ Study Session Tracker
-You sit down to study [SUBJECT] but have no idea if your sessions are actually adding up to anything.
+You sat down to study [SUBJECT] for an hour and have nothing to show for where that time went.
 
 Build me:
-- A log entry for each session
-- Duration and topic fields
-- A mood rating at the end
-- Weekly totals by subject
-- A breakdown of where your time actually goes
+- A log entry for [DATE] with duration and topic
+- A mood rating for each session
+- Coverage notes for [TOPIC COVERED]
+- A weekly view of all sessions
+- A clear picture of where your hours actually go
 
 ---
 
-4/ Spaced Repetition Queue
-You learned [CONCEPT] three weeks ago and have already forgotten most of it.
+4/ Spaced Repetition Engine
+You reviewed [CONCEPT] once three weeks ago and have never looked at it since.
 
 Include:
-- A review queue sorted by due date
-- Overdue flags for neglected topics
-- A confidence level rating per concept
-- A next-review date that updates automatically
-- Coverage across every course you are taking
+- A queue of overdue topics starting with [CONCEPT]
+- A confidence level rating per item
+- A flag for anything not reviewed in [N] days
+- A next-review date for each topic
+- A running log of what you have actually retained
 
 ---
 
-5/ Learning Goal System
-You set a goal to finish [CERTIFICATION] by [DATE] and then never tracked whether you were on pace.
+5/ Learning Goals System
+You set a goal to finish [CERTIFICATION] by [DATE] and have checked on it exactly zero times.
 
 Give me:
-- Daily, weekly, monthly, and quarterly goal tiers
-- Deadline fields with countdown tracking
-- Success metrics defined per goal
-- Streak counters for recurring study habits
-- A clear view of what is on track and what is not
+- Daily, weekly, monthly, and quarterly goal slots
+- A deadline for [GOAL] with a success metric
+- A streak counter for [RECURRING HABIT]
+- A progress indicator tied to real activity
+- One view that shows every goal and its current status
 
 ---
 
-6/ Book Reading Machine
-You have [NUMBER] books on your list and finish maybe one or two a year because nothing keeps you accountable.
+6/ Reading List Tracker
+You bought [BOOK TITLE] six months ago and it is still sitting unread in a tab somewhere.
 
 Build me:
-- A reading list with status and priority
-- Progress tracking by chapter or percentage
-- Key takeaways captured per book
-- A linked note page for each title
-- A finished shelf that shows your actual output
+- A list of every book on your radar
+- A status column for [BOOK TITLE]: to read, reading, or done
+- A priority ranking so you always know what is next
+- Key takeaways captured the moment you finish
+- A count of books completed this [MONTH / QUARTER]
 
 ---
 
 7/ Certification Roadmap Blueprint
-You want to earn [CERTIFICATION] but have no idea which steps to take or in what order.
+You want [CERTIFICATION] but have no idea what steps actually stand between you and it.
 
 Include:
-- A milestone breakdown from start to exam
-- Resource links attached to each phase
-- A deadline per milestone
-- A completion percentage that updates as you move
-- A single timeline view of the full roadmap
+- A breakdown of every requirement for [CERTIFICATION]
+- A checklist of modules or exams for [STEP]
+- A target date for each milestone
+- A progress bar tied to completed steps
+- A single page that shows exactly what is left
 
 ---
 
-8/ Weekly Review Engine
-You end every week unsure whether you actually made progress on [SKILL] or just stayed busy.
+8/ Weekly Study Planner Engine
+Every Sunday you plan to study [SUBJECT] five times this week and by Friday you have done it once.
 
 Give me:
-- A weekly review template with fixed prompts
-- A wins section to log what you completed
-- A gaps section to flag what slipped
-- A carry-forward list for the next week
-- A link to your active goals for comparison
+- A weekly schedule block for [SUBJECT] on [DAY]
+- A planned vs actual comparison for each session
+- A carry-over slot for missed sessions
+- A weekly target tied to your active goals
+- A review section to adjust next week's plan
 
 ---
 
 9/ Concept Confidence Tracker
-You covered [TOPIC] in your course but have no system to know which ideas are solid and which are shaky.
+You think you understand [CONCEPT] but have never actually tested yourself on it.
 
 Build me:
-- A concept log linked to each course
-- A confidence rating on a simple scale
-- A flag for concepts that need re-study
-- A filter to surface low-confidence items fast
-- A review date to schedule follow-up
+- A list of every concept from [COURSE NAME]
+- A self-rated confidence score from one to five for [CONCEPT]
+- A filter to surface everything rated below [SCORE]
+- A review date so nothing slips past [N] days
+- A trend showing how your confidence grows over time
 
 ---
 
 10/ Resource Library Machine
-You save articles, videos, and links for [SUBJECT] across five different apps and never look at them again.
+You have saved [ARTICLE / VIDEO / PODCAST] to five different places and cannot find any of them.
 
 Include:
-- A central resource database by topic
-- Type tags for articles, videos, and courses
-- A status field for saved, in progress, and done
-- A linked course or goal for each resource
-- A priority filter to surface what to use next
+- A single inbox for every resource you want to revisit
+- A tag for type: article, video, book, or course
+- A link to the source and a two-line summary
+- A status column: saved, in progress, or done
+- A filter to pull up everything related to [TOPIC]
 
 ---
 
-That's 10 Notion templates for learning. 💸
-Built the system so you don't have to.
+That's 10 Notion prompts for learning. 💸
+Built the template so you don't have to.
 Get it for $13 → https://takasoccerfan.gumroad.com/l/glnhwp
