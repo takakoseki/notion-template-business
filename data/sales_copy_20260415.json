@@ -8,10 +8,21 @@
     "Never forget to review material again with a built-in Spaced Repetition Queue that flags overdue topics and tracks your confidence level per concept.",
     "Set and monitor daily, weekly, monthly, and quarterly learning goals with deadline tracking, success metrics, and streak counters for recurring habits."
   ],
+  "faq": [
+    {
+      "q": "Do I need to be a Notion expert to use StudyOS?",
+      "a": "No — StudyOS is designed for intermediate Notion users who are comfortable with databases and basic views. All databases, relations, formulas, and views are pre-built and ready to use out of the box. A step-by-step Getting Started guide and setup instructions are included inside the template."
+    },
+    {
+      "q": "Can I use this for university coursework as well as self-directed learning?",
+      "a": "Absolutely. StudyOS supports multiple use cases simultaneously — you can track university subjects with assignment deadlines alongside personal certification prep or recreational reading. The course type selector includes Online Course, Book, Certification, University Subject, Workshop, and Podcast Series."
+    },
+    {
+      "q": "What do I get after purchasing?",
+      "a": "You'll receive a link to duplicate the full StudyOS Notion template directly into your own Notion workspace. The template includes six fully configured databases, a central dashboard, pre-built filtered views, in-template guides for note-taking, spaced repetition, and goal-setting, plus a database relation map so you understand how everything connects."
+    }
+  ],
   "price": {
     "usd": 13
-  },
-  "notion_url": "https://www.notion.so/33c66eda9d8781909827cde9dff99ef1",
-  "created_at": "2026-04-14T21:57:31.478944+00:00",
-  "gumroad_url": "https://takasoccerfan.gumroad.com/l/glnhwp"
+  }
 }
