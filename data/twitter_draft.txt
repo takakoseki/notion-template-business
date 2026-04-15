@@ -1,129 +1,129 @@
-Notion + learning = the study system top performers use 💰
-No apps. No chaos. No half-finished courses. Just results.
+Notion + learning = study smarter, not harder 💰
+No apps. No forgotten notes. No excuses.
 10 templates that do all the work 👇
 
 ---
 
 1/ The Course Command Center
-You started [N] courses this year and finished zero because they all lived in different tabs.
+You started [N] courses this year and finished zero because you had no single place to track them all.
 
 Give me:
-- A dashboard for every course, book, and cert you're taking
-- Auto-calculated progress percentages per course
-- Status filters to separate active, paused, and completed
-- A single view showing everything in progress at once
-- Zero manual math, ever
+- A master course list
+- Auto-calculated progress per course
+- Status tags for each
+- A book and cert tracker
+- A completion dashboard
 
 ---
 
-2/ The Note-Linking Blueprint
-You took great notes in [COURSE] but can't find them three days later because nothing connects to anything.
-
-Give me:
-- A structured note template for every study session
-- A Key Concepts section per note
-- A Questions section to flag what you still don't understand
-- An Action Items section for immediate next steps
-- Every note automatically linked to its parent course
-
----
-
-3/ The Session Log Engine
-You study for [DURATION] and still feel like you made no progress because you never actually tracked it.
+2/ The Progress Percentage Engine
+You always feel busy studying but have no idea if you are actually moving forward on [COURSE].
 
 Include:
-- A log entry for every study session you complete
-- Duration tracking per session
-- Topic coverage fields so you know exactly what you touched
-- Mood tracking to spot patterns in your focus levels
-- A running history of every minute you've invested
+- Auto-calculated progress bars
+- Completion percentages per resource
+- A running total across all subjects
+- Milestone markers
+- A visual progress snapshot
 
 ---
 
-4/ The Habit Streak Tracker
-You want to study [N] days a week but have no system to hold yourself accountable past day three.
+3/ The Structured Note Blueprint
+You open your notes for [TOPIC] and find a wall of unlinked text that tells you nothing three weeks later.
 
 Give me:
-- Daily, weekly, monthly, and quarterly learning goals in one place
-- Deadline fields per goal so nothing stays vague
-- Success metrics defined before you start
-- Streak counters that reset when you break the chain
-- A single view showing every active goal and its status
+- A reusable note template
+- A Key Concepts section
+- A Questions section
+- An Action Items section
+- Direct links back to the parent course
 
 ---
 
-5/ The Spaced Repetition Queue
-You reviewed [TOPIC] once, felt confident, and then blanked on it completely two weeks later.
+4/ The Concept Capture Machine
+You just finished reading chapter [N] of [BOOK] and need to pull out what actually matters before you forget.
 
 Include:
-- A review queue that flags every overdue topic automatically
-- Confidence level tracking per concept so you know what needs work
-- A priority filter that surfaces the most urgent reviews first
-- Next review date calculations built in
-- No manual scheduling required
+- A linked note entry
+- Key concept fields
+- A follow-up question log
+- Action items per session
+- A tagging system by subject
 
 ---
 
-6/ The Learning Goal Blueprint
-You told yourself you'd finish [CERTIFICATION] by [MONTH] but set no milestones and are now three months behind.
+5/ The Study Session Tracker
+You sit down to study [SUBJECT] for an hour but have no record of what you covered or how focused you were.
 
 Give me:
-- A goal-setting page with clear success metrics
-- Deadline tracking with visual status indicators
-- Weekly check-in fields to measure actual progress
-- A breakdown of what hitting the goal actually requires
-- Quarterly review rows to course-correct before it's too late
+- A session log entry
+- Duration tracking
+- Topic coverage fields
+- A mood rating per session
+- A cumulative hours counter
 
 ---
 
-7/ The Focus Pattern Engine
-You have no idea if studying in the [MORNING/EVENING] is actually working because you've never measured it.
+6/ The Habit Data Engine
+You think you study consistently but have never actually measured where your time on [SKILL] goes.
 
 Include:
-- Session logs filtered by time of day and mood
-- Duration averages per study block
-- Topic coverage summaries across the week
-- A pattern view that reveals your most productive conditions
-- Actionable data to double down on what works
+- A weekly session breakdown
+- Time-per-subject analysis
+- Mood trend over sessions
+- Topic frequency tracking
+- A time audit summary view
 
 ---
 
-8/ The Certification Roadmap Tracker
-You want to earn [N] certifications this year but have no system to track prep progress across all of them simultaneously.
+7/ The Spaced Repetition Queue
+You reviewed [CONCEPT] once three weeks ago and have completely forgotten it because nothing reminded you to go back.
 
 Give me:
-- One row per certification with progress percentage
-- Study hour targets and actuals side by side
-- Status labels from not started through complete
-- Linked notes for every cert in your pipeline
-- A dashboard that shows everything at a glance
+- A review queue sorted by urgency
+- Overdue topic flags
+- A confidence level rating per concept
+- A next-review date field
+- A mastery progress indicator
 
 ---
 
-9/ The Reading Progress Machine
-You bought [N] books this quarter, started four, and finished none because there was no system pulling you forward.
+8/ The Forgetting Curve Fighter
+You spend more time relearning [TOPIC] from scratch than actually making progress because reviews are random.
 
 Include:
-- A tracker for every book with current page and total pages
-- Auto-calculated read percentage per title
-- A notes page linked directly to each book
-- Key Concepts captured while you read
-- Action Items pulled from each chapter before you forget them
+- A spaced repetition schedule
+- Confidence tracking per item
+- Overdue alerts
+- A review history log
+- A topic mastery dashboard
 
 ---
 
-10/ The Confidence Gap System
-You feel like you understand [SUBJECT] but can't tell which specific concepts are still shaky until the test reveals them.
+9/ The Learning Goal Blueprint
+You set a goal to finish [CERTIFICATION] by [DATE] but never built the daily and weekly steps to actually get there.
 
 Give me:
-- A concept-level confidence score for every topic you study
-- A filtered view showing only low-confidence items
-- Review frequency tied to how uncertain you are
-- Progress tracking as confidence improves over time
-- A clear map of exactly where your knowledge breaks down
+- Daily goal entries
+- Weekly target tracking
+- Monthly milestone markers
+- A deadline field per goal
+- Success metric definitions
 
 ---
 
-That's 10 Notion templates for learning. 💸
+10/ The Streak and Habit Machine
+You want to build a daily study habit around [SKILL] but you always break the chain after a few days with no system holding you accountable.
+
+Include:
+- A recurring habit tracker
+- Daily streak counters
+- Weekly completion rates
+- A quarterly goal overview
+- A reset and reflection field
+
+---
+
+That's 10 Notion templates for students and self-learners. 💸
 Built the system so you don't have to.
 Get it for $13 → https://takasoccerfan.gumroad.com/l/glnhwp
