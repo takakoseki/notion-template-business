@@ -1,129 +1,129 @@
-Notion + learning = study smarter, not harder 💰
-No apps. No forgotten notes. No excuses.
-10 templates that do all the work 👇
+Notion + learning = one workspace to rule them all 💰
+No overwhelm. No lost notes. No wasted hours.
+5 templates that do all the work 👇
 
 ---
 
-1/ The Course Command Center
-You started [N] courses this year and finished zero because you had no single place to track them all.
-
-Give me:
-- A master course list
-- Auto-calculated progress per course
-- Status tags for each
-- A book and cert tracker
-- A completion dashboard
-
----
-
-2/ The Progress Percentage Engine
-You always feel busy studying but have no idea if you are actually moving forward on [COURSE].
+1/ Course & Certification Tracker
+You signed up for [NUMBER] courses this year and have no idea how far you are in any of them.
 
 Include:
-- Auto-calculated progress bars
-- Completion percentages per resource
-- A running total across all subjects
-- Milestone markers
-- A visual progress snapshot
+- A dedicated page per course
+- Auto-calculated progress percentage
+- Status labels for each module
+- Linked certification records
+- Completion deadlines per course
 
 ---
 
-3/ The Structured Note Blueprint
-You open your notes for [TOPIC] and find a wall of unlinked text that tells you nothing three weeks later.
+2/ Structured Note-Taking Blueprint
+You take notes during [COURSE NAME] but can never find the right ones when you actually need them.
 
-Give me:
-- A reusable note template
+Include:
+- A reusable note template per lesson
 - A Key Concepts section
 - A Questions section
 - An Action Items section
-- Direct links back to the parent course
+- A direct link back to the parent course
 
 ---
 
-4/ The Concept Capture Machine
-You just finished reading chapter [N] of [BOOK] and need to pull out what actually matters before you forget.
+3/ Study Session Log Engine
+You study [X] hours a week but have no proof of what topics you actually covered or when.
 
 Include:
-- A linked note entry
-- Key concept fields
-- A follow-up question log
-- Action items per session
-- A tagging system by subject
+- A log entry per session
+- Duration field per session
+- Topic coverage field
+- Mood tracker per session
+- Weekly time breakdown view
 
 ---
 
-5/ The Study Session Tracker
-You sit down to study [SUBJECT] for an hour but have no record of what you covered or how focused you were.
-
-Give me:
-- A session log entry
-- Duration tracking
-- Topic coverage fields
-- A mood rating per session
-- A cumulative hours counter
-
----
-
-6/ The Habit Data Engine
-You think you study consistently but have never actually measured where your time on [SKILL] goes.
+4/ Spaced Repetition Queue Machine
+You reviewed [TOPIC] once three weeks ago and have completely forgotten it by now.
 
 Include:
-- A weekly session breakdown
-- Time-per-subject analysis
-- Mood trend over sessions
-- Topic frequency tracking
-- A time audit summary view
-
----
-
-7/ The Spaced Repetition Queue
-You reviewed [CONCEPT] once three weeks ago and have completely forgotten it because nothing reminded you to go back.
-
-Give me:
-- A review queue sorted by urgency
-- Overdue topic flags
+- A queue of concepts due for review
 - A confidence level rating per concept
-- A next-review date field
-- A mastery progress indicator
+- Overdue topic flags
+- A linked source note per concept
+- A next review date per entry
 
 ---
 
-8/ The Forgetting Curve Fighter
-You spend more time relearning [TOPIC] from scratch than actually making progress because reviews are random.
+5/ Learning Goals & Habit Tracker System
+You set a goal to finish [CERTIFICATION] by [MONTH] but never built a system to actually track it.
 
 Include:
-- A spaced repetition schedule
-- Confidence tracking per item
-- Overdue alerts
-- A review history log
-- A topic mastery dashboard
+- Daily, weekly, monthly, and quarterly goal views
+- Deadline fields per goal
+- Success metrics per goal
+- Streak counters for recurring habits
+- A progress status per goal period
 
 ---
 
-9/ The Learning Goal Blueprint
-You set a goal to finish [CERTIFICATION] by [DATE] but never built the daily and weekly steps to actually get there.
-
-Give me:
-- Daily goal entries
-- Weekly target tracking
-- Monthly milestone markers
-- A deadline field per goal
-- Success metric definitions
-
----
-
-10/ The Streak and Habit Machine
-You want to build a daily study habit around [SKILL] but you always break the chain after a few days with no system holding you accountable.
+6/ Reading List Blueprint
+You have [NUMBER] books on your list and keep adding more without finishing any.
 
 Include:
-- A recurring habit tracker
-- Daily streak counters
-- Weekly completion rates
-- A quarterly goal overview
-- A reset and reflection field
+- A book entry with author and genre fields
+- A reading status per book
+- A notes link per book
+- A target finish date per entry
+- A priority ranking per book
 
 ---
 
-That's 10 Notion templates for students and self-learners. 💸
+7/ Concept Mastery Tracker
+You learned about [CONCEPT] in two different courses but stored the notes in completely different places.
+
+Include:
+- A master concept database
+- Tags linking each concept to its source course
+- A mastery level field per concept
+- A related notes section per concept
+- A review history per entry
+
+---
+
+8/ Weekly Study Planner Engine
+You sit down to study on [DAY] and waste the first 20 minutes figuring out what to work on.
+
+Include:
+- A weekly schedule view
+- Time blocks per subject
+- A priority level per task
+- A completion checkbox per block
+- A rollover field for unfinished tasks
+
+---
+
+9/ Exam Prep Blueprint
+Your exam is in [X] weeks and you have no idea which topics still need the most work.
+
+Include:
+- A topic list per exam
+- A confidence score per topic
+- A last reviewed date per topic
+- A flagged weak areas view
+- A countdown to exam date
+
+---
+
+10/ Resource Library Machine
+You saved [URL], [PDF], and [VIDEO] to five different places and now can't find any of them.
+
+Include:
+- A central resource database
+- Format tags per resource
+- A linked course per resource
+- A notes field per resource
+- A read or watched status per entry
+
+---
+
+That's 10 Notion templates for learning. 💸
 Built the system so you don't have to.
 Get it for $13 → https://takasoccerfan.gumroad.com/l/glnhwp
