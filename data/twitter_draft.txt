@@ -1,126 +1,126 @@
-Notion + learning = built-in accountability, finally 💰
-No apps. No lost progress. No half-read books.
-10 templates that do all the work 👇
+Notion + learning = the study OS high achievers wish they had 💰
+No apps. No guesswork. No wasted sessions.
+10 templates that run your entire learning life 👇
 
 ---
 
-1/ Course Progress Machine
-You've enrolled in [N] courses and have no idea how far along you actually are.
+1/ Course Progress Engine
+You enrolled in [COURSE] three weeks ago but have no idea how far you've actually gotten.
 
-Include:
-- Auto-calculated progress per course
-- Completion percentage dashboard
-- Status labels for each course
-- Linked books and certifications
-- One-glance overview of everything in progress
+Track:
+- Every course, book, and cert in one place
+- Auto-calculated progress percentages
+- Completion status per resource
+- Time invested per subject
+- What's active vs abandoned
 
 ---
 
-2/ Structured Note Blueprint
-You take notes during [COURSE] but can never find the key points when you need them.
+2/ Structured Notes Blueprint
+You just finished a lecture on [TOPIC] and already can't remember what mattered.
 
-Include:
-- Linked notes tied directly to [COURSE]
-- Key Concepts section per note
-- Questions log for follow-up
-- Action Items captured in real time
-- Consistent format across every subject
+Capture:
+- Key concepts from every session
+- Questions you still need to answer
+- Action items tied to the material
+- Notes linked directly to the parent course
+- A consistent format every single time
 
 ---
 
 3/ Study Session Tracker
-You sit down to study [TOPIC] but never know if you're actually building a habit.
+You've been "studying" [SUBJECT] for weeks but have nothing concrete to show for it.
 
-Include:
-- Logged duration per session
-- Mood rating at time of study
-- Topics covered per session
-- Weekly session history
-- Time breakdown by subject area
+Log:
+- Start and end time for each session
+- Topics covered that day
+- Your mood and energy level
+- Duration trends across the week
+- Exactly where your study hours actually go
 
 ---
 
-4/ Spaced Repetition Engine
-You reviewed [CONCEPT] once weeks ago and now it's completely gone from memory.
+4/ Spaced Repetition Queue
+You studied [CONCEPT] last month and now it's completely gone from your memory.
 
-Include:
-- Overdue review queue sorted by priority
+Build:
+- A running queue of topics due for review
 - Confidence level per concept
-- Last reviewed date auto-tracked
-- Flagged topics that need immediate attention
-- Review schedule linked to your course list
+- Overdue flags so nothing slips
+- Review history for every idea
+- A system that tells you what to study next
 
 ---
 
-5/ Learning Goal System
-You set a goal to finish [CERTIFICATION] by [DATE] but never defined what success looks like.
+5/ Learning Goals Engine
+You set a goal to finish [CERTIFICATION] by [DATE] and now the deadline is two weeks away.
 
-Include:
-- Daily, weekly, monthly, and quarterly goal layers
-- Deadline tracking per goal
-- Success metrics defined per milestone
-- Streak counters for recurring study habits
-- Progress indicators tied to real outcomes
-
----
-
-6/ Certification Roadmap Blueprint
-You want to earn [CERTIFICATION] but have no clear path from start to finish.
-
-Include:
-- Step-by-step milestone breakdown
-- Estimated hours per module
-- Linked study sessions to each milestone
-- Deadline assigned to each phase
-- Status tracker from enrolled to complete
+Set:
+- Daily, weekly, monthly, and quarterly targets
+- Deadlines and success metrics per goal
+- Streak counters for recurring habits
+- Progress tracked against each milestone
+- A dashboard view of every active goal
 
 ---
 
-7/ Book Learning Tracker
-You've started [N] books this year and finished almost none of them.
+6/ Weekly Review System
+You ended [WEEK] with no idea what you actually learned or what to prioritize next.
 
-Include:
-- Active, paused, and finished reading status
-- Key takeaways captured per chapter
-- Linked notes for each book
-- Estimated read time remaining
-- Auto-updated progress percentage
-
----
-
-8/ Concept Confidence Engine
-You keep re-studying [TOPIC] because you never know if you actually understand it.
-
-Include:
-- Self-rated confidence score per concept
-- Weak areas flagged automatically
-- Review history per concept
-- Linked source material for each entry
-- Sorted view from lowest to highest confidence
+Summarize:
+- Sessions completed vs planned
+- Goals hit or missed
+- Topics that need more time
+- Wins worth carrying into next week
+- One clear focus for the week ahead
 
 ---
 
-9/ Weekly Study Planner
-You start [MONDAY] with no plan and end [FRIDAY] wondering where your study time went.
+7/ Resource Inbox Blueprint
+You have [N] bookmarked articles, videos, and courses you keep meaning to get to.
 
-Include:
-- Pre-blocked study slots per day
-- Topics assigned to each time block
-- Session goals set in advance
-- Completion checkboxes per block
-- Weekly review summary at the end
+Organize:
+- Every saved resource in one view
+- Priority and format tags
+- Status from unread to done
+- Links to related notes you've taken
+- A backlog that never overwhelms you
 
 ---
 
-10/ Habit Streak Machine
-You want to study [SUBJECT] every day but always break the chain after [N] days.
+8/ Certification Roadmap Machine
+You want to get certified in [SKILL] but have no idea what order to tackle things in.
 
-Include:
-- Daily habit checkboxes per learning goal
-- Streak counter that resets on a miss
-- Best streak record displayed
-- Linked to your weekly goal targets
-- Monthly habit grid to spot patterns
+Map out:
+- Every cert or credential you're pursuing
+- Prerequisites and dependencies
+- Target completion dates
+- Study resources assigned to each stage
+- A visual path from zero to qualified
+
+---
+
+9/ Daily Study Habit Tracker
+You keep telling yourself you'll study [SUBJECT] every day but never actually do.
+
+Build:
+- A daily habit grid for your learning goals
+- Streak counters that reset if you miss a day
+- Time-of-day patterns across your sessions
+- A simple check-in that takes under a minute
+- Momentum you can actually see building
+
+---
+
+10/ Knowledge Base Engine
+You take notes on [TOPIC] in five different places and can never find them again.
+
+Create:
+- A searchable library of everything you've learned
+- Tags by subject, source, and format
+- Links between related concepts
+- Notes connected to the course they came from
+- One place your knowledge actually lives
 
 ---
 
