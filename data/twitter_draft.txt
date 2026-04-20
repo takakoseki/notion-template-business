@@ -1,126 +1,126 @@
-Notion + learning = stop abandoning courses halfway 💰
-No apps. No lost notes. No excuses.
+Notion + learning = built-in accountability, finally 💰
+No apps. No lost progress. No half-read books.
 10 templates that do all the work 👇
 
 ---
 
-1/ Course Progress Engine
-You signed up for [NUMBER] courses this year and have no idea where you left off.
+1/ Course Progress Machine
+You've enrolled in [N] courses and have no idea how far along you actually are.
 
 Include:
-- A tracker for every course, book, and cert you own
-- Auto-calculated progress percentages per item
-- Completion status updated as you go
-- A master view of everything in one place
-- Zero manual math required
+- Auto-calculated progress per course
+- Completion percentage dashboard
+- Status labels for each course
+- Linked books and certifications
+- One-glance overview of everything in progress
 
 ---
 
 2/ Structured Note Blueprint
-You take notes during [COURSE NAME] but can never find the right one when you need it.
+You take notes during [COURSE] but can never find the key points when you need them.
 
 Include:
-- A note template with dedicated Key Concepts section
-- A Questions section to capture what you don't understand yet
-- An Action Items section tied to each lesson
-- Every note linked back to its parent course
-- A searchable note library across all subjects
+- Linked notes tied directly to [COURSE]
+- Key Concepts section per note
+- Questions log for follow-up
+- Action Items captured in real time
+- Consistent format across every subject
 
 ---
 
 3/ Study Session Tracker
-You study for [DURATION] but have no memory of what you actually covered last week.
+You sit down to study [TOPIC] but never know if you're actually building a habit.
 
 Include:
-- A log entry for each session you complete
-- Duration tracking per topic
-- A mood rating to spot when you study best
-- Topic coverage notes per session
-- A weekly summary view of your real study hours
+- Logged duration per session
+- Mood rating at time of study
+- Topics covered per session
+- Weekly session history
+- Time breakdown by subject area
 
 ---
 
-4/ Habit Streak Machine
+4/ Spaced Repetition Engine
+You reviewed [CONCEPT] once weeks ago and now it's completely gone from memory.
+
+Include:
+- Overdue review queue sorted by priority
+- Confidence level per concept
+- Last reviewed date auto-tracked
+- Flagged topics that need immediate attention
+- Review schedule linked to your course list
+
+---
+
+5/ Learning Goal System
+You set a goal to finish [CERTIFICATION] by [DATE] but never defined what success looks like.
+
+Include:
+- Daily, weekly, monthly, and quarterly goal layers
+- Deadline tracking per goal
+- Success metrics defined per milestone
+- Streak counters for recurring study habits
+- Progress indicators tied to real outcomes
+
+---
+
+6/ Certification Roadmap Blueprint
+You want to earn [CERTIFICATION] but have no clear path from start to finish.
+
+Include:
+- Step-by-step milestone breakdown
+- Estimated hours per module
+- Linked study sessions to each milestone
+- Deadline assigned to each phase
+- Status tracker from enrolled to complete
+
+---
+
+7/ Book Learning Tracker
+You've started [N] books this year and finished almost none of them.
+
+Include:
+- Active, paused, and finished reading status
+- Key takeaways captured per chapter
+- Linked notes for each book
+- Estimated read time remaining
+- Auto-updated progress percentage
+
+---
+
+8/ Concept Confidence Engine
+You keep re-studying [TOPIC] because you never know if you actually understand it.
+
+Include:
+- Self-rated confidence score per concept
+- Weak areas flagged automatically
+- Review history per concept
+- Linked source material for each entry
+- Sorted view from lowest to highest confidence
+
+---
+
+9/ Weekly Study Planner
+You start [MONDAY] with no plan and end [FRIDAY] wondering where your study time went.
+
+Include:
+- Pre-blocked study slots per day
+- Topics assigned to each time block
+- Session goals set in advance
+- Completion checkboxes per block
+- Weekly review summary at the end
+
+---
+
+10/ Habit Streak Machine
 You want to study [SUBJECT] every day but always break the chain after [N] days.
 
 Include:
-- Daily, weekly, and monthly habit goals
-- Streak counters that reset automatically
-- Success metrics defined per habit
-- Deadline fields for time-sensitive goals
-- A recurring habit view filtered by frequency
-
----
-
-5/ Spaced Repetition Queue
-You reviewed [CONCEPT] once three weeks ago and now remember absolutely nothing.
-
-Give me:
-- A review queue that flags overdue topics automatically
-- Confidence level ratings per concept
-- Next review date calculated per item
-- A filtered view showing only what needs attention today
-- A history log of every past review session
-
----
-
-6/ Learning Goal System
-You set a goal to finish [CERTIFICATION] by [MONTH] but never tracked a single milestone.
-
-Build me:
-- Quarterly, monthly, and weekly goal layers
-- Deadline fields with visual status indicators
-- Success metrics defined upfront per goal
-- Progress linked to active courses
-- A goal review dashboard for weekly check-ins
-
----
-
-7/ Knowledge Library Engine
-You finished [BOOK] six months ago but can't remember a single idea worth using.
-
-Include:
-- A dedicated library for books, courses, and certs
-- Key takeaways captured per resource
-- Status tags for reading, active, paused, and done
-- A filter to resurface your best past learning
-- Links from library items to related notes
-
----
-
-8/ Weekly Review Blueprint
-You end every Sunday not knowing if you actually made progress on [SKILL] this week.
-
-Give me:
-- A weekly review template with fixed sections
-- A summary of sessions completed that week
-- Goals reviewed and updated in one view
-- Notes added during the week surfaced automatically
-- A carry-forward field for unfinished items
-
----
-
-9/ Resource Inbox Tracker
-You save articles, videos, and links about [TOPIC] across five different apps and never open them.
-
-Build me:
-- A single inbox for every resource you want to consume
-- Type tags to separate videos, articles, and courses
-- Priority levels to decide what to tackle first
-- A status field to move items from saved to done
-- Links to relevant notes once a resource is finished
-
----
-
-10/ Focus Sprint Machine
-You sit down to study [SUBJECT] but spend the first twenty minutes deciding what to work on.
-
-Include:
-- A daily focus block template with one clear objective
-- A linked course or topic field per sprint
-- A timer-friendly duration target per block
-- An outcome field to log what you actually finished
-- A streak view to build the daily study habit
+- Daily habit checkboxes per learning goal
+- Streak counter that resets on a miss
+- Best streak record displayed
+- Linked to your weekly goal targets
+- Monthly habit grid to spot patterns
 
 ---
 
