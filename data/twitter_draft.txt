@@ -1,126 +1,126 @@
-Notion + learning = the only system you'll ever need 💰
-No apps. No forgotten notes. No abandoned courses.
+Notion + learning = consistent progress, zero guesswork 💰
+No apps. No lost notes. No abandoned courses.
 10 templates that do all the work 👇
 
 ---
 
 1/ Course Progress Engine
-You signed up for [NUMBER] courses this year and have no idea where you left off.
+You started [N] courses this year and have no idea where you left off.
 
-Include:
-- Auto-calculated progress % per course
-- Status tags for Not Started, In Progress, Done
-- Linked resources and deadlines
-- Completion milestones per course
-- A master dashboard showing all active courses
-
----
-
-2/ Book Learning Tracker
-You finished [BOOK TITLE] three weeks ago and can't remember a single key idea.
-
-Include:
-- A reading log with start and finish dates
-- Key takeaways section per book
-- Rating and review fields
-- Genre and topic filters
-- A shelf view sorted by status
+Give me:
+- A master course tracker
+- Auto-calculated progress per course
+- Certification and book entries
+- Completion status at a glance
+- One dashboard for everything
 
 ---
 
-3/ Structured Note Blueprint
-You open a blank page to take notes on [COURSE NAME] and stare at it for five minutes.
+2/ Structured Note-Taking Blueprint
+You took notes on [TOPIC] and now you can't find them or remember why they mattered.
 
 Include:
-- Sections for Key Concepts, Questions, and Action Items
-- Auto-link to the parent course
-- A summary field for quick review
-- Tags by topic and difficulty
-- A searchable notes database
+- A linked note for each course
+- Key Concepts section
+- Questions section
+- Action Items section
+- Notes tied directly to their parent course
 
 ---
 
-4/ Study Session Logger
-You sat down to study [SUBJECT] for two hours but have no idea if it actually helped.
+3/ Study Session Tracker
+You sat down to study [SUBJECT] for an hour but have nothing to show for it.
+
+Build me:
+- A session log per day
+- Duration tracking per session
+- Topic coverage per entry
+- Mood tracking per session
+- A clear view of where your time actually goes
+
+---
+
+4/ Habit Streak Machine
+You told yourself you'd study [SKILL] every day and broke the streak by day three.
 
 Include:
-- Duration and topic fields per session
-- Mood tracker with five levels
-- A weekly session count rollup
-- Notes field for what you covered
-- A habit streak counter
+- Daily study habit entries
+- Streak counters for recurring goals
+- Weekly and monthly targets
+- Deadline tracking per habit
+- Success metrics you define yourself
 
 ---
 
 5/ Spaced Repetition Queue
-You studied [CONCEPT] last month and now it's gone from your memory completely.
+You reviewed [CONCEPT] once and assumed you'd remember it forever.
 
-Include:
-- Overdue review flags per topic
-- Confidence level ratings per concept
-- Next review date auto-calculated
-- Linked notes for each topic
-- A filtered view showing only what to review today
-
----
-
-6/ Learning Goal Machine
-You set a goal to finish [CERTIFICATION] by [MONTH] and it's still sitting at 0%.
-
-Include:
-- Daily, weekly, monthly, and quarterly goal fields
-- Deadline tracking with countdowns
-- Success metrics per goal
-- Recurring habit toggles
-- A goal health dashboard with streak counters
+Give me:
+- A review queue for every topic
+- Overdue flags for missed reviews
+- Confidence level tracking per concept
+- A schedule that tells you what to review today
+- A system that never lets material go cold
 
 ---
 
-7/ Certification Roadmap Tracker
-You want to earn [CERT NAME] but have no idea what steps are left before the exam.
+6/ Goal Setting Engine
+You set a quarterly learning goal for [CERTIFICATION] and forgot about it by week two.
 
-Include:
-- Module-by-module checklist per certification
-- Exam date and prep time fields
-- Linked study sessions and notes
-- Progress percentage rollup
-- A priority view sorted by deadline
-
----
-
-8/ Weekly Review System
-You keep starting strong on [SKILL] every Monday and losing momentum by Wednesday.
-
-Include:
-- A weekly wins and blockers section
-- Hours studied vs. hours planned comparison
-- Top three focus areas for next week
-- Mood trend from the week's sessions
-- A carry-forward action items list
+Build me:
+- Daily, weekly, monthly, and quarterly goal entries
+- Deadline fields per goal
+- Success metric tracking
+- Progress indicators per time horizon
+- One view for all active goals
 
 ---
 
-9/ Knowledge Base Engine
-You learned how [TOPIC] works six months ago and now you can't find where you wrote it down.
+7/ Certification Roadmap Blueprint
+You want to earn [CERTIFICATION] but have no idea how to break it into steps.
 
 Include:
-- A linked database of all notes across courses
-- Filter by topic, date, and confidence level
-- Quick-add form for on-the-go captures
-- A most-reviewed concepts view
-- Tags connecting related ideas across subjects
+- A certification entry with linked resources
+- Milestone tracking toward completion
+- Study sessions tied to the cert
+- Progress percentage auto-calculated
+- A clear path from enrolled to done
 
 ---
 
-10/ Habit and Streak Blueprint
-You want to study [SUBJECT] every day for [N] days but always break the chain by week two.
+8/ Reading Tracker System
+You bought [BOOK] six months ago and read twelve pages.
+
+Give me:
+- A book entry with progress tracking
+- Key Concepts captured per chapter
+- Action Items pulled from each read
+- A completion percentage that updates
+- A backlog of every book you plan to read
+
+---
+
+9/ Weekly Review Machine
+You finished a week of studying [TOPIC] and have no idea what you actually retained.
+
+Build me:
+- A weekly recap entry per subject
+- Sessions reviewed per week
+- Goals hit versus missed
+- Confidence ratings for the week
+- A habit of reviewing before moving on
+
+---
+
+10/ Knowledge Gap Tracker
+You keep encountering [CONCEPT] in your course and realizing you never actually learned it.
 
 Include:
-- Daily habit checkboxes with auto streak count
-- A visual streak history by week
-- Minimum session length targets
-- Accountability notes per day
-- A monthly consistency score rollup
+- A log of concepts you don't fully understand
+- Links back to the course where they appeared
+- A review status per gap
+- Action Items to close each gap
+- A queue that shrinks as your knowledge grows
 
 ---
 
