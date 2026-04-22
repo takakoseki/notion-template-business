@@ -1,0 +1,48 @@
+{
+  "page_title": "Life OS / Second Brain",
+  "page_id": "33c66eda-9d87-8190-9827-cde9dff99ef1",
+  "page_url": "https://www.notion.so/33c66eda9d8781909827cde9dff99ef1",
+  "databases_created": 10,
+  "databases": [
+    {
+      "name": "Projects",
+      "id": "33c66eda-9d87-8122-a585-dbadbd235d7b"
+    },
+    {
+      "name": "Tasks",
+      "id": "33c66eda-9d87-81ca-8fb1-f1fe500c8341"
+    },
+    {
+      "name": "Goals",
+      "id": "33c66eda-9d87-8167-90c6-c4f60505a991"
+    },
+    {
+      "name": "Notes / Knowledge Base",
+      "id": "33c66eda-9d87-8183-9fe4-f160d3c85b26"
+    },
+    {
+      "name": "Library",
+      "id": "33c66eda-9d87-81df-b366-ec901a014322"
+    },
+    {
+      "name": "Life Areas",
+      "id": "33c66eda-9d87-8149-acde-f7ef074f7b86"
+    },
+    {
+      "name": "Journal / Daily Log",
+      "id": "33c66eda-9d87-819b-a0c6-c08adc1d6d76"
+    },
+    {
+      "name": "Habits Tracker",
+      "id": "33c66eda-9d87-81d7-82e9-ea6f9fc8711e"
+    },
+    {
+      "name": "Weekly Reviews",
+      "id": "33c66eda-9d87-816f-ad33-d69d29f409bf"
+    },
+    {
+      "name": "Finance Tracker",
+      "id": "33c66eda-9d87-8123-add3-ebe23d003778"
+    }
+  ]
+}

@@ -568,5 +568,29 @@
     "agent": "pipeline_notify_agent",
     "status": "success",
     "message": "Pipeline notification email sent: StudyOS — The Ultimate Notion Learning System"
+  },
+  {
+    "timestamp": "2026-04-22T21:56:20.111670+00:00",
+    "agent": "analytics_agent",
+    "status": "started",
+    "message": "Analytics job started"
+  },
+  {
+    "timestamp": "2026-04-22T21:56:20.174597+00:00",
+    "agent": "analytics_agent",
+    "status": "warning",
+    "message": "Metrics fetch failed: 401 Unauthorized\nUnauthorized"
+  },
+  {
+    "timestamp": "2026-04-22T21:56:20.604604+00:00",
+    "agent": "pipeline_notify_agent",
+    "status": "started",
+    "message": "Pipeline notification started"
+  },
+  {
+    "timestamp": "2026-04-22T21:56:21.770643+00:00",
+    "agent": "pipeline_notify_agent",
+    "status": "success",
+    "message": "Pipeline notification email sent: StudyOS — The Ultimate Notion Learning System"
   }
 ]
