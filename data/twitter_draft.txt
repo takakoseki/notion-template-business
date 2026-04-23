@@ -1,126 +1,126 @@
-Notion + learning = the study system that runs itself 💰
-No apps. No lost progress. No abandoned courses.
+Notion + learning = your unfair advantage in 2025 💰
+No skills. No design. No excuses.
 10 templates that do all the work 👇
 
 ---
 
-1/ The Course Command Center
-You have [N] courses open across [PLATFORM], [PLATFORM], and [PLATFORM] and no idea which one you actually finished.
+1/ The Course Progress Engine
+You enrolled in [NUMBER] courses this year and have no idea how far along you actually are.
 
-Give me:
+Include:
 - A master course database
-- Auto-calculated progress percentages
-- Status filters by topic or skill
-- A priority ranking column
-- A one-click active course view
+- Auto-calculated completion percentages
+- Status labels for each course
+- Linked resources per course
+- A visual progress overview
 
 ---
 
-2/ The Book Learning Blueprint
-You read [BOOK] three months ago and can't remember a single thing you'd actually use.
-
-Give me:
-- A book tracking database
-- Fields for genre, author, and status
-- A key takeaways section per entry
-- A linked notes view per book
-- A monthly reading goal counter
-
----
-
-3/ The Structured Note Engine
-You open a blank page to take notes on [TOPIC] and end up with a wall of unlinked text no one can use.
+2/ The Book & Cert Tracker
+You keep buying books and signing up for certifications but [CERTIFICATION] is still sitting at 0% done.
 
 Include:
-- A reusable note template
+- A unified library for books and certs
+- Completion status per item
+- Priority ranking for what to tackle next
+- Estimated finish dates
+- A "currently studying" view
+
+---
+
+3/ The Structured Note Blueprint
+You took notes on [TOPIC] somewhere but now you cannot find them and cannot remember what you even learned.
+
+Include:
+- A note template tied to its parent course
 - A Key Concepts section
-- A Questions to revisit block
-- An Action Items checklist
-- A parent course relation field
+- A Questions section
+- An Action Items section
+- A searchable tag system
 
 ---
 
-4/ The Study Session Tracker
-You study for [N] hours and have no idea if you actually made progress or just felt busy on [DATE].
-
-Give me:
-- A daily session log database
-- Duration and topic fields
-- A mood tracker per session
-- A weekly time summary view
-- A topic coverage breakdown
-
----
-
-5/ The Habit Streak Machine
-You set a goal to study [SKILL] every day and quit by day [N] because nothing was holding you accountable.
+4/ The Study Session Logger
+You study for hours but have no record of what you covered or whether [SUBJECT] sessions are actually helping you improve.
 
 Include:
-- A daily recurring habit tracker
-- A streak counter per habit
-- A completion checkbox view
-- A weekly consistency summary
-- A reset-proof streak logic field
+- A daily session log
+- Duration tracking per session
+- Topic coverage fields
+- Mood and energy ratings
+- A weekly time summary view
+
+---
+
+5/ The Habit Consistency Tracker
+You want to study [SUBJECT] every day but you miss one session and the whole streak collapses.
+
+Include:
+- Daily habit checkboxes
+- Streak counters per habit
+- A weekly consistency score
+- Missed session notes
+- A monthly habit heatmap view
 
 ---
 
 6/ The Spaced Repetition Queue
-You reviewed [CONCEPT] once and assumed you knew it until [EXAM] proved you wrong.
+You read [CHAPTER] three weeks ago and already forgot everything because you never went back to review it.
 
-Give me:
-- A review queue database
-- Overdue topic flagging
-- A confidence level field per concept
+Include:
+- A review queue sorted by due date
+- Overdue topic flags
+- Confidence level ratings per concept
 - A next review date calculator
-- A filtered view for due-today items
+- A mastery progress bar per topic
 
 ---
 
-7/ The Certification Tracker
-You are working toward [CERT] but have no idea how many hours you have left or when you will realistically finish.
+7/ The Learning Goal System
+You set a goal to finish [COURSE] by [DEADLINE] but there is no plan, no check-ins, and no accountability anywhere.
 
 Include:
-- A certification progress database
-- Linked course and study session views
-- A deadline field with countdown logic
-- A completion percentage bar
-- A status column from enrolled to certified
+- Daily, weekly, monthly, and quarterly goal pages
+- Deadline fields per goal
+- Success metric definitions
+- Progress check-in prompts
+- A goal completion history log
 
 ---
 
-8/ The Weekly Goal Blueprint
-You set [N] learning goals on Monday and forget all of them by Wednesday because they live nowhere useful.
-
-Give me:
-- A weekly goal-setting template
-- Success metric fields per goal
-- A deadline and priority column
-- A linked habit and session view
-- A weekly review reflection block
-
----
-
-9/ The Knowledge Gap Engine
-You finish [COURSE] and immediately move on without ever checking what you actually understood versus what you skipped.
+8/ The Knowledge Retention Engine
+You finished [BOOK] but could not explain a single idea from it one month later.
 
 Include:
-- A concept mastery database
-- A self-assessed confidence rating
-- A gap identification filter
-- A linked spaced repetition entry
-- A revisit priority ranking field
+- A post-course review template
+- A top 5 takeaways section
+- A "teach it back" summary field
+- Action items you committed to applying
+- A 30-day follow-up reminder slot
 
 ---
 
-10/ The Quarterly Learning System
-You want to learn [SKILL], finish [CERT], and read [N] books this quarter but have no single place tracking all three.
+9/ The Weekly Review Machine
+You never sit down to reflect on what you actually learned this week before [NEW CONTENT] pulls your attention away.
 
-Give me:
-- A quarterly learning goals dashboard
-- Monthly milestone breakdowns
-- A linked courses and books view
-- A progress-to-goal percentage field
-- A end-of-quarter review template
+Include:
+- A weekly review prompt template
+- Sessions completed this week
+- Goals hit vs missed
+- Top insight of the week
+- Focus intention for next week
+
+---
+
+10/ The Learning Backlog Blueprint
+You have [NUMBER] saved articles, courses, and videos you keep meaning to start but the list is buried and growing.
+
+Include:
+- A master backlog database
+- Source type labels
+- Effort and time estimates
+- A priority scoring field
+- A "ready to start" filtered view
 
 ---
 
