@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-04-09T21:51:27.259862+00:00",
+  "total_posts_analyzed": 2,
+  "top5_themes": [
+    {
+      "theme": "Personal Finance",
+      "total_score": 0,
+      "post_count": 1,
+      "top_posts": [
+        {
+          "title": "Template For Investors Who Want Clarity - Track investment profits, distributions, ROI all in 1 place",
+          "score": 0,
+          "url": "https://www.producthunt.com/products/template-for-investors-who-want-clarity?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+notion-template-research+%28ID%3A+279812%29"
+        }
+      ]
+    },
+    {
+      "theme": "Life OS / Second Brain",
+      "total_score": 30,
+      "post_count": 1,
+      "top_posts": []
+    },
+    {
+      "theme": "Study / Learning",
+      "total_score": 60,
+      "post_count": 1,
+      "top_posts": []
+    },
+    {
+      "theme": "Job Search / Career",
+      "total_score": 50,
+      "post_count": 1,
+      "top_posts": []
+    },
+    {
+      "theme": "Habit Tracker",
+      "total_score": 100,
+      "post_count": 1,
+      "top_posts": []
+    }
+  ]
+}
