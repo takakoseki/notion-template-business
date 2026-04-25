@@ -1,10 +1,11 @@
 name: Notion Template Business Scheduler
 
 on:
-  schedule:
-    - cron: "0 21 * * *"   # 06:00 JST — pipeline
-    - cron: "0 0 * * *"    # 09:00 JST — morning post
-    - cron: "0 12 * * *"   # 21:00 JST — evening post
+  # Scheduled runs are paused. Re-add the cron entries below to resume.
+  # schedule:
+  #   - cron: "0 21 * * *"   # 06:00 JST — pipeline
+  #   - cron: "0 0 * * *"    # 09:00 JST — morning post
+  #   - cron: "0 12 * * *"   # 21:00 JST — evening post
   workflow_dispatch:
     inputs:
       job_type:
