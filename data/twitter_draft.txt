@@ -1,128 +1,126 @@
-Notion + learning = never lose a study session again 💰
+Notion + learning = a second brain that actually works 💰
 No skills. No design. No excuses.
 10 templates that do all the work 👇
 
 ---
 
-1/ Course Progress Engine
-You started [N] courses this year but have no idea how far along you actually are.
+1/ The Course Command Center
+You started [N] courses this year and finished none of them.
 
-Include:
-- A tracker for every course, book, and cert
-- Auto-calculated progress percentages
-- Completion status at a glance
-- Linked notes per course
-- A single dashboard to see it all
-
----
-
-2/ Structured Notes Blueprint
-You take notes during [COURSE] but can never find the key takeaways when you need them.
-
-Include:
-- A reusable note template per lesson
-- A section for Key Concepts
-- A dedicated Questions block
-- An Action Items checklist
-- Direct links back to the parent course
+Track unlimited courses, books, and certs with:
+- Auto-calculated progress %
+- Completion status per resource
+- Priority ranking
+- Category tags
+- A single dashboard view of everything
 
 ---
 
-3/ Study Session Tracker
-You study for [DURATION] but have no record of what you actually covered or how you felt.
+2/ The Progress Percentage Engine
+You have no idea how close you are to finishing [COURSE].
 
-Include:
-- A log entry for every session
-- Duration and topic fields
-- A mood tracker per session
-- A weekly time breakdown
-- Patterns showing where your hours really go
+Build a live tracker that shows:
+- Exact % complete per course
+- Lessons done vs remaining
+- Time invested so far
+- Momentum score
+- Visual progress bars
 
 ---
 
-4/ Habit Streak Machine
-You want to study [SUBJECT] daily but always fall off after a few days without a system.
+3/ The Structured Notes Blueprint
+Your notes from [BOOK] are buried in 5 different apps.
 
-Include:
-- Daily, weekly, and monthly goal slots
+Give me a linked note system with:
+- Key Concepts section per note
+- Questions to revisit later
+- Action Items to apply learning
+- Direct link to parent course
+- Consistent format every time
+
+---
+
+4/ The Study Session Tracker
+You sit down to study [TOPIC] but have no idea if it's actually working.
+
+Log every session with:
+- Duration and date
+- Topics covered
+- Mood at the time
+- Consistency patterns over weeks
+- A breakdown of where your time goes
+
+---
+
+5/ The Habit Time Audit Machine
+You think you study [N] hours a week but you really don't.
+
+Build an honest record that shows:
+- Weekly study totals
+- Your most productive days
+- Topic distribution
+- Session frequency trends
+- Real vs perceived effort
+
+---
+
+6/ The Spaced Repetition Queue
+You reviewed [CONCEPT] once and assumed you remembered it.
+
+Never let material go stale with:
+- Overdue review flags
+- Confidence level per concept
+- Scheduled review dates
+- Topics sorted by urgency
+- A queue that updates automatically
+
+---
+
+7/ The Confidence Level System
+You finished [CHAPTER] but have no idea how well it stuck.
+
+Rate and monitor what you actually know with:
+- Per-concept confidence scores
+- Weak spot identification
+- Review priority ranking
+- Progress from shaky to solid
+- A running list of gaps to close
+
+---
+
+8/ The Daily Goal Blueprint
+You want to study [SKILL] every day but keep skipping.
+
+Set targets that stick with:
+- Daily learning goals
+- A streak counter per habit
+- Success metrics you define
+- Deadline for each goal
+- A daily checklist to stay on track
+
+---
+
+9/ The Weekly Learning Tracker
+Your [WEEK] had zero structure and you fell behind again.
+
+Plan and review each week with:
+- Weekly study targets
+- Hours allocated per subject
+- End-of-week reflection prompts
+- Goal hit rate over time
+- A reset ritual for Monday
+
+---
+
+10/ The Quarterly Mastery Engine
+You set a big learning goal for [QUARTER] and forgot about it by week two.
+
+Build a 90-day system with:
+- Quarterly learning milestones
+- Monthly checkpoints
+- Progress against deadlines
 - Streak counters for recurring habits
-- Deadline fields per goal
-- Success metrics to define what done looks like
-- A habit history you can actually look back on
-
----
-
-5/ Spaced Repetition Queue
-You finished [COURSE] two weeks ago and already forgot most of what you learned.
-
-Include:
-- A review queue that flags overdue topics
-- Confidence level ratings per concept
-- A next-review date that updates automatically
-- Filters to surface the most urgent reviews
-- A record of every concept you have ever studied
-
----
-
-6/ Learning Goal Blueprint
-You set a goal to get [CERTIFICATION] by [DEADLINE] but never broke it into trackable steps.
-
-Include:
-- Quarterly, monthly, and weekly goal layers
-- Deadline tracking per milestone
-- A success metric field for each goal
-- A progress bar linked to real activity
-- A single view showing every active goal at once
-
----
-
-7/ Knowledge Capture Engine
-You read [BOOK] and highlighted everything but retained almost nothing a month later.
-
-Include:
-- A book entry linked to your reading goal
-- A Key Concepts section per chapter
-- An open Questions log
-- An Action Items list you can act on immediately
-- A connection back to related courses
-
----
-
-8/ Weekly Review System
-You end every week unsure whether you actually made progress on [SKILL] or just stayed busy.
-
-Include:
-- A weekly study summary template
-- Total hours logged for the week
-- Topics covered across all active courses
-- Goals hit versus goals missed
-- A notes block for what to adjust next week
-
----
-
-9/ Certification Roadmap Tracker
-You want to earn [CERTIFICATION] but have no idea what to study first or how long it will take.
-
-Include:
-- A step-by-step topic checklist for [CERT]
-- Estimated study time per topic
-- A progress percentage for the full roadmap
-- Links to notes and sessions per topic
-- A target exam date with a countdown
-
----
-
-10/ Focus Session Blueprint
-You sit down to study [SUBJECT] but spend the first [MINUTES] minutes just deciding what to do.
-
-Include:
-- A pre-session setup checklist
-- A single focus topic field to eliminate decisions
-- A timer log to record actual deep work
-- A post-session reflection block
-- A link to the next scheduled review
-
----
+- A review to carry wins forward
 
 That's 10 Notion templates for learning. 💸
 Built the system so you don't have to.
